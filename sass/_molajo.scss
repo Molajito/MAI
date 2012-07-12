@@ -1,0 +1,38 @@
+/* Typography*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic,500italic&subset=cyrillic-ext,latin-ext);
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400;}
+
+/* Colors */
+$brown: #464646;
+$teal: #006767;
+$white: #ffffff;
+$offwhite: #fffffd;
+
+/* Resets */
+* {
+	font-family: Ubuntu;
+	font-weight: 300;
+}
+body {
+	background: $offwhite;
+	// padding: 10px;
+}
+
+
+/* Imagery */
+.molajo_crocs {
+  background: transparent url(../images/molajo/molajo_crocs.svg) no-repeat left center;
+  color: $white;
+}
+
+a[href="#expand"] {
+
+	@include border-radius(5px);
+	@include single-box-shadow(rgba(0,0,0,.4), 0, 1px, 2px, 0, true);
+
+	background: $white url(../images/molajo/icon-expand.svg) no-repeat center center;
+	display: inline-block;
+	height: 22px;
+	width: 26px;
+}

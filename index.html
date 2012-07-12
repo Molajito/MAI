@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to MAI (Molajo Administrator Interface)</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body id="expand">
+
+	<header role="header" class="row">
+		<div>
+			<h1><strong>Molajo</strong> Admin Interface</h1>
+			<form role="search">
+				<fieldset>
+					<input type="search" placeholder="Search Resources">
+				</fieldset>
+			</form>
+			<nav>
+				<dl class="settings">
+					<dt class="user"><span>Babs Gösgens</span></dt>
+					<dd>
+						<ul>
+							<li><a href="#">Dropdown Item</a></li>
+							<li><a href="#">Another Dropdown Item</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Last Item</a></li>
+						</ul>
+					</dd>
+					<dt class="panel last"><span>Settings</span></dt>
+					<dd></dd>
+				</dl>
+			</nav>
+		</div>
+	</header>
+
+	<div class="row">
+		<nav role="navigation">
+			<dl class="accordion level-one" id="main">
+				<dt id="build"><a href="build"><i></i><span>Build</span></a><div></div><div></div></dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="#build-item-one">Item One</a>
+							<ul id="build-item-one">
+								<li><a href="#one">One</a></li>
+								<li><a href="#two">Two</a></li>
+								<li><a href="#three">Three</a></li>
+							</ul>
+						</li>
+						<li><a href="#build-item-two">Item Two</a></li>
+						<li><a href="#build-item-three">Item Three</a></li>
+						<li><a href="#build-item-four">Item Four</a></li>
+						<li><a href="#build-item-five">Item Five</a></li>
+					</ul>
+				</dd>
+				<dt id="resources"><a href="resources"><i></i><span>Resources</span></a><div></div><div></div></dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="#"><span>Blog</span></a>
+							<ul>
+								<li><a href="#"><span>Articles</span></a></li>
+								<li><a href="#"><span>Images</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span>F.A.Q.'s</span></a></li>
+						<li><a href="#"><span>Contact</span></a></li>
+						<li><a href="#"><span>Downloads</span></a></li>
+					</ul>
+				</dd>
+			</dl>
+		</nav>
+		<section role="main">
+			<a href="#expand" id="expander"></a>
+			Main
+		</section>
+	</div>
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation/jquery.reveal.js"></script>
+	<script src="javascripts/foundation/jquery.orbit-1.4.0.js"></script>
+	<script src="javascripts/foundation/jquery.customforms.js"></script>
+	<script src="javascripts/foundation/jquery.placeholder.min.js"></script>
+	<script src="javascripts/foundation/jquery.tooltips.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	<script src="javascripts/molajo/navigation.js"></script>
+	<!--script src="javascripts/jquery.flip.min.js"></script-->
+
+</body>
+</html>

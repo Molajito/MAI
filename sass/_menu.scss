@@ -1,0 +1,118 @@
+nav[role="navigation"] {
+
+	@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
+	// @include border-left-radius(5px);
+	// @include border-top-radius(0);
+
+	@extend .column;
+	@extend .three;
+
+	@include transition();
+
+
+	background: $teal;
+	color: $white;
+	height: 100%;
+	padding: 0;
+
+	>dl>dd>ul>li>ul {
+		display: none;
+	}
+	dl {
+		dt, li {
+			border-bottom: 1px solid rgba(0,0,0,.3);
+			border-top: 1px solid rgba(255,255,255,.3);
+		}
+		dt {
+			position: relative;
+			&:first-child {
+				border-top: 0;
+			}
+			&.current {
+				>div {
+					position: absolute;
+					@include cssTriangle(11px, rgba(0,0,0,.3), top);
+					left: 10px;
+					&:last-child {
+						position: absolute;
+						@include cssTriangle(10px, $teal, top);
+						left: 11px;
+					}
+				}
+			}
+			i {
+				@include font-size(18);
+				display: inline-block;
+				width: 26px;
+				font-style: normal;
+				margin-right: 8px;
+				text-align: center;
+				&:before {
+					@extend .glyph.general;
+				}
+			}
+		}
+		a {
+			@include transition();
+			color: $white;
+			display: block;
+			padding: 7px 8px;
+		}
+		#build i:before {
+			content: "k";
+		}
+		#resources i:before {
+			content: "j";
+		}
+		dd {
+			background: darken($teal, 4);
+				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
+
+			ul {
+				list-style-type: none;
+				margin-bottom: 0;
+				a {
+					padding-left: 42px;
+					&:hover {
+						background: rgba(0,0,0,.2);
+					}
+				}
+			}
+		}
+	}
+}
+
+[role="main"] {
+
+	@extend .column;
+	@extend .fifteen;
+
+	@include transition();
+}
+
+
+
+#expand:target {
+	nav[role="navigation"] {
+		@extend .one;
+		dt>a>span,
+		dt>div,
+		dd>ul { display: none; }
+		&:hover {
+
+			@extend .three;
+
+			+[role="main"] { @extend .fifteen; }
+
+			dt>a>span { display: inline; }
+			dt>div,
+			dd>ul { display: block; }
+		}
+	}
+	[role="main"] {
+		@extend .seventeen;
+	}
+	#expander {
+		display: none;
+	}
+}

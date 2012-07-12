@@ -1,0 +1,100 @@
+header[role="header"] {
+
+	$height: 40px;
+
+	// @include border-top-radius(5px);
+
+	background: $brown;
+
+	>div {
+		@extend .molajo_crocs;
+		background-position: 8px;
+		background-size: 26px;
+		height: $height;
+		text-indent: 34px;
+		width: 100%;
+	}
+
+	h1 {
+		@include font-size(18);
+		@extend .columns;
+		@extend .six;
+		background-size: 26px;
+		display: table-cell;
+		height: 40px;
+		line-height: 35px;
+		margin: 0 8px;
+		padding: 2px 0;
+		text-transform: lowercase;
+	}
+	form[role="search"] {
+		display: inline;
+		fieldset {
+			display: inline;
+			padding: 8px 0 0;
+			border: 0 !important;
+		}
+		input[type="search"] {
+			background: $offwhite;
+		}
+	}
+	nav {
+		display: inline-block;
+		float: right;
+		height: $height;
+		.settings {
+			display: inline-block;
+			position: relative;
+			border-left: 1px solid rgba(0,0,0,.3);
+			dt {
+				border-left: 1px solid rgba(255,255,255,.3);
+				border-right: 1px solid rgba(0,0,0,.3);
+				color: $white;
+				display: table-cell;
+				height: $height;
+				padding: 0 15px;
+				text-align: center;
+				vertical-align: middle;
+				&.user {
+					background: url(../media/smile.png) no-repeat 0 0;
+					background-size: $height;
+					padding-left: 40px;
+				}
+				&.panel {
+					&:before {
+						@extend .glyph.general;
+						content: "a";
+					}
+					>span {
+						display: none;
+					}
+				}
+				&.last {
+					border-right: 0;
+				}
+			}
+			dd {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screenSmall - 1) {
+	header[role="header"] {
+		display: block;
+		h1 {
+			display: none;
+		}
+		nav {
+			dt {
+				&.user {
+					padding: 0 0 0 40px;
+					>span {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

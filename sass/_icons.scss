@@ -1,0 +1,44 @@
+/* Foundation Icons General */
+@font-face {
+  font-family: 'FoundationIconsGeneral';
+  src: url('../fonts/foundation-icons-general/foundation-icons-general.eot');
+  src: url('../fonts/foundation-icons-general/foundation-icons-general.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/foundation-icons-general/foundation-icons-general.woff') format('woff'),
+       url('../fonts/foundation-icons-general/foundation-icons-general.ttf') format('truetype'),
+       url('../fonts/foundation-icons-general/foundation-icons-general.svg#FoundationIconsGeneral') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Icons General Enclosed */
+@font-face {
+    font-family: 'FoundationIconsGeneralEnclosed';
+    src: url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot');
+    src: url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.woff') format('woff'),
+         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.ttf') format('truetype'),
+         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.svg#FoundationIconsGeneralEnclosed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Foundation Icons Social */
+@font-face {
+    font-family: 'FoundationIconsSocial';
+    src: url('../fonts/foundation-icons-social/foundation-icons-social.eot');
+    src: url('../fonts/foundation-icons-social/foundation-icons-social.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/foundation-icons-social/foundation-icons-social.woff') format('woff'),
+         url('../fonts/foundation-icons-social/foundation-icons-social.ttf') format('truetype'),
+         url('../fonts/foundation-icons-social/foundation-icons-social.svg#FoundationIconsSocial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* CSS to style glyphs */
+.glyph { cursor: default; font-size: 16px; line-height: 1; }
+.glyph.general { font-family: "FoundationIconsGeneral"; }
+.glyph.enclosed { font-family: "FoundationIconsGeneralEnclosed"; }
+.glyph.social { font-family: "FoundationIconsSocial
+	"; }
