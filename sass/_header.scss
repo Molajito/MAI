@@ -28,11 +28,14 @@ header[role="header"] {
 		text-transform: lowercase;
 	}
 	form[role="search"] {
-		display: inline;
+		@extend .glyph.general;
+		display: table-cell;
+		height: $height;
+		vertical-align: middle;
 		fieldset {
 			display: inline;
 			padding: 8px 0 0;
-			border: 0 !important;
+			border: 0;
 		}
 		input[type="search"] {
 			background: $offwhite;
@@ -55,15 +58,25 @@ header[role="header"] {
 				padding: 0 15px;
 				text-align: center;
 				vertical-align: middle;
+				&:before {
+					@extend .glyph.general;
+				}
 				&.user {
 					background: url(../media/smile.png) no-repeat 0 0;
 					background-size: $height;
-					padding-left: 40px;
+					padding-left: $height + 13px;
 				}
 				&.panel {
 					&:before {
-						@extend .glyph.general;
 						content: "a";
+					}
+					>span {
+						display: none;
+					}
+				}
+				&.search {
+					&:before {
+						content: "=";
 					}
 					>span {
 						display: none;
@@ -85,6 +98,11 @@ header[role="header"] {
 		display: block;
 		h1 {
 			display: none;
+		}
+		form {
+			&:before {
+				content: "=";
+			}
 		}
 		nav {
 			dt {
