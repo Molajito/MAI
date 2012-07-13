@@ -2928,10 +2928,9 @@ header[role="header"] > div {
   background-position: 8px;
   background-size: 26px;
   height: 40px;
-  text-indent: 34px;
   width: 100%;
 }
-/* line 18, ../sass/_header.scss */
+/* line 17, ../sass/_header.scss */
 header[role="header"] h1 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -2941,6 +2940,7 @@ header[role="header"] h1 {
   line-height: 35px;
   margin: 0 8px;
   padding: 2px 0;
+  text-indent: 34px;
   text-transform: lowercase;
 }
 /* line 30, ../sass/_header.scss */
@@ -3061,7 +3061,7 @@ nav[role="navigation"] dl dt.current > div {
   height: 0;
   border: solid 11px;
   border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
-  left: 10px;
+  left: 9px;
 }
 /* line 36, ../sass/_menu.scss */
 nav[role="navigation"] dl dt.current > div:last-child {
@@ -3072,7 +3072,7 @@ nav[role="navigation"] dl dt.current > div:last-child {
   height: 0;
   border: solid 10px;
   border-color: #006767 transparent transparent transparent;
-  left: 11px;
+  left: 10px;
 }
 /* line 43, ../sass/_menu.scss */
 nav[role="navigation"] dl dt i {
@@ -3084,7 +3084,11 @@ nav[role="navigation"] dl dt i {
   margin-right: 8px;
   text-align: center;
 }
-/* line 55, ../sass/_menu.scss */
+/* line 50, ../sass/_menu.scss */
+nav[role="navigation"] dl dt i:before {
+  text-shadow: -1px, -1px, 1px, 0, black;
+}
+/* line 56, ../sass/_menu.scss */
 nav[role="navigation"] dl a {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -3094,36 +3098,40 @@ nav[role="navigation"] dl a {
   display: block;
   padding: 7px 8px;
 }
-/* line 61, ../sass/_menu.scss */
+/* line 63, ../sass/_menu.scss */
+nav[role="navigation"] dl a span {
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
+}
+/* line 67, ../sass/_menu.scss */
 nav[role="navigation"] dl #build i:before {
   content: "k";
 }
-/* line 64, ../sass/_menu.scss */
+/* line 70, ../sass/_menu.scss */
 nav[role="navigation"] dl #resources i:before {
   content: "j";
 }
-/* line 67, ../sass/_menu.scss */
+/* line 73, ../sass/_menu.scss */
 nav[role="navigation"] dl dd {
   background: #005353;
   -webkit-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
   box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 71, ../sass/_menu.scss */
+/* line 77, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul {
   list-style-type: none;
   margin-bottom: 0;
 }
-/* line 74, ../sass/_menu.scss */
+/* line 80, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul a {
   padding-left: 42px;
 }
-/* line 76, ../sass/_menu.scss */
+/* line 82, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 85, ../sass/_menu.scss */
+/* line 91, ../sass/_menu.scss */
 [role="main"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -3131,22 +3139,28 @@ nav[role="navigation"] dl dd ul a:hover {
   transition: all 1s;
 }
 
-/* line 100, ../sass/_menu.scss */
+/* line 106, ../sass/_menu.scss */
 #expand:target nav[role="navigation"] dt > a > span,
 #expand:target nav[role="navigation"] dt > div,
 #expand:target nav[role="navigation"] dd > ul {
   display: none;
 }
-/* line 107, ../sass/_menu.scss */
+/* line 113, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover dt > a > span {
   display: inline;
 }
-/* line 109, ../sass/_menu.scss */
+/* line 115, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover dt > div,
 #expand:target nav[role="navigation"]:hover dd > ul {
   display: block;
 }
-/* line 115, ../sass/_menu.scss */
+/* line 121, ../sass/_menu.scss */
 #expand:target #expander {
   display: none;
+}
+
+/* Temp Helper Styles */
+/* line 31, ../sass/app.scss */
+[role="main"] {
+  padding-top: 10px;
 }

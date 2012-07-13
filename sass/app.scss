@@ -1,7 +1,8 @@
 /* Artfully masterminded by ZURB  */
 @import "compass";
-@import "compass/css3/transition";
 @import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/transition";
 
 @import "settings";
 // @import "foundation";
@@ -25,3 +26,8 @@
 @import "molajo";
 @import "header";
 @import "menu";
+
+/* Temp Helper Styles */
+[role="main"] {
+	padding-top: 10px;
+}

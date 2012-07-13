@@ -11,7 +11,6 @@ header[role="header"] {
 		background-position: 8px;
 		background-size: 26px;
 		height: $height;
-		text-indent: 34px;
 		width: 100%;
 	}
 
@@ -25,6 +24,7 @@ header[role="header"] {
 		line-height: 35px;
 		margin: 0 8px;
 		padding: 2px 0;
+		text-indent: 34px;
 		text-transform: lowercase;
 	}
 	form[role="search"] {
