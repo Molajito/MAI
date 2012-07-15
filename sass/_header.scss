@@ -9,24 +9,28 @@ header[role="header"] {
 	>div {
 		height: $height;
 		width: 100%;
+
+		&:before {
+			@include font-size(28);
+			@extend .icon;
+			@extend .icon.molajo;
+			color: $white;
+			line-height: $height + 2px;
+			padding-left: 8px;
+		}
 	}
 
 	h1 {
 		@include font-size(18);
-		@extend .columns;
-		@extend .six;
-		background-size: 26px;
+		// @extend .columns;
+		// @extend .six;
 		color: $offwhite;
-		display: table-cell;
-		height: 40px;
-		margin: 0 8px;
+		left: $height + 2px;
+		line-height: $height;
+		position: absolute;
+		margin: 0;
 		text-transform: lowercase;
-		vertical-align: middle;
-		i:before {
-			@include font-size(28);
-			@extend .icon;
-			@extend .icon.molajo;
-		}
+		top: 0;
 	}
 	form[role="search"] {
 		@extend .glyph.general;

@@ -28,4 +28,9 @@ a[href="#expand"] {
 	display: inline-block;
 	height: 22px;
 	width: 26px;
+
+	&:before {
+		@extend .icon;
+		@extend .icon.fullscreen;
+	}
 }

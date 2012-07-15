@@ -62,16 +62,8 @@
   font-family: 'molajo';
   content: attr(data-icon);
   speak: none;
-  &.molajo {
-    content: "\22";
-  }
 }
 .icon.fullscreen { content: "\21"; }
 .icon.molajo { content: "\22"; }
 .icon.crocs { content: "\23"; }
 .icon.crocs-large { content: "\24"; }
-i.icon {
-  // display: table-cell;
-  // vertical-align: middle;
-  // text-align: center;
-}
