@@ -19,13 +19,6 @@ body {
 	// padding: 10px;
 }
 
-
-/* Imagery */
-.molajo_crocs {
-  background: transparent url(../images/molajo/molajo_crocs.svg) no-repeat left center;
-  color: $white;
-}
-
 a[href="#expand"] {
 
 	@include border-radius(5px);

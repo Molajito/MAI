@@ -7,9 +7,6 @@ header[role="header"] {
 	background: $brown;
 
 	>div {
-		@extend .molajo_crocs;
-		background-position: 8px;
-		background-size: 26px;
 		height: $height;
 		width: 100%;
 	}
@@ -19,13 +16,17 @@ header[role="header"] {
 		@extend .columns;
 		@extend .six;
 		background-size: 26px;
+		color: $offwhite;
 		display: table-cell;
 		height: 40px;
-		line-height: 35px;
 		margin: 0 8px;
-		padding: 2px 0;
-		text-indent: 34px;
 		text-transform: lowercase;
+		vertical-align: middle;
+		i:before {
+			@include font-size(28);
+			@extend .icon;
+			@extend .icon.molajo;
+		}
 	}
 	form[role="search"] {
 		@extend .glyph.general;
