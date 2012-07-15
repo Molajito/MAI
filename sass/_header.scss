@@ -1,13 +1,9 @@
 header[role="header"] {
 
-	$height: 40px;
-
-	// @include border-top-radius(5px);
-
 	background: $brown;
 
 	>div {
-		height: $height;
+		height: $headerHeight;
 		width: 100%;
 
 		&:before {
@@ -15,7 +11,7 @@ header[role="header"] {
 			@extend .icon;
 			@extend .icon.molajo;
 			color: $white;
-			line-height: $height + 2px;
+			line-height: $headerHeight + 2px;
 			padding-left: 8px;
 		}
 	}
@@ -25,8 +21,8 @@ header[role="header"] {
 		// @extend .columns;
 		// @extend .six;
 		color: $offwhite;
-		left: $height + 2px;
-		line-height: $height;
+		left: $headerHeight + 2px;
+		line-height: $headerHeight;
 		position: absolute;
 		margin: 0;
 		text-transform: lowercase;
@@ -35,7 +31,7 @@ header[role="header"] {
 	form[role="search"] {
 		@extend .glyph.general;
 		display: table-cell;
-		height: $height;
+		height: $headerHeight;
 		vertical-align: middle;
 		fieldset {
 			display: inline;
@@ -49,7 +45,7 @@ header[role="header"] {
 	nav {
 		display: inline-block;
 		float: right;
-		height: $height;
+		height: $headerHeight;
 		.settings {
 			display: inline-block;
 			position: relative;
@@ -59,7 +55,7 @@ header[role="header"] {
 				border-right: 1px solid rgba(0,0,0,.3);
 				color: $white;
 				display: table-cell;
-				height: $height;
+				height: $headerHeight;
 				padding: 0 15px;
 				text-align: center;
 				vertical-align: middle;
@@ -68,8 +64,8 @@ header[role="header"] {
 				}
 				&.user {
 					background: url(../media/smile.png) no-repeat 0 0;
-					background-size: $height;
-					padding-left: $height + 13px;
+					background-size: $headerHeight;
+					padding-left: $headerHeight + 13px;
 				}
 				&.panel {
 					&:before {

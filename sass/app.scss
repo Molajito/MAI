@@ -5,6 +5,7 @@
 @import "compass/css3/transition";
 
 @import "settings";
+@import "molajo";
 // @import "foundation";
 
 // Import Each Specific Piece for SASS
@@ -23,7 +24,6 @@
 
 /* Custom */
 @import "icons";
-@import "molajo";
 @import "header";
 @import "menu";
 
