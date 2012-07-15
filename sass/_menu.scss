@@ -14,12 +14,15 @@ nav[role="navigation"] {
 	@extend .column;
 	@extend .three;
 
+	@include transition-property(width);
 	@include transition();
 
 	background: $teal;
+	box-sizing: border-box;
 	color: $white;
 	height: 100%;
 	padding: 0;
+	overflow: hidden;
 
 	&:before {
 		margin-top: $headerHeight;
@@ -103,6 +106,7 @@ nav[role="navigation"] {
 	@extend .column;
 	@extend .fifteen;
 
+	@include transition-property(width);
 	@include transition();
 }
 
