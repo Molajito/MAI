@@ -1,6 +1,5 @@
 // Force menu over full height
 [role="header"]+div {
-	box-sizing: border-box;
 	height: 100%;
 	padding-top: $headerHeight;
 	margin-top: - $headerHeight;

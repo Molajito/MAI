@@ -1,6 +1,8 @@
 header[role="header"] {
 
 	background: $brown;
+	border-bottom: 1px solid darken($brown, 6);
+	color: $offwhite;
 
 	>div {
 		height: $headerHeight;
@@ -20,7 +22,6 @@ header[role="header"] {
 		@include font-size(18);
 		// @extend .columns;
 		// @extend .six;
-		color: $offwhite;
 		left: $headerHeight + 2px;
 		line-height: $headerHeight;
 		position: absolute;
@@ -29,10 +30,6 @@ header[role="header"] {
 		top: 0;
 	}
 	form[role="search"] {
-		@extend .glyph.general;
-		display: table-cell;
-		height: $headerHeight;
-		vertical-align: middle;
 		fieldset {
 			display: inline;
 			padding: 8px 0 0;
@@ -43,45 +40,51 @@ header[role="header"] {
 		}
 	}
 	nav {
-		display: inline-block;
 		float: right;
 		height: $headerHeight;
 		.settings {
-			display: inline-block;
-			position: relative;
 			border-left: 1px solid rgba(0,0,0,.3);
 			dt {
 				border-left: 1px solid rgba(255,255,255,.3);
 				border-right: 1px solid rgba(0,0,0,.3);
-				color: $white;
-				display: table-cell;
-				height: $headerHeight;
-				padding: 0 15px;
-				text-align: center;
+				display: inline-block;
 				vertical-align: middle;
-				&:before {
-					@extend .glyph.general;
+				a {
+					display: inline-block;
+					color: inherit;
+					height: $headerHeight;
+					line-height: $headerHeight;
+					min-width: $headerHeight;
+					text-align: center;
+					vertical-align: middle;
+					>i {
+						display: inline-block;
+						font-style: normal;
+						height: inherit;
+						width: inherit;
+						@extend .glyph.general;
+					}
+					>span {
+						display: none;
+						float: right;
+					}
+
 				}
 				&.user {
-					background: url(../media/smile.png) no-repeat 0 0;
-					background-size: $headerHeight;
-					padding-left: $headerHeight + 13px;
+					a {
+						padding: 0;
+						>img {
+							height: $headerHeight;
+							width: $headerHeight;
+						}
+						>span {
+							padding: 0 10px;
+						}
+					}
 				}
 				&.panel {
-					&:before {
-						content: "a";
-					}
-					>span {
-						display: none;
-					}
 				}
 				&.search {
-					&:before {
-						content: "=";
-					}
-					>span {
-						display: none;
-					}
 				}
 				&.last {
 					border-right: 0;
@@ -93,27 +96,26 @@ header[role="header"] {
 		}
 	}
 }
-
+@media only screen and (min-width: $screenSmall) {
+	header[role="header"] {
+		nav {
+			dt {
+				&.user {
+					a {
+						>span {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media only screen and (max-width: $screenSmall - 1) {
 	header[role="header"] {
 		display: block;
 		h1 {
 			display: none;
-		}
-		form {
-			&:before {
-				content: "=";
-			}
-		}
-		nav {
-			dt {
-				&.user {
-					padding: 0 0 0 40px;
-					>span {
-						display: none;
-					}
-				}
-			}
 		}
 	}
 }

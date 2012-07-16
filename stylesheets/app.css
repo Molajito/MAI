@@ -2898,7 +2898,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, header[role="header"] form[role="search"], header[role="header"] nav .settings dt:before, nav[role="navigation"] dl dt i:before {
+.glyph.general, header[role="header"] nav .settings dt a > i, nav[role="navigation"] dl dt i:before {
   font-family: "FoundationIconsGeneral";
 }
 
@@ -2956,13 +2956,15 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 /* line 1, ../sass/_header.scss */
 header[role="header"] {
   background: #464646;
+  border-bottom: 1px solid #373737;
+  color: #fffffd;
 }
-/* line 5, ../sass/_header.scss */
+/* line 7, ../sass/_header.scss */
 header[role="header"] > div {
   height: 40px;
   width: 100%;
 }
-/* line 9, ../sass/_header.scss */
+/* line 11, ../sass/_header.scss */
 header[role="header"] > div:before {
   font-size: 28px;
   font-size: 2.8rem;
@@ -2970,11 +2972,10 @@ header[role="header"] > div:before {
   line-height: 42px;
   padding-left: 8px;
 }
-/* line 19, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 header[role="header"] h1 {
   font-size: 18px;
   font-size: 1.8rem;
-  color: #fffffd;
   left: 42px;
   line-height: 40px;
   position: absolute;
@@ -2982,107 +2983,100 @@ header[role="header"] h1 {
   text-transform: lowercase;
   top: 0;
 }
-/* line 31, ../sass/_header.scss */
-header[role="header"] form[role="search"] {
-  display: table-cell;
-  height: 40px;
-  vertical-align: middle;
-}
-/* line 36, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header[role="header"] form[role="search"] fieldset {
   display: inline;
   padding: 8px 0 0;
   border: 0;
 }
-/* line 41, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 header[role="header"] form[role="search"] input[type="search"] {
   background: #fffffd;
 }
-/* line 45, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 header[role="header"] nav {
-  display: inline-block;
   float: right;
   height: 40px;
 }
-/* line 49, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 header[role="header"] nav .settings {
-  display: inline-block;
-  position: relative;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 53, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 header[role="header"] nav .settings dt {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
-  color: white;
-  display: table-cell;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 52, ../sass/_header.scss */
+header[role="header"] nav .settings dt a {
+  display: inline-block;
+  color: inherit;
   height: 40px;
-  padding: 0 15px;
+  line-height: 40px;
+  min-width: 40px;
   text-align: center;
   vertical-align: middle;
 }
-/* line 65, ../sass/_header.scss */
-header[role="header"] nav .settings dt.user {
-  background: url(../media/smile.png) no-repeat 0 0;
-  background-size: 40px;
-  padding-left: 53px;
+/* line 60, ../sass/_header.scss */
+header[role="header"] nav .settings dt a > i {
+  display: inline-block;
+  font-style: normal;
+  height: inherit;
+  width: inherit;
 }
-/* line 71, ../sass/_header.scss */
-header[role="header"] nav .settings dt.panel:before {
-  content: "a";
+/* line 67, ../sass/_header.scss */
+header[role="header"] nav .settings dt a > span {
+  display: none;
+  float: right;
 }
 /* line 74, ../sass/_header.scss */
-header[role="header"] nav .settings dt.panel > span {
-  display: none;
+header[role="header"] nav .settings dt.user a {
+  padding: 0;
 }
-/* line 79, ../sass/_header.scss */
-header[role="header"] nav .settings dt.search:before {
-  content: "=";
+/* line 76, ../sass/_header.scss */
+header[role="header"] nav .settings dt.user a > img {
+  height: 40px;
+  width: 40px;
 }
-/* line 82, ../sass/_header.scss */
-header[role="header"] nav .settings dt.search > span {
-  display: none;
+/* line 80, ../sass/_header.scss */
+header[role="header"] nav .settings dt.user a > span {
+  padding: 0 10px;
 }
-/* line 86, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 header[role="header"] nav .settings dt.last {
   border-right: 0;
 }
-/* line 90, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 header[role="header"] nav .settings dd {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  /* line 105, ../sass/_header.scss */
+  header[role="header"] nav dt.user a > span {
+    display: inline;
+  }
+}
 @media only screen and (max-width: 767px) {
-  /* line 98, ../sass/_header.scss */
+  /* line 115, ../sass/_header.scss */
   header[role="header"] {
     display: block;
   }
-  /* line 100, ../sass/_header.scss */
+  /* line 117, ../sass/_header.scss */
   header[role="header"] h1 {
-    display: none;
-  }
-  /* line 104, ../sass/_header.scss */
-  header[role="header"] form:before {
-    content: "=";
-  }
-  /* line 110, ../sass/_header.scss */
-  header[role="header"] nav dt.user {
-    padding: 0 0 0 40px;
-  }
-  /* line 112, ../sass/_header.scss */
-  header[role="header"] nav dt.user > span {
     display: none;
   }
 }
 /* line 2, ../sass/_menu.scss */
 [role="header"] + div {
-  box-sizing: border-box;
   height: 100%;
   padding-top: 40px;
   margin-top: -40px;
 }
 
-/* line 8, ../sass/_menu.scss */
+/* line 7, ../sass/_menu.scss */
 nav[role="navigation"] {
   -webkit-box-shadow: inset -2px 1px 2px 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset -2px 1px 2px 0 rgba(0, 0, 0, 0.4);
@@ -3102,28 +3096,28 @@ nav[role="navigation"] {
   padding: 0;
   overflow: hidden;
 }
-/* line 27, ../sass/_menu.scss */
+/* line 26, ../sass/_menu.scss */
 nav[role="navigation"]:before {
   margin-top: 40px;
 }
-/* line 31, ../sass/_menu.scss */
+/* line 30, ../sass/_menu.scss */
 nav[role="navigation"] > dl > dd > ul > li > ul {
   display: none;
 }
-/* line 35, ../sass/_menu.scss */
+/* line 34, ../sass/_menu.scss */
 nav[role="navigation"] dl dt, nav[role="navigation"] dl li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* line 39, ../sass/_menu.scss */
+/* line 38, ../sass/_menu.scss */
 nav[role="navigation"] dl dt {
   position: relative;
 }
-/* line 41, ../sass/_menu.scss */
+/* line 40, ../sass/_menu.scss */
 nav[role="navigation"] dl dt:first-child {
   border-top: 0;
 }
-/* line 45, ../sass/_menu.scss */
+/* line 44, ../sass/_menu.scss */
 nav[role="navigation"] dl dt.current > div {
   position: absolute;
   content: "";
@@ -3134,7 +3128,7 @@ nav[role="navigation"] dl dt.current > div {
   border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
   left: 9px;
 }
-/* line 49, ../sass/_menu.scss */
+/* line 48, ../sass/_menu.scss */
 nav[role="navigation"] dl dt.current > div:last-child {
   position: absolute;
   content: "";
@@ -3145,7 +3139,7 @@ nav[role="navigation"] dl dt.current > div:last-child {
   border-color: #006767 transparent transparent transparent;
   left: 10px;
 }
-/* line 56, ../sass/_menu.scss */
+/* line 55, ../sass/_menu.scss */
 nav[role="navigation"] dl dt i {
   font-size: 18px;
   font-size: 1.8rem;
@@ -3155,11 +3149,11 @@ nav[role="navigation"] dl dt i {
   margin-right: 8px;
   text-align: center;
 }
-/* line 63, ../sass/_menu.scss */
+/* line 62, ../sass/_menu.scss */
 nav[role="navigation"] dl dt i:before {
   text-shadow: -1px, -1px, 1px, 0, black;
 }
-/* line 69, ../sass/_menu.scss */
+/* line 68, ../sass/_menu.scss */
 nav[role="navigation"] dl a {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -3169,40 +3163,40 @@ nav[role="navigation"] dl a {
   display: block;
   padding: 7px 8px;
 }
-/* line 76, ../sass/_menu.scss */
+/* line 75, ../sass/_menu.scss */
 nav[role="navigation"] dl a span {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
 }
-/* line 80, ../sass/_menu.scss */
+/* line 79, ../sass/_menu.scss */
 nav[role="navigation"] dl #build i:before {
   content: "k";
 }
-/* line 83, ../sass/_menu.scss */
+/* line 82, ../sass/_menu.scss */
 nav[role="navigation"] dl #resources i:before {
   content: "j";
 }
-/* line 86, ../sass/_menu.scss */
+/* line 85, ../sass/_menu.scss */
 nav[role="navigation"] dl dd {
   background: #005353;
   -webkit-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
   box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 90, ../sass/_menu.scss */
+/* line 89, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul {
   list-style-type: none;
   margin-bottom: 0;
 }
-/* line 93, ../sass/_menu.scss */
+/* line 92, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul a {
   padding-left: 42px;
 }
-/* line 95, ../sass/_menu.scss */
+/* line 94, ../sass/_menu.scss */
 nav[role="navigation"] dl dd ul a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 104, ../sass/_menu.scss */
+/* line 103, ../sass/_menu.scss */
 [role="main"] {
   -webkit-transition-property: width;
   -moz-transition-property: width;
@@ -3214,22 +3208,22 @@ nav[role="navigation"] dl dd ul a:hover {
   transition: all 1s;
 }
 
-/* line 120, ../sass/_menu.scss */
+/* line 119, ../sass/_menu.scss */
 #expand:target nav[role="navigation"] dt > a > span,
 #expand:target nav[role="navigation"] dt > div,
 #expand:target nav[role="navigation"] dd > ul {
   display: none;
 }
-/* line 127, ../sass/_menu.scss */
+/* line 126, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover dt > a > span {
   display: inline;
 }
-/* line 129, ../sass/_menu.scss */
+/* line 128, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover dt > div,
 #expand:target nav[role="navigation"]:hover dd > ul {
   display: block;
 }
-/* line 135, ../sass/_menu.scss */
+/* line 134, ../sass/_menu.scss */
 #expand:target #expander {
   display: none;
 }
