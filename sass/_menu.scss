@@ -1,12 +1,23 @@
 // Force menu over full height
-[role="header"]+div {
-	height: 100%;
-	padding-top: $headerHeight;
-	margin-top: - $headerHeight;
+@media only screen and (min-width: $screenSmall) {
+	[role="header"]+div {
+		height: 100% !important;
+		padding-top: $headerHeight + 1px !important;
+		margin-top: - ($headerHeight + 1px) !important;
+		nav[role="navigation"] {
+			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
+			&:before {
+				margin-top: $headerHeight;
+			}
+			dl dd {
+				background: darken($teal, 4);
+				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
+			}
+		}
+	}
 }
 nav[role="navigation"] {
 
-	@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
 	// @include border-left-radius(5px);
 	// @include border-top-radius(0);
 
@@ -17,15 +28,10 @@ nav[role="navigation"] {
 	@include transition();
 
 	background: $teal;
-	box-sizing: border-box;
 	color: $white;
 	height: 100%;
 	padding: 0;
 	overflow: hidden;
-
-	&:before {
-		margin-top: $headerHeight;
-	}
 
 	>dl>dd>ul>li>ul {
 		display: none;
@@ -84,7 +90,7 @@ nav[role="navigation"] {
 		}
 		dd {
 			background: darken($teal, 4);
-				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
+			// @include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
 
 			ul {
 				list-style-type: none;
