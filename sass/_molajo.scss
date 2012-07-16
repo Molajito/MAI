@@ -17,9 +17,11 @@ $headerHeight: 40px;
 	font-family: Ubuntu;
 	font-weight: 300;
 }
-body {
+html, body {
 	background: $offwhite;
 	// padding: 10px;
+	min-height: 100%;
+	height: 100%;
 }
 
 a[href="#expand"] {

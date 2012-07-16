@@ -16,11 +16,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 20, ../sass/_molajo.scss */
-body {
+html, body {
   background: #fffffd;
+  min-height: 100%;
+  height: 100%;
 }
 
-/* line 25, ../sass/_molajo.scss */
+/* line 27, ../sass/_molajo.scss */
 a[href="#expand"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
