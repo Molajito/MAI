@@ -2891,24 +2891,25 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 
 /* CSS to style glyphs */
 /* line 40, ../sass/_icons.scss */
-.glyph {
+.glyph, .icon, a[href="#expand"]:before, header[role="header"] > div:before {
   cursor: default;
   font-size: 16px;
   line-height: 1;
+  speak: none;
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, header[role="header"] nav .settings dt a > i, nav[role="navigation"] dl dt i:before {
+.glyph.general, .general.icon, a.general[href="#expand"]:before, header[role="header"] > div.general:before, header[role="header"] nav .settings dt a > i, nav[role="navigation"] dl dt i:before {
   font-family: "FoundationIconsGeneral";
 }
 
 /* line 42, ../sass/_icons.scss */
-.glyph.enclosed {
+.glyph.enclosed, .enclosed.icon, a.enclosed[href="#expand"]:before, header[role="header"] > div.enclosed:before {
   font-family: "FoundationIconsGeneralEnclosed";
 }
 
 /* line 43, ../sass/_icons.scss */
-.glyph.social {
+.glyph.social, .social.icon, a.social[href="#expand"]:before, header[role="header"] > div.social:before {
   font-family: "FoundationIconsSocial
 	";
 }
@@ -2930,7 +2931,6 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .icon, a[href="#expand"]:before, header[role="header"] > div:before {
   font-family: 'molajo';
   content: attr(data-icon);
-  speak: none;
 }
 
 /* line 66, ../sass/_icons.scss */

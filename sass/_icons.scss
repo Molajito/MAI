@@ -37,7 +37,7 @@
 }
 
 /* CSS to style glyphs */
-.glyph { cursor: default; font-size: 16px; line-height: 1; }
+.glyph { cursor: default; font-size: 16px; line-height: 1;speak: none; }
 .glyph.general { font-family: "FoundationIconsGeneral"; }
 .glyph.enclosed { font-family: "FoundationIconsGeneralEnclosed"; }
 .glyph.social { font-family: "FoundationIconsSocial
@@ -59,9 +59,9 @@
 }
 
 .icon {
+  @extend .glyph;
   font-family: 'molajo';
   content: attr(data-icon);
-  speak: none;
 }
 .icon.fullscreen { content: "\21"; }
 .icon.molajo { content: "\22"; }
