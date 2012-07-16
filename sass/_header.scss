@@ -3,6 +3,7 @@ header[role="header"] {
 	background: $brown;
 	border-bottom: 1px solid darken($brown, 6);
 	color: $offwhite;
+	position: relative;
 
 	>div {
 		height: $headerHeight;
@@ -68,7 +69,15 @@ header[role="header"] {
 						display: none;
 						float: right;
 					}
-
+					&:hover, &:active {
+						background: darken($brown, 6);
+					}
+				}
+				&+dd:target {
+					display: block;
+				}
+				&.last {
+					border-right: 0;
 				}
 				&.user {
 					a {
@@ -82,16 +91,21 @@ header[role="header"] {
 						}
 					}
 				}
-				&.panel {
-				}
-				&.search {
-				}
-				&.last {
-					border-right: 0;
-				}
 			}
 			dd {
+				@include transition();
 				display: none;
+				position: absolute;
+				z-index: 10;
+				&#settings {
+					@include transition-property(height);
+					background: darken($brown, 6);
+					border-top: 1px solid $black;
+					height: 200px;
+					right: 0;
+					top: $headerHeight + 1px;
+					width: 100%;
+				}
 			}
 		}
 	}

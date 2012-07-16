@@ -1,9 +1,9 @@
 // Force menu over full height
 @media only screen and (min-width: $screenSmall) {
 	[role="header"]+div {
-		height: 100% !important;
-		padding-top: $headerHeight + 1px !important;
-		margin-top: - ($headerHeight + 1px) !important;
+		height: 100%;
+		padding-top: $headerHeight + 1px;
+		margin-top: - ($headerHeight + 1px);
 		nav[role="navigation"] {
 			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
 			&:before {
@@ -43,11 +43,13 @@ nav[role="navigation"] {
 		}
 		dt {
 			position: relative;
+			white-space: nowrap;
 			&:first-child {
 				border-top: 0;
 			}
 			&.current {
-				>div {
+				>span {
+					display: block;
 					position: absolute;
 					@include cssTriangle(11px, rgba(0,0,0,.3), top);
 					left: 9px;
@@ -72,6 +74,7 @@ nav[role="navigation"] {
 			}
 		}
 		a {
+			@include transition-property(width, color);
 			@include transition();
 			color: $white;
 			display: block;
