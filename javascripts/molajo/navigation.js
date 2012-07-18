@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 	$(".accordion").tabs(
-		".accordion dd",
-		{tabs: 'dt', effect: 'slide', initialIndex: 1}
+		".accordion ul",
+		{tabs: 'li, dt', effect: 'slide', initialIndex: 1}
 	);
 
 	$('nav[role="navigation"] dd>ul>li').click(function(){

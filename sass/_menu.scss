@@ -33,78 +33,88 @@ nav[role="navigation"] {
 	padding: 0;
 	overflow: hidden;
 
-	>dl>dd>ul>li>ul {
-		display: none;
-	}
-	dl {
-		dt, li {
-			border-bottom: 1px solid rgba(0,0,0,.3);
-			border-top: 1px solid rgba(255,255,255,.3);
+	ul { list-style-type: none; }
+	.level-two,
+	.level-three {
+		// display: none;
+		background: darken($teal, 4);
+		margin-bottom: 0;
+		a {
+			padding-left: 42px;
+			&:hover {
+				background: rgba(0,0,0,.2);
+			}
 		}
-		dt {
+	}
+	.link {
+		border-bottom: 1px solid rgba(0,0,0,.3);
+		border-top: 1px solid rgba(255,255,255,.3);
+		&.level-one-child {
 			position: relative;
 			white-space: nowrap;
 			&:first-child {
 				border-top: 0;
 			}
-			&.current {
-				>span {
-					display: block;
-					position: absolute;
-					@include cssTriangle(11px, rgba(0,0,0,.3), top);
-					left: 9px;
-					&:last-child {
-						position: absolute;
-						@include cssTriangle(10px, $teal, top);
-						left: 10px;
-					}
-				}
-			}
-			i {
-				@include font-size(18);
-				display: inline-block;
-				width: 26px;
-				font-style: normal;
-				margin-right: 8px;
-				text-align: center;
-				&:before {
-					@extend .glyph.general;
-					@include text-shadow(-1px, -1px, 1px, 0, $black);
-				}
-			}
 		}
-		a {
-			@include transition-property(width, color);
-			@include transition();
-			color: $white;
-			display: block;
-			padding: 7px 8px;
-			// text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10);
-			// single-text-shadow($hoff, $voff, $blur, $spread, $color)
-			span {
-				@include text-shadow(rgba($black, 0.2) 1px 1px 0);
-			}
+	}
+	.level-one>.current>span {
+		@include cssTriangle(11px, rgba(0,0,0,.3), top);
+		display: block;
+		left: 9px;
+		position: absolute;
+		>span {
+			@include cssTriangle(10px, $teal, top);
+			left: -10px;
+			position: absolute;
+			top: -11px;
 		}
-		#build i:before {
-			content: "k";
+	}
+	// .level-one>.current>span>span {
+	// 		@include cssTriangle(10px, $teal, top);
+	// 		left: 1px;
+	// 		position: absolute;
+	//		top: 0;
+	// }
+	.icon {
+		@include font-size(18);
+		display: inline-block;
+		width: 26px;
+		font-style: normal;
+		margin-right: 8px;
+		text-align: center;
+		&:before {
+			@extend .glyph.general;
+			@include text-shadow(-1px, -1px, 1px, 0, $black);
 		}
-		#resources i:before {
-			content: "j";
-		}
-		dd {
-			background: darken($teal, 4);
-			// @include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
+	}
 
-			ul {
-				list-style-type: none;
-				margin-bottom: 0;
-				a {
-					padding-left: 42px;
-					&:hover {
-						background: rgba(0,0,0,.2);
-					}
-				}
-			}
+	i { @extend .icon; }
+
+	// ul style menu
+	li { @extend .link; }
+	ul.level-one>li { @extend .level-one-child; }
+	.level-one {
+		#build i:before { content: "k"; }
+		#resources i:before { content: "j"; }		
+	}
+
+	a {
+		@include transition-property(width, color);
+		@include transition();
+		color: $white;
+		display: block;
+		padding: 7px 8px;
+		// text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10);
+		// single-text-shadow($hoff, $voff, $blur, $spread, $color)
+		span {
+			@include text-shadow(rgba($black, 0.2) 1px 1px 0);
+		}
+	}
+
+	// dl style menu
+	dl {
+		dt, li {
+			@extend .link;
 		}
 	}
 }
