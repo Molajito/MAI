@@ -106,13 +106,20 @@ nav[role="navigation"] {
 	.level-one {
 		>dt:first-child a,
 		>li:first-child a { border-top: 0; }
+		background: darken($teal, 6);
 		>:target {
-			>a+span { display: block; }
+			>a+span { 
+				border-top-color: darken($teal, 8);
+				display: block;
+				>span {
+					border-top-color: darken($teal, 6);
+				}
+			}
 			&:hover {
 				>a+span {
-					border-top-color: darken($teal, 8);
+					// border-top-color: darken($teal, 8);
 					>span {
-						border-top-color: darken($teal, 6);
+						// border-top-color: darken($teal, 6);
 					}
 				}
 			}
@@ -122,13 +129,13 @@ nav[role="navigation"] {
 	.level-two,
 	.level-three {
 		@include transition();
-		background: darken($teal, 4);
+		background: darken($teal, 2);
 		// display: none;
 		margin-bottom: 0;
 		a+span {
 			top: 0;
 			>span {
-				border-top-color: darken($teal, 4);
+				border-top-color: darken($teal, 2);
 			}
 		}
 		&:target {
@@ -143,9 +150,14 @@ nav[role="navigation"] {
 				border-top-color: darken($teal, 6);
 			}
 		}
+		:target li:hover a+span {
+			border-top-color: darken($teal, 9);
+		}
 	}
 	.level-three {
 		display: none;
+		background: $teal;
+
 		a { border: 0; }
 	}
 	a {
