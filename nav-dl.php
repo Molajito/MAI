@@ -1,12 +1,15 @@
 
 			<dl class="accordion level-one" id="main">
-				<dt><a href="#build"><i></i><span>Build</span></a><span><span></span></span></dt>
-				<dd id="build">
-					<ul>
+				<dt id="build">
+					<a href="#build"><i data-icon="k"></i><span>Build</span></a>
+					<span><span></span></span>
+				</dt>
+				<dd>
+					<ul class="level-two">
 						<li>
-							<a href="#build-item-one">Item One</a>
-							<ul id="build-item-one">
-								<li><a href="#one">One</a></li>
+							<a href="#build-item-one">Item One</a><span><span></span></span>
+							<ul id="build-item-one" class="level-three">
+								<li><a href="#one">One</a><span><span></span></span></li>
 								<li><a href="#two">Two</a></li>
 								<li><a href="#three">Three</a></li>
 							</ul>
@@ -17,19 +20,40 @@
 						<li><a href="#build-item-five">Item Five</a></li>
 					</ul>
 				</dd>
-				<dt><a href="#resources"><i></i><span>Resources</span></a><span><span></span></span></dt>
-				<dd id="resources">
-					<ul>
+				<dt id="resources">
+					<a href="#resources"><i data-icon="j"></i><span>Resources</span></a>
+					<span><span></span></span>
+				</dt>
+				<dd>
+					<ul class="level-two">
 						<li>
-							<a href="#"><span>Blog</span></a>
-							<ul>
-								<li><a href="#"><span>Articles</span></a></li>
+							<a href="#blog"><span>Blog</span></a>
+							<ul class="level-three" id="blog">
+								<li><a href="#"><span>Articles</span></a><span><span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
-						<li><a href="#"><span>F.A.Q.'s</span></a></li>
-						<li><a href="#"><span>Contact</span></a></li>
-						<li><a href="#"><span>Downloads</span></a></li>
+						<li>
+							<a href="#faqs"><span>F.A.Q.'s</span></a><span><span></span></span>
+							<ul class="level-three" id="faqs">
+								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Images</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#contact"><span>Contact</span></a><span><span></span></span>
+							<ul class="level-three" id="contact">
+								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Images</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#downloads"><span>Downloads</span></a><span><span></span></span>
+							<ul class="level-three" id="downloads">
+								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Images</span></a></li>
+							</ul>
+						</li>
 					</ul>
 				</dd>
 			</dl>

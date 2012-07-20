@@ -33,9 +33,37 @@ nav[role="navigation"] {
 	padding: 0;
 	overflow: hidden;
 
-	>ul { margin: 0;}
-	// >ul>li>ul { @extend .level-two; }
-	// >ul>li>ul>li>ul { @extend .level-three; }
+	a {
+		position: relative;
+		&+span {
+			@include cssTriangle(11px, darken($teal, 6), top);
+			@include transition-property(color);
+			@include transition();
+			display: none;
+			left: 9px;
+			position: absolute;
+			z-index: 10;
+			>span {
+				@include cssTriangle(10px, darken($teal, 0), top);
+				@include transition-property(color);
+				@include transition();
+				left: -10px;
+				position: absolute;
+				top: -12px;
+			}
+		}
+		&:hover {
+			background: darken($teal, 6);
+			&+span {
+				>span {
+					border-top-color: darken($teal, 6);
+				}
+			}
+		}
+	}
+	
+	ul,
+	dl { margin: 0;}
 	i {
 		@extend .glyph;
 		@extend .glyph.general;
@@ -53,95 +81,72 @@ nav[role="navigation"] {
 
 	ul { list-style-type: none; }
 
-	// .active,
-	// .current {
-	// 	display: block !important;
-	// }
+	.level-one,
+	.level-two,
+	.level-three {
+		position: relative;
+		dt, li {
+			position: relative;
+		}
+	}
+
+	.level-one ul a {
+		padding-left: 42px;
+	}
+
+	.level-one, 
+	.level-two {
+		a {
+			border-bottom: 1px solid rgba(0,0,0,.3);
+			border-top: 1px solid rgba(255,255,255,.3);
+			white-space: nowrap;
+		}
+	}
+
+	.level-one {
+		>dt:first-child a,
+		>li:first-child a { border-top: 0; }
+		>:target {
+			>a+span { display: block; }
+			&:hover {
+				>a+span {
+					border-top-color: darken($teal, 8);
+					>span {
+						border-top-color: darken($teal, 6);
+					}
+				}
+			}
+		}
+	}
+
 	.level-two,
 	.level-three {
 		@include transition();
 		background: darken($teal, 4);
 		// display: none;
 		margin-bottom: 0;
+		a+span {
+			top: 0;
+			>span {
+				border-top-color: darken($teal, 4);
+			}
+		}
 		&:target {
 			display: block;
-		}
-		&:hover {
-			display: block;
-		}
-		a {
-			padding-left: 42px;
-			&:hover {
-				background: rgba(0,0,0,.2);
+			a+span {
+				display: block;
 			}
 		}
-		li:active {
-			&:hover {
-				.level-two,
-				.level-three {
-					display: block;
-				}
-			}
-		}
-	}
-	.level-one, 
-	.level-two {
-		>li>a {
-			border-bottom: 1px solid rgba(0,0,0,.3);
-			border-top: 1px solid rgba(255,255,255,.3);
-		}
-		li>a:hover+span+ul:target>li>a+span {
-			@include cssTriangle(10px, darken($teal, 9), top);
+		:hover+:target li a+span {
+				border-top-color: darken($teal, 8);
 			>span {
-				@include cssTriangle(10px, darken($teal, 7.5), top);
-			}
-		}
-	}
-	.level-one {
-		>li {
-			position: relative;
-			white-space: nowrap;
-			&:first-child {
-				border-top: 0;
+				border-top-color: darken($teal, 6);
 			}
 		}
 	}
 	.level-three {
 		display: none;
-	}
-
-	.level-two.current,
-	.level-two:target,
-	.level-three:target {
-		position: relative;
-		a+span {
-			@include cssTriangle(11px, darken($teal, 6), top);
-			@include transition-property(color);
-			@include transition();
-			display: block;
-			left: 9px;
-			position: absolute;
-			top: -1px;
-			z-index: 10;
-			>span {
-				@include transition-property(color);
-				@include transition();
-				left: -10px;
-				position: absolute;
-			}
-		}
-	}
-	.level-two:target {
-		a+span>span {
-			@include cssTriangle(10px, $teal, top);
-			top: -11px;
-		}
-	}
-	.level-three:target {
-		a+span>span {
-			@include cssTriangle(10px, darken($teal, 4), top);
-			top: -12px;
-		}
+		a { border: 0; }
 	}
 	a {
 		@include transition-property(width, color);

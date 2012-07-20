@@ -3146,114 +3146,11 @@ nav[role="navigation"] {
   overflow: hidden;
 }
 /* line 36, ../sass/_menu.scss */
-nav[role="navigation"] > ul {
-  margin: 0;
-}
-/* line 39, ../sass/_menu.scss */
-nav[role="navigation"] i {
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-shadow: -1px, -1px, 1px, 0, black;
-  display: inline-block;
-  font-style: normal;
-  width: 26px;
-  margin-right: 8px;
-  text-align: center;
-}
-/* line 49, ../sass/_menu.scss */
-nav[role="navigation"] i:before {
-  content: attr(data-icon);
-}
-/* line 54, ../sass/_menu.scss */
-nav[role="navigation"] ul {
-  list-style-type: none;
-}
-/* line 61, ../sass/_menu.scss */
-nav[role="navigation"] .level-two,
-nav[role="navigation"] .level-three {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-  background: #005353;
-  margin-bottom: 0;
-}
-/* line 66, ../sass/_menu.scss */
-nav[role="navigation"] .level-two:target,
-nav[role="navigation"] .level-three:target {
-  display: block;
-}
-/* line 69, ../sass/_menu.scss */
-nav[role="navigation"] .level-two:hover,
-nav[role="navigation"] .level-three:hover {
-  display: block;
-}
-/* line 72, ../sass/_menu.scss */
-nav[role="navigation"] .level-two a,
-nav[role="navigation"] .level-three a {
-  padding-left: 42px;
-}
-/* line 74, ../sass/_menu.scss */
-nav[role="navigation"] .level-two a:hover,
-nav[role="navigation"] .level-three a:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-/* line 81, ../sass/_menu.scss */
-nav[role="navigation"] .level-two li:active:hover .level-two,
-nav[role="navigation"] .level-two li:active:hover .level-three,
-nav[role="navigation"] .level-three li:active:hover .level-two,
-nav[role="navigation"] .level-three li:active:hover .level-three {
-  display: block;
-}
-/* line 89, ../sass/_menu.scss */
-nav[role="navigation"] .level-one > li > a,
-nav[role="navigation"] .level-two > li > a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-/* line 93, ../sass/_menu.scss */
-nav[role="navigation"] .level-one li > a:hover + span + ul:target > li > a + span,
-nav[role="navigation"] .level-two li > a:hover + span + ul:target > li > a + span {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: #003939 transparent transparent transparent;
-}
-/* line 95, ../sass/_menu.scss */
-nav[role="navigation"] .level-one li > a:hover + span + ul:target > li > a + span > span,
-nav[role="navigation"] .level-two li > a:hover + span + ul:target > li > a + span > span {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: #004141 transparent transparent transparent;
-}
-/* line 101, ../sass/_menu.scss */
-nav[role="navigation"] .level-one > li {
-  position: relative;
-  white-space: nowrap;
-}
-/* line 104, ../sass/_menu.scss */
-nav[role="navigation"] .level-one > li:first-child {
-  border-top: 0;
-}
-/* line 109, ../sass/_menu.scss */
-nav[role="navigation"] .level-three {
-  display: none;
-}
-/* line 115, ../sass/_menu.scss */
-nav[role="navigation"] .level-two.current,
-nav[role="navigation"] .level-two:target,
-nav[role="navigation"] .level-three:target {
+nav[role="navigation"] a {
   position: relative;
 }
-/* line 117, ../sass/_menu.scss */
-nav[role="navigation"] .level-two.current a + span,
-nav[role="navigation"] .level-two:target a + span,
-nav[role="navigation"] .level-three:target a + span {
+/* line 38, ../sass/_menu.scss */
+nav[role="navigation"] a + span {
   content: "";
   display: block;
   width: 0;
@@ -3268,16 +3165,19 @@ nav[role="navigation"] .level-three:target a + span {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  display: block;
+  display: none;
   left: 9px;
   position: absolute;
-  top: -1px;
   z-index: 10;
 }
-/* line 126, ../sass/_menu.scss */
-nav[role="navigation"] .level-two.current a + span > span,
-nav[role="navigation"] .level-two:target a + span > span,
-nav[role="navigation"] .level-three:target a + span > span {
+/* line 46, ../sass/_menu.scss */
+nav[role="navigation"] a + span > span {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 10px;
+  border-color: #006767 transparent transparent transparent;
   -webkit-transition-property: color;
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -3288,28 +3188,131 @@ nav[role="navigation"] .level-three:target a + span > span {
   transition: all 1s;
   left: -10px;
   position: absolute;
-}
-/* line 135, ../sass/_menu.scss */
-nav[role="navigation"] .level-two:target a + span > span {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: #006767 transparent transparent transparent;
-  top: -11px;
-}
-/* line 141, ../sass/_menu.scss */
-nav[role="navigation"] .level-three:target a + span > span {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: #005353 transparent transparent transparent;
   top: -12px;
 }
-/* line 146, ../sass/_menu.scss */
+/* line 55, ../sass/_menu.scss */
+nav[role="navigation"] a:hover {
+  background: #004848;
+}
+/* line 58, ../sass/_menu.scss */
+nav[role="navigation"] a:hover + span > span {
+  border-top-color: #004848;
+}
+/* line 66, ../sass/_menu.scss */
+nav[role="navigation"] ul,
+nav[role="navigation"] dl {
+  margin: 0;
+}
+/* line 67, ../sass/_menu.scss */
+nav[role="navigation"] i {
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-shadow: -1px, -1px, 1px, 0, black;
+  display: inline-block;
+  font-style: normal;
+  width: 26px;
+  margin-right: 8px;
+  text-align: center;
+}
+/* line 77, ../sass/_menu.scss */
+nav[role="navigation"] i:before {
+  content: attr(data-icon);
+}
+/* line 82, ../sass/_menu.scss */
+nav[role="navigation"] ul {
+  list-style-type: none;
+}
+/* line 86, ../sass/_menu.scss */
+nav[role="navigation"] .level-one,
+nav[role="navigation"] .level-two,
+nav[role="navigation"] .level-three {
+  position: relative;
+}
+/* line 88, ../sass/_menu.scss */
+nav[role="navigation"] .level-one dt, nav[role="navigation"] .level-one li,
+nav[role="navigation"] .level-two dt,
+nav[role="navigation"] .level-two li,
+nav[role="navigation"] .level-three dt,
+nav[role="navigation"] .level-three li {
+  position: relative;
+}
+/* line 93, ../sass/_menu.scss */
+nav[role="navigation"] .level-one ul a {
+  padding-left: 42px;
+}
+/* line 99, ../sass/_menu.scss */
+nav[role="navigation"] .level-one a,
+nav[role="navigation"] .level-two a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+/* line 108, ../sass/_menu.scss */
+nav[role="navigation"] .level-one > dt:first-child a,
+nav[role="navigation"] .level-one > li:first-child a {
+  border-top: 0;
+}
+/* line 110, ../sass/_menu.scss */
+nav[role="navigation"] .level-one > :target > a + span {
+  display: block;
+}
+/* line 112, ../sass/_menu.scss */
+nav[role="navigation"] .level-one > :target:hover > a + span {
+  border-top-color: #003e3e;
+}
+/* line 114, ../sass/_menu.scss */
+nav[role="navigation"] .level-one > :target:hover > a + span > span {
+  border-top-color: #004848;
+}
+/* line 123, ../sass/_menu.scss */
+nav[role="navigation"] .level-two,
+nav[role="navigation"] .level-three {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: #005353;
+  margin-bottom: 0;
+}
+/* line 128, ../sass/_menu.scss */
+nav[role="navigation"] .level-two a + span,
+nav[role="navigation"] .level-three a + span {
+  top: 0;
+}
+/* line 130, ../sass/_menu.scss */
+nav[role="navigation"] .level-two a + span > span,
+nav[role="navigation"] .level-three a + span > span {
+  border-top-color: #005353;
+}
+/* line 134, ../sass/_menu.scss */
+nav[role="navigation"] .level-two:target,
+nav[role="navigation"] .level-three:target {
+  display: block;
+}
+/* line 136, ../sass/_menu.scss */
+nav[role="navigation"] .level-two:target a + span,
+nav[role="navigation"] .level-three:target a + span {
+  display: block;
+}
+/* line 140, ../sass/_menu.scss */
+nav[role="navigation"] .level-two :hover + :target li a + span,
+nav[role="navigation"] .level-three :hover + :target li a + span {
+  border-top-color: #003e3e;
+}
+/* line 142, ../sass/_menu.scss */
+nav[role="navigation"] .level-two :hover + :target li a + span > span,
+nav[role="navigation"] .level-three :hover + :target li a + span > span {
+  border-top-color: #004848;
+}
+/* line 147, ../sass/_menu.scss */
+nav[role="navigation"] .level-three {
+  display: none;
+}
+/* line 149, ../sass/_menu.scss */
+nav[role="navigation"] .level-three a {
+  border: 0;
+}
+/* line 151, ../sass/_menu.scss */
 nav[role="navigation"] a {
   -webkit-transition-property: width, color;
   -moz-transition-property: width, color;
@@ -3323,12 +3326,12 @@ nav[role="navigation"] a {
   display: block;
   padding: 7px 8px;
 }
-/* line 154, ../sass/_menu.scss */
+/* line 159, ../sass/_menu.scss */
 nav[role="navigation"] a span {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
 }
 
-/* line 160, ../sass/_menu.scss */
+/* line 165, ../sass/_menu.scss */
 [role="main"] {
   -webkit-transition-property: width;
   -moz-transition-property: width;
@@ -3340,24 +3343,24 @@ nav[role="navigation"] a span {
   transition: all 1s;
 }
 
-/* line 174, ../sass/_menu.scss */
+/* line 179, ../sass/_menu.scss */
 #expand:target nav[role="navigation"] a > span {
   display: none;
 }
-/* line 181, ../sass/_menu.scss */
+/* line 186, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover a > span {
   display: inline-block;
 }
-/* line 182, ../sass/_menu.scss */
+/* line 187, ../sass/_menu.scss */
 #expand:target nav[role="navigation"]:hover :target {
   display: block;
 }
-/* line 188, ../sass/_menu.scss */
+/* line 193, ../sass/_menu.scss */
 #expand:target #expander {
   display: none;
 }
 
-/* line 195, ../sass/_menu.scss */
+/* line 200, ../sass/_menu.scss */
 .debug #resources {
   display: block;
 }
