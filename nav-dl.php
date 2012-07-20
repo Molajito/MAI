@@ -1,7 +1,7 @@
 
 			<dl class="accordion level-one" id="main">
-				<dt id="build"><a href="build"><i></i><span>Build</span></a><span><span></span></span></dt>
-				<dd>
+				<dt><a href="#build"><i></i><span>Build</span></a><span><span></span></span></dt>
+				<dd id="build">
 					<ul>
 						<li>
 							<a href="#build-item-one">Item One</a>
@@ -17,8 +17,8 @@
 						<li><a href="#build-item-five">Item Five</a></li>
 					</ul>
 				</dd>
-				<dt id="resources"><a href="resources"><i></i><span>Resources</span></a><span><span></span></span></dt>
-				<dd>
+				<dt><a href="#resources"><i></i><span>Resources</span></a><span><span></span></span></dt>
+				<dd id="resources">
 					<ul>
 						<li>
 							<a href="#"><span>Blog</span></a>

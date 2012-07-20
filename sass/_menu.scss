@@ -3,7 +3,7 @@
 	[role="header"]+div {
 		height: 100%;
 		padding-top: $headerHeight + 1px;
-		margin-top: - ($headerHeight + 1px);
+		margin-top: -($headerHeight + 1px);
 		nav[role="navigation"] {
 			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
 			&:before {
@@ -33,9 +33,9 @@ nav[role="navigation"] {
 	padding: 0;
 	overflow: hidden;
 
-	>ul { @extend .level-one; margin: 0;}
-	>ul>li>ul { @extend .level-two; }
-	>ul>li>ul>li>ul { @extend .level-three; }
+	>ul { margin: 0;}
+	// >ul>li>ul { @extend .level-two; }
+	// >ul>li>ul>li>ul { @extend .level-three; }
 	i {
 		@extend .glyph;
 		@extend .glyph.general;
@@ -53,11 +53,15 @@ nav[role="navigation"] {
 
 	ul { list-style-type: none; }
 
+	// .active,
+	// .current {
+	// 	display: block !important;
+	// }
 	.level-two,
 	.level-three {
 		@include transition();
 		background: darken($teal, 4);
-		display: none;
+		// display: none;
 		margin-bottom: 0;
 		&:target {
 			display: block;
@@ -102,15 +106,14 @@ nav[role="navigation"] {
 			}
 		}
 	}
-	.level-three {}
+	.level-three {
+		display: none;
+	}
 
 	.level-two.current,
 	.level-two:target,
 	.level-three:target {
 		position: relative;
-		a>span{
-			font-weight: 500;
-		}
 		a+span {
 			@include cssTriangle(11px, darken($teal, 6), top);
 			@include transition-property(color);
@@ -168,18 +171,15 @@ nav[role="navigation"] {
 #expand:target {
 	nav[role="navigation"] {
 		@extend .one;
-		dt>a>span,
-		dt>div,
-		dd>ul { display: none; }
+		a>span { display: none; }
 		&:hover {
 
 			@extend .three;
 
 			+[role="main"] { @extend .fifteen; }
 
-			dt>a>span { display: inline; }
-			dt>div,
-			dd>ul { display: block; }
+			a>span { display: inline-block; }
+			:target { display: block; }
 		}
 	}
 	[role="main"] {

@@ -1,27 +1,35 @@
 jQuery(document).ready(function($){
-	$(".accordion").tabs(
-		".accordion ul",
-		{tabs: 'li, dt', effect: 'slide', initialIndex: 1}
-	);
+	// $("nav .accordion").tabs(
+	// 	"ul",
+	// 	{tabs: 'li', effect: 'slide', initialIndex: 1}
+	// );
 
-	$('nav[role="navigation"] dd>ul>li').click(function(){
-		$(this).children('ul').toggle();
-	});
+	$('li').click(function(){
+		$(this).addClass('current');
+		// var current = $(this);
+		// $(this).parents('ul').toggleCss('display');
+		// console.log($(this).parents('ul'));
+		// $(this).siblings('li').click(function(){
+		// 	current.parents('.level-two, .level-three').hide();
+		// });
+	})
+	;
 
-	$('.level-one > dd > ul > li > a').click(function(){
+	$('nav[role="navigation"] li').click(function(){
 
-		var dd     = $(this).parents('dd');
-		var menu   = $(this).parents('ul').clone(true);
-		var width  = $('nav').width();
-		var active = dd.prev('dt').html();
 
-		dd.prev('dt')
-		.html( $(this).html() )
-		.click(function(){
-			dd.html( menu );
-		});
+		// $(this).siblings('li').children('ul').hide();
+		// $(this).parents('ul').css('display', 'block');
 
-		dd.html( $(this).siblings( $(this).attr('href') ) );
+		// var active = dd.prev('dt').html();
+
+		// dd.prev('dt')
+		// .html( $(this).html() )
+		// .click(function(){
+		// 	dd.html( menu );
+		// });
+
+		// dd.html( $(this).siblings( $(this).attr('href') ) );
 
 		
 
