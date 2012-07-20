@@ -24,7 +24,7 @@
 	<![endif]-->
 
 </head>
-<body id="expand">
+<body id="expand" class="debug">
 
 	<header role="header" class="row">
 		<div>
@@ -59,7 +59,7 @@
 
 	<div class="row">
 		<nav role="navigation">
-			<?php include('nav-dl.php') ?>
+			<?php include('nav-ul.php') ?>
 		</nav>
 		<section role="main">
 			<a href="#expand" id="expander"></a>
@@ -76,7 +76,7 @@
 	<script src="javascripts/foundation/jquery.tooltips.js"></script>
 	<script src="javascripts/app.js"></script>
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-	<script src="javascripts/molajo/navigation.js"></script>
+	<!--<script src="javascripts/molajo/navigation.js"></script>-->
 	<!--script src="javascripts/jquery.flip.min.js"></script-->
 
 </body>

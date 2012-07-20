@@ -33,23 +33,68 @@ nav[role="navigation"] {
 	padding: 0;
 	overflow: hidden;
 
+	>ul { @extend .level-one; }
+	>ul>li>ul { @extend .level-two; }
+	>ul>li>ul>li>ul { @extend .level-three; }
+	i {
+		@extend .glyph;
+		@extend .glyph.general;
+		@include font-size(18);
+		@include text-shadow(-1px, -1px, 1px, 0, $black);
+		display: inline-block;
+		font-style: normal;
+		width: 26px;
+		margin-right: 8px;
+		text-align: center;
+		&:before {
+			content: attr(data-icon);
+		}
+	}
+
 	ul { list-style-type: none; }
+
 	.level-two,
 	.level-three {
-		// display: none;
+		@include transition();
 		background: darken($teal, 4);
+		display: none;
 		margin-bottom: 0;
+		&:target {
+			display: block;
+		}
+		&:hover {
+			display: block;
+		}
 		a {
 			padding-left: 42px;
 			&:hover {
 				background: rgba(0,0,0,.2);
 			}
 		}
+		li:active {
+			&:hover {
+				.level-two,
+				.level-three {
+					display: block;
+				}
+			}
+		}
 	}
-	.link {
-		border-bottom: 1px solid rgba(0,0,0,.3);
-		border-top: 1px solid rgba(255,255,255,.3);
-		&.level-one-child {
+	.level-one, 
+	.level-two {
+		>li>a {
+			border-bottom: 1px solid rgba(0,0,0,.3);
+			border-top: 1px solid rgba(255,255,255,.3);
+		}
+		li>a:hover+span+ul:target>li>a+span {
+			@include cssTriangle(10px, darken($teal, 9), top);
+			>span {
+				@include cssTriangle(10px, darken($teal, 7.5), top);
+			}
+		}
+	}
+	.level-one {
+		>li {
 			position: relative;
 			white-space: nowrap;
 			&:first-child {
@@ -57,47 +102,44 @@ nav[role="navigation"] {
 			}
 		}
 	}
-	.level-one>.current>span {
-		@include cssTriangle(11px, rgba(0,0,0,.3), top);
-		display: block;
-		left: 9px;
-		position: absolute;
-		>span {
-			@include cssTriangle(10px, $teal, top);
-			left: -10px;
+	.level-three {}
+
+	.level-two.current,
+	.level-two:target,
+	.level-three:target {
+		position: relative;
+		a>span{
+			font-weight: 500;
+		}
+		a+span {
+			@include cssTriangle(11px, darken($teal, 6), top);
+			@include transition-property(color);
+			@include transition();
+			display: block;
+			left: 9px;
 			position: absolute;
+			top: -1px;
+			z-index: 10;
+			>span {
+				@include transition-property(color);
+				@include transition();
+				left: -10px;
+				position: absolute;
+			}
+		}
+	}
+	.level-two:target {
+		a+span>span {
+			@include cssTriangle(10px, $teal, top);
 			top: -11px;
 		}
 	}
-	// .level-one>.current>span>span {
-	// 		@include cssTriangle(10px, $teal, top);
-	// 		left: 1px;
-	// 		position: absolute;
-	//		top: 0;
-	// }
-	.icon {
-		@include font-size(18);
-		display: inline-block;
-		width: 26px;
-		font-style: normal;
-		margin-right: 8px;
-		text-align: center;
-		&:before {
-			@extend .glyph.general;
-			@include text-shadow(-1px, -1px, 1px, 0, $black);
+	.level-three:target {
+		a+span>span {
+			@include cssTriangle(10px, darken($teal, 4), top);
+			top: -12px;
 		}
 	}
-
-	i { @extend .icon; }
-
-	// ul style menu
-	li { @extend .link; }
-	ul.level-one>li { @extend .level-one-child; }
-	.level-one {
-		#build i:before { content: "k"; }
-		#resources i:before { content: "j"; }		
-	}
-
 	a {
 		@include transition-property(width, color);
 		@include transition();
@@ -108,13 +150,6 @@ nav[role="navigation"] {
 		// single-text-shadow($hoff, $voff, $blur, $spread, $color)
 		span {
 			@include text-shadow(rgba($black, 0.2) 1px 1px 0);
-		}
-	}
-
-	// dl style menu
-	dl {
-		dt, li {
-			@extend .link;
 		}
 	}
 }
@@ -153,4 +188,15 @@ nav[role="navigation"] {
 	#expander {
 		display: none;
 	}
+}
+
+
+.debug {
+	#resources {
+		display: block;
+	}
+}
+
+/* CSS3 Enhancements */
+@media only screen  {
 }
