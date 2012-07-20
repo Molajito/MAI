@@ -2984,33 +2984,37 @@ header[role="header"] h1 {
   text-transform: lowercase;
   top: 0;
 }
-/* line 34, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
+header[role="header"] h1 a {
+  color: inherit;
+}
+/* line 37, ../sass/_header.scss */
 header[role="header"] form[role="search"] fieldset {
   display: inline;
   padding: 8px 0 0;
   border: 0;
 }
-/* line 39, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 header[role="header"] form[role="search"] input[type="search"] {
   background: #fffffd;
 }
-/* line 43, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 header[role="header"] nav {
   float: right;
   height: 40px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 header[role="header"] nav .settings {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 48, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 header[role="header"] nav .settings dt {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   vertical-align: middle;
 }
-/* line 53, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 header[role="header"] nav .settings dt a {
   display: inline-block;
   color: inherit;
@@ -3020,45 +3024,49 @@ header[role="header"] nav .settings dt a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 61, ../sass/_header.scss */
+/* line 64, ../sass/_header.scss */
 header[role="header"] nav .settings dt a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
-/* line 68, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 header[role="header"] nav .settings dt a > span {
   display: none;
   float: right;
 }
-/* line 72, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 header[role="header"] nav .settings dt a:hover, header[role="header"] nav .settings dt a:active {
   background: #373737;
 }
-/* line 76, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 header[role="header"] nav .settings dt + dd:target {
   display: block;
 }
-/* line 79, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
 header[role="header"] nav .settings dt.last {
   border-right: 0;
 }
-/* line 83, ../sass/_header.scss */
+/* line 86, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a {
   padding: 0;
 }
-/* line 85, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a > img {
   height: 40px;
   width: 40px;
 }
-/* line 89, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a > span {
   padding: 0 10px;
 }
-/* line 95, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 header[role="header"] nav .settings dd {
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -3067,12 +3075,11 @@ header[role="header"] nav .settings dd {
   position: absolute;
   z-index: 10;
 }
-/* line 100, ../sass/_header.scss */
-header[role="header"] nav .settings dd#settings {
-  -webkit-transition-property: height;
-  -moz-transition-property: height;
-  -o-transition-property: height;
-  transition-property: height;
+
+/* line 110, ../sass/_header.scss */
+#settings,
+#user,
+#search {
   background: #373737;
   border-top: 1px solid black;
   height: 200px;
@@ -3082,17 +3089,17 @@ header[role="header"] nav .settings dd#settings {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 119, ../sass/_header.scss */
+  /* line 125, ../sass/_header.scss */
   header[role="header"] nav dt.user a > span {
     display: inline;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/_header.scss */
+  /* line 135, ../sass/_header.scss */
   header[role="header"] {
     display: block;
   }
-  /* line 131, ../sass/_header.scss */
+  /* line 137, ../sass/_header.scss */
   header[role="header"] h1 {
     display: none;
   }
@@ -3137,6 +3144,10 @@ nav[role="navigation"] {
   height: 100%;
   padding: 0;
   overflow: hidden;
+}
+/* line 36, ../sass/_menu.scss */
+nav[role="navigation"] > ul {
+  margin: 0;
 }
 /* line 39, ../sass/_menu.scss */
 nav[role="navigation"] i {

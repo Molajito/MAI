@@ -29,6 +29,9 @@ header[role="header"] {
 		margin: 0;
 		text-transform: lowercase;
 		top: 0;
+		a {
+			color: inherit;
+		}
 	}
 	form[role="search"] {
 		fieldset {
@@ -93,23 +96,26 @@ header[role="header"] {
 				}
 			}
 			dd {
+				@include transition-property(height);
 				@include transition();
 				display: none;
 				position: absolute;
 				z-index: 10;
-				&#settings {
-					@include transition-property(height);
-					background: darken($brown, 6);
-					border-top: 1px solid $black;
-					height: 200px;
-					right: 0;
-					top: $headerHeight + 1px;
-					width: 100%;
-				}
 			}
 		}
 	}
 }
+#settings,
+#user,
+#search {
+	background: darken($brown, 6);
+	border-top: 1px solid $black;
+	height: 200px;
+	right: 0;
+	top: $headerHeight + 1px;
+	width: 100%;
+}
+
 @media only screen and (min-width: $screenSmall) {
 	header[role="header"] {
 		nav {

@@ -33,7 +33,7 @@ nav[role="navigation"] {
 	padding: 0;
 	overflow: hidden;
 
-	>ul { @extend .level-one; }
+	>ul { @extend .level-one; margin: 0;}
 	>ul>li>ul { @extend .level-two; }
 	>ul>li>ul>li>ul { @extend .level-three; }
 	i {
