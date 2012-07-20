@@ -3356,11 +3356,15 @@ nav[role="navigation"] a span {
   display: block;
 }
 /* line 193, ../sass/_menu.scss */
+#expand:target ul {
+  display: none;
+}
+/* line 196, ../sass/_menu.scss */
 #expand:target #expander {
   display: none;
 }
 
-/* line 200, ../sass/_menu.scss */
+/* line 203, ../sass/_menu.scss */
 .debug #resources {
   display: block;
 }

@@ -190,6 +190,9 @@ nav[role="navigation"] {
 	[role="main"] {
 		@extend .seventeen;
 	}
+	ul {
+		display: none;
+	}
 	#expander {
 		display: none;
 	}
