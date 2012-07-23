@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 12, ../sass/_molajo.scss */
 * {
   font-family: Ubuntu;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* line 16, ../sass/_molajo.scss */
@@ -3385,23 +3385,11 @@ nav[role="navigation"] a span {
  */
 /* line 9, ../sass/_extensions.scss */
 a > i {
+  cursor: pointer;
   font-style: normal;
 }
 
 /* line 17, ../sass/_extensions.scss */
-nav[role="navigation"] ul a.button {
-  background-color: cyan;
-  display: block;
-  margin: 0 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-/* line 27, ../sass/_extensions.scss */
-nav[role="navigation"] :target li:last-child {
-  padding-bottom: 10px;
-}
-
-/* line 32, ../sass/_extensions.scss */
 .add:after {
   font-size: 10px;
   font-size: 1rem;
@@ -3410,33 +3398,66 @@ nav[role="navigation"] :target li:last-child {
   margin-left: 10px;
 }
 
-/* line 45, ../sass/_extensions.scss */
+/* line 31, ../sass/_extensions.scss */
+.dismiss a {
+  color: inherit;
+  font-weight: 600;
+}
+/* line 35, ../sass/_extensions.scss */
+.dismiss i {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-size: 1rem;
+  background: #006767;
+  color: white;
+  margin: 0 5px 0;
+  padding: 2px 8px 7px;
+}
+
+/* line 47, ../sass/_extensions.scss */
+nav[role="navigation"] ul a.button {
+  background-color: cyan;
+  display: block;
+  margin: 0 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 57, ../sass/_extensions.scss */
+nav[role="navigation"] :target li:last-child {
+  padding-bottom: 10px;
+}
+
+/* line 63, ../sass/_extensions.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 47, ../sass/_extensions.scss */
+/* line 65, ../sass/_extensions.scss */
 [role="main"] table.grid th {
   vertical-align: top;
 }
-/* line 49, ../sass/_extensions.scss */
+/* line 67, ../sass/_extensions.scss */
 [role="main"] table.grid th span {
   display: block;
 }
-/* line 53, ../sass/_extensions.scss */
+/* line 71, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="text"] {
   width: 10em;
 }
-/* line 56, ../sass/_extensions.scss */
+/* line 74, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="number"] {
   width: 3em;
 }
-/* line 64, ../sass/_extensions.scss */
+/* line 82, ../sass/_extensions.scss */
 [role="main"] dl#table_config {
   margin: 0;
   text-align: right;
   width: 100%;
 }
-/* line 69, ../sass/_extensions.scss */
+/* line 87, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -3449,11 +3470,11 @@ nav[role="navigation"] :target li:last-child {
   display: inline-block;
   padding: 6px 10px 14px;
 }
-/* line 75, ../sass/_extensions.scss */
+/* line 93, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i + span {
   display: none;
 }
-/* line 80, ../sass/_extensions.scss */
+/* line 98, ../sass/_extensions.scss */
 [role="main"] dl#table_config dd {
   display: none;
   -moz-border-radius-topleft: 3px;
@@ -3475,17 +3496,18 @@ nav[role="navigation"] :target li:last-child {
   background: #dddddd;
   margin: 0 0 2px;
   padding: 20px;
+  position: relative;
   text-align: left;
 }
-/* line 94, ../sass/_extensions.scss */
+/* line 113, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dt {
   margin-bottom: -2px;
 }
-/* line 97, ../sass/_extensions.scss */
+/* line 116, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dd {
   display: block;
 }
-/* line 100, ../sass/_extensions.scss */
+/* line 119, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -3494,7 +3516,7 @@ nav[role="navigation"] :target li:last-child {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 104, ../sass/_extensions.scss */
+/* line 123, ../sass/_extensions.scss */
 [role="main"] dl#table_config + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;

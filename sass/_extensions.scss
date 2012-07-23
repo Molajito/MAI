@@ -9,7 +9,37 @@
 a>i {
 	@extend .glyph;
 	@extend .glyph.general;
+	cursor: pointer;
 	font-style: normal;
+}
+
+// Move this one somewhere more appropriate:
+.add:after {
+	@extend .glyph;
+	@extend .glyph.general;
+	@include font-size(10);
+	color: darken($mainColor, 2);
+	content: "d";
+	margin-left: 10px;
+}
+
+// Move this one somewhere more appropriate:
+.dismiss {
+	// position: absolute;
+	// top: 0.5*$navBarHeight;
+	// right: 0.5*$navBarHeight;
+	a {
+		color: inherit;
+		font-weight: 600;
+	}
+	i {
+		@include border-radius(3px);
+		@include font-size(10);
+		background: $mainColor;
+		color: $white;
+		margin: 0 5px 0;
+		padding: 2px 8px 7px;
+	}
 }
 
 
@@ -28,18 +58,6 @@ nav[role="navigation"] {
 		padding-bottom: 0.25*($navBarHeight);
 	}
 }
-
-.add:after {
-	@extend .glyph;
-	@extend .glyph.general;
-	@include font-size(10);
-	color: darken($mainColor, 2);
-	content: "d";
-	margin-left: 10px;
-}
-.dismiss {
-}
-
 
 [role="main"] {
 	table.grid {
@@ -88,6 +106,7 @@ nav[role="navigation"] {
 			background: $borderColor;
 			margin: 0 0 2px;
 			padding: 0.5*$navBarHeight;
+			position: relative;
 			text-align: left;
 		}
 		&:target {
