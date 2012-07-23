@@ -1,3 +1,6 @@
+/* To Do:
+ * Swap level two and three a styling
+ */
 
 .debug {
 	nav[role="navigation"] * {
@@ -165,7 +168,40 @@ nav[role="navigation"] {
 		display: none;
 		background: $mainColor;
 
-		a { border: 0; }
+		li a {
+			@include border-radius(3px);
+			border: 0;
+			background-color: darken($mainColor, 6);
+			display: block;
+			margin: 0 (0.75*($navBarHeight));
+			padding: 0.1*($navBarHeight) 0.25*($navBarHeight);
+			&.add {
+				background-color: $secondaryColor;
+				position: relative;
+				&:after {
+					@include font-size(12);
+					color: darken($mainColor, 6);
+					position: absolute;
+					right: 8px;
+					top: 4px;
+				}
+				&:hover {
+					@include buttonBackgroundHover($white);
+				}
+			}
+			&:hover {
+				@include buttonBackgroundHover($secondaryColor);
+			}
+		}
+		li {
+			padding: 0.15*($navBarHeight) 0;
+			&:first-child {
+				padding-top: 0.5*($navBarHeight);
+			}
+			&:last-child {
+				padding-bottom: 0.5*($navBarHeight);
+			}
+		}
 	}
 	a {
 		@include transition-property(width, color);
@@ -173,8 +209,6 @@ nav[role="navigation"] {
 		color: $white;
 		display: block;
 		padding: 7px 8px;
-		// text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10);
-		// single-text-shadow($hoff, $voff, $blur, $spread, $color)
 		span {
 			@include text-shadow(rgba($black, 0.2) 1px 1px 0);
 		}
