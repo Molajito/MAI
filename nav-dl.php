@@ -27,6 +27,20 @@
 				<dd>
 					<ul class="level-two">
 						<li>
+							<a href="#articles"><span>Articles</span></a>
+							<ul class="level-three" id="articles">
+								<li><a href="#"><span>Archive</span></a><span><span></span></li>
+								<li><a href="#" class="button"><span>Add article</span></a></li>
+							</ul>
+						</li>
+				</dd>
+				<dt id="collections">
+					<a href="#collections"><i data-icon="8"></i><span>Collections</span></a>
+					<span><span></span></span>
+				</dt>
+				<dd>
+					<ul class="level-two">
+						<li>
 							<a href="#blog"><span>Blog</span></a>
 							<ul class="level-three" id="blog">
 								<li><a href="#"><span>Articles</span></a><span><span></span></li>
