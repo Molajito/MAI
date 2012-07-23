@@ -27,12 +27,12 @@
 <body id="expand" class="debuggg">
 
 	<header role="header" class="row">
-		<?php include('header.php') ?>
+<?php include('_header.php') ?>
 	</header>
 
 	<div class="row">
 		<nav role="navigation">
-			<?php include('nav-dl.php') ?>
+<?php include('_nav-dl.php') ?>
 		</nav>
 		<section role="main">
 			<a href="#expand" id="expander"></a>
@@ -40,17 +40,7 @@
 	</div>
 
 
-	<!-- Included JS Files -->
-	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/foundation/jquery.reveal.js"></script>
-	<script src="javascripts/foundation/jquery.orbit-1.4.0.js"></script>
-	<script src="javascripts/foundation/jquery.customforms.js"></script>
-	<script src="javascripts/foundation/jquery.placeholder.min.js"></script>
-	<script src="javascripts/foundation/jquery.tooltips.js"></script>
-	<script src="javascripts/app.js"></script>
-	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-	<script src="javascripts/molajo/navigation.js"></script>
-	<!--script src="javascripts/jquery.flip.min.js"></script-->
+<?php include('_scripts.php') ?>
 
 </body>
 </html>
