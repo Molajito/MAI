@@ -3388,12 +3388,19 @@ nav[role="navigation"] a span {
  *
  */
 /* line 9, ../sass/_extensions.scss */
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* line 15, ../sass/_extensions.scss */
 a > i {
   cursor: pointer;
   font-style: normal;
 }
 
-/* line 17, ../sass/_extensions.scss */
+/* line 23, ../sass/_extensions.scss */
 .add:after {
   font-size: 10px;
   font-size: 1rem;
@@ -3402,17 +3409,17 @@ a > i {
   margin-left: 10px;
 }
 
-/* line 27, ../sass/_extensions.scss */
+/* line 33, ../sass/_extensions.scss */
 .dismiss {
   display: block;
   text-align: right;
 }
-/* line 30, ../sass/_extensions.scss */
+/* line 36, ../sass/_extensions.scss */
 .dismiss a {
   color: inherit;
   font-weight: 600;
 }
-/* line 34, ../sass/_extensions.scss */
+/* line 40, ../sass/_extensions.scss */
 .dismiss i {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3427,18 +3434,19 @@ a > i {
   padding: 2px 8px 7px;
 }
 
-/* line 45, ../sass/_extensions.scss */
+/* line 51, ../sass/_extensions.scss */
 .pagination ul {
   font-size: 12px;
   font-size: 1.2rem;
   list-style-type: none;
+  margin: 0 0 -20px;
 }
-/* line 48, ../sass/_extensions.scss */
+/* line 55, ../sass/_extensions.scss */
 .pagination ul li {
   display: inline;
 }
 
-/* line 55, ../sass/_extensions.scss */
+/* line 62, ../sass/_extensions.scss */
 nav[role="navigation"] ul a.button {
   background-color: cyan;
   display: block;
@@ -3446,58 +3454,58 @@ nav[role="navigation"] ul a.button {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 65, ../sass/_extensions.scss */
+/* line 72, ../sass/_extensions.scss */
 nav[role="navigation"] :target li:last-child {
   padding-bottom: 10px;
 }
 
-/* line 71, ../sass/_extensions.scss */
+/* line 78, ../sass/_extensions.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 74, ../sass/_extensions.scss */
+/* line 81, ../sass/_extensions.scss */
 [role="main"] table.grid thead th {
   vertical-align: top;
 }
-/* line 76, ../sass/_extensions.scss */
+/* line 83, ../sass/_extensions.scss */
 [role="main"] table.grid thead th span {
   display: block;
 }
-/* line 80, ../sass/_extensions.scss */
+/* line 87, ../sass/_extensions.scss */
 [role="main"] table.grid thead th input[type="text"] {
   width: 10em;
 }
-/* line 83, ../sass/_extensions.scss */
+/* line 90, ../sass/_extensions.scss */
 [role="main"] table.grid thead th input[type="number"] {
   width: 3em;
 }
-/* line 89, ../sass/_extensions.scss */
+/* line 96, ../sass/_extensions.scss */
 [role="main"] table.grid thead tr#batch-actions th {
   background: #aaaaaa;
   font-weight: 400;
   text-align: right;
 }
-/* line 94, ../sass/_extensions.scss */
+/* line 101, ../sass/_extensions.scss */
 [role="main"] table.grid thead tr#batch-actions th > div,
 [role="main"] table.grid thead tr#batch-actions th .dismiss {
   display: none;
 }
-/* line 97, ../sass/_extensions.scss */
+/* line 104, ../sass/_extensions.scss */
 [role="main"] table.grid thead tr#batch-actions th div {
   text-align: left;
 }
-/* line 104, ../sass/_extensions.scss */
+/* line 111, ../sass/_extensions.scss */
 [role="main"] table.grid thead tr#batch-actions:target th > div,
 [role="main"] table.grid thead tr#batch-actions:target th .dismiss {
   display: block;
 }
-/* line 115, ../sass/_extensions.scss */
+/* line 122, ../sass/_extensions.scss */
 [role="main"] dl#table_config {
   margin: 0;
   text-align: right;
   width: 100%;
 }
-/* line 120, ../sass/_extensions.scss */
+/* line 127, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -3510,11 +3518,11 @@ nav[role="navigation"] :target li:last-child {
   display: inline-block;
   padding: 6px 10px 14px;
 }
-/* line 126, ../sass/_extensions.scss */
+/* line 133, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i + span {
   display: none;
 }
-/* line 131, ../sass/_extensions.scss */
+/* line 138, ../sass/_extensions.scss */
 [role="main"] dl#table_config dd {
   display: none;
   -moz-border-radius-topleft: 3px;
@@ -3539,15 +3547,15 @@ nav[role="navigation"] :target li:last-child {
   position: relative;
   text-align: left;
 }
-/* line 146, ../sass/_extensions.scss */
+/* line 153, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dt {
   margin-bottom: -2px;
 }
-/* line 149, ../sass/_extensions.scss */
+/* line 156, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dd {
   display: block;
 }
-/* line 152, ../sass/_extensions.scss */
+/* line 159, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -3556,7 +3564,7 @@ nav[role="navigation"] :target li:last-child {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 156, ../sass/_extensions.scss */
+/* line 163, ../sass/_extensions.scss */
 [role="main"] dl#table_config + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;

@@ -55,7 +55,7 @@ for($i=1; $i<=10; $i++) {
 
 			<nav class="pagination">
 				<ul>
-					<li>Page <select><?php for($i=1; $i<=10; $i++): echo '<option value="'.$i.'">'.$i.'</option>'; endfor ?></select> of <?php echo $i-1 ?> pages</li>
+					<li>Page <input type="number" min="1" max="9" /> of 9 pages</li>
 					<li>View <select><?php for($i=1; $i<=10; $i++): echo '<option value="'.($i*10).'">'.($i*10).'</option>'; endfor ?></select> per page</li>
 					<li>Total number of records: 84</li>
 				</ul>
