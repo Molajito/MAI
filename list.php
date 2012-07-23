@@ -20,6 +20,9 @@ for($i=1; $i<=10; $i++) {
 		if($column == 'id') {
 			$_rowset[$i][$column] = $i;
 		}
+		else if($column == 'title') {
+			$_rowset[$i][$column] = 'Lorem ipsum dolor sit amet';
+		}
 		else if($column == 'owner') {
 			$_rowset[$i][$column] = 'Babs G&ouml;sgens';
 		}
