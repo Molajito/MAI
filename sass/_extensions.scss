@@ -20,6 +20,11 @@ a>i {
 }
 
 // Move this one somewhere more appropriate:
+button {
+	@extend .button;
+}
+
+// Move this one somewhere more appropriate:
 .add:after {
 	@extend .glyph;
 	@extend .glyph.general;

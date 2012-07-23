@@ -2,15 +2,23 @@
 <?php
 // Fake app
 $_columns = array(
-		'title'	=> array('title'=>'Title', 	'data_type'=>'text', 	'filter'=>true),
-		'owner' => array('title'=>'Owner', 	'data_type'=>'fk',		'filter'=>true),
-		'three' => array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
-		'four' 	=> array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
-		'five' 	=> array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
-		'six' 	=> array('title'=>'State', 'data_type'=>'state', 	'filter'=>true),
-		'seven' => array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
-		'id' 	=> array('title'=>'Id', 	'data_type'=>'int',  	'filter'=>true),
+		'title'	=> array('title'=>'Title', 	'show'=>true, 'data_type'=>'text', 	'filter'=>true),
+		'owner' => array('title'=>'Owner', 	'show'=>true, 'data_type'=>'fk',		'filter'=>true),
+		'three' => array('title'=>'Column 3', 'show'=>true, 'data_type'=>'text', 	'filter'=>false),
+		'four' 	=> array('title'=>'Column 4', 'show'=>true, 'data_type'=>'text', 	'filter'=>false),
+		'five' 	=> array('title'=>'Column 5', 'show'=>false, 'data_type'=>'text', 	'filter'=>false),
+		'six' 	=> array('title'=>'State', 	'show'=>true, 'data_type'=>'state', 	'filter'=>true),
+		'seven' => array('title'=>'Column', 'show'=>true, 'data_type'=>'text', 	'filter'=>false),
+		'id' 	=> array('title'=>'Id', 	'show'=>true, 'data_type'=>'int',  	'filter'=>true),
 	);
+
+// We will need to know the number of visible columns
+$numCols = 0;
+foreach ($_columns as $data) {
+	if($data['show']) {
+		$numCols ++;
+	}
+}
 
 $_rowset = array();
 for($i=1; $i<=10; $i++) {
@@ -49,7 +57,7 @@ for($i=1; $i<=10; $i++) {
 		<section role="main">
 
 			<a href="#expand" id="expander"></a>
-			<a href="list.php#articles" id="collapser">Show Menu</a>
+			<!-- <a href="list.php#articles" id="collapser">Show Menu</a> -->
 
 			<h1>Articles</h1>
 
@@ -65,6 +73,25 @@ for($i=1; $i<=10; $i++) {
 				<dt><a href="#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
 				<dd>
 					<a href="list.php#articles" class="dismiss"><i>g</i><span>Close</span></a>
+					<table>
+						<thead>
+							<tr>
+								<th>Column</th>
+								<th>Show</th>
+								<th>Use as Filter</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php foreach ($_columns as $column => $data): ?>
+							<tr>
+								<td><?php echo $data['title'] ?></td>
+								<td><select><option value="1"<?php if($data['show']): ?> selected="selected"<?php endif ?>>Yes</option><option value="0"<?php if(!$data['show']): ?> selected="selected"<?php endif ?>>No</option></select></td>
+								<td><select><option value="1"<?php if($data['filter']): ?> selected="selected"<?php endif ?>>Yes</option><option value="0"<?php if(!$data['filter']): ?> selected="selected"<?php endif ?>>No</option></select></td>
+							</tr>
+							<?php endforeach ?>
+						</tbody>
+					</table>
+					<button>Apply</button>
 				</dd>
 			</dl>
 			<table class="responsive grid">
@@ -72,16 +99,16 @@ for($i=1; $i<=10; $i++) {
 					<?php foreach ($_rowset as $row): ?>
 					<tr>
 						<td><input type="checkbox"></td>
-						<?php foreach ($_columns as $column => $data): ?>
+						<?php foreach ($_columns as $column => $data): if($data['show']): ?>
 						<td><?php echo $row[$column] ?></td>
-					<?php endforeach ?>
+						<?php endif; endforeach ?>
 					</tr>
 					<?php endforeach ?>
 				</tbody>
 				<thead>
 					<tr>
 						<th></th>
-						<?php foreach ($_columns as $column => $data): ?>
+						<?php foreach ($_columns as $column => $data): if($data['show']): ?>
 						<th id="<?php echo $column ?>">
 							<span><?php echo $data['title'] ?></span>
 							<?php if($data['filter']) {
@@ -102,10 +129,10 @@ for($i=1; $i<=10; $i++) {
 							}
 							?>
 						</th>
-						<?php endforeach ?>
+						<?php endif; endforeach ?>
 					</tr>
 					<tr id="batch-actions">
-						<th colspan="<?php echo count($_columns) + 1 ?>">
+						<th colspan="<?php echo $numCols + 1 ?>">
 							With selected: <select id="batch-options"><option>Enable</option><option>Disable</option><option>Archive</option><option>Delete</option><option value="more">More options...</option></select>
 							<a href="list.php#articles" class="dismiss"><i>g</i><span>Close</span></a>
 							<div>
