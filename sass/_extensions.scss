@@ -61,18 +61,42 @@ nav[role="navigation"] {
 [role="main"] {
 	table.grid {
 		width: 100%;
-		th {
-			vertical-align: top;
-			span {
-				display: block;
+		thead {
+			th {
+				vertical-align: top;
+				span {
+					display: block;
+				}
+				input {
+					&[type="text"] {
+						width: 10em;
+					}
+					&[type="number"] {
+						width: 3em;
+					}
+				}
 			}
-			input {
-				&[type="text"] {
-					width: 10em;
+			tr#batch-actions {
+				th {
+					background: darken($borderColor, 20);
+					text-align: right;
+					>div,
+					.dismiss {
+						display: none;
+					}
+					div {
+						text-align: left;
+					}
 				}
-				&[type="number"] {
-					width: 3em;
+				&:target {
+					th {
+						>div,
+						.dismiss {
+							display: block;
+						}
+					}
 				}
+
 			}
 		}
 	}

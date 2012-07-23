@@ -51,6 +51,8 @@ for($i=1; $i<=10; $i++) {
 			<a href="#expand" id="expander"></a>
 			<a href="list.php#articles" id="collapser">Show Menu</a>
 
+			<h1>Articles</h1>
+
 			<dl id="table_config">
 				<dt><a href="#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
 				<dd>
@@ -94,6 +96,15 @@ for($i=1; $i<=10; $i++) {
 						</th>
 						<?php endforeach ?>
 					</tr>
+					<tr id="batch-actions">
+						<th colspan="<?php echo count($_columns) + 1 ?>">
+							With selected: <select id="batch-options"><option>Enable</option><option>Disable</option><option>Archive</option><option>Delete</option><option value="more">More options...</option></select>
+							<a href="list.php#articles" class="dismiss"><i>g</i><span>Close</span></a>
+							<div>
+								<h2>More options ...</h2>
+							</div>
+						</th>
+					</tr>
 				</thead>
 				<tfoot>
 				</tfoot>
@@ -104,6 +115,18 @@ for($i=1; $i<=10; $i++) {
 
 
 <?php include('_scripts.php') ?>
+
+<script>
+<!--
+	jQuery(document).ready(function($){
+		$('#batch-options').change(function(){
+			if($(this).val()==='more') {
+				location.href = 'list.php#batch-actions';
+			}
+		});
+	});
+-->
+</script>
 
 </body>
 </html>
