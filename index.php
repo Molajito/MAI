@@ -32,7 +32,7 @@
 
 	<div class="row">
 		<nav role="navigation">
-			<?php include('nav-ul.php') ?>
+			<?php include('nav-dl.php') ?>
 		</nav>
 		<section role="main">
 			<a href="#expand" id="expander"></a>
