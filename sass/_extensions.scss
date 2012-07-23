@@ -6,6 +6,12 @@
  */
 
 // Move this one somewhere more appropriate:
+h1 {
+	@include font-size(24);
+	font-weight: 700;
+}
+
+// Move this one somewhere more appropriate:
 a>i {
 	@extend .glyph;
 	@extend .glyph.general;
@@ -14,13 +20,15 @@ a>i {
 }
 
 // Move this one somewhere more appropriate:
+button {
+	@extend .button;
+}
+
+// Move this one somewhere more appropriate:
 .add:after {
 	@extend .glyph;
 	@extend .glyph.general;
-	@include font-size(10);
-	color: darken($mainColor, 2);
 	content: "d";
-	margin-left: 10px;
 }
 
 // Move this one somewhere more appropriate:
@@ -45,25 +53,10 @@ a>i {
 	ul {
 		@include font-size(12);
 		list-style-type: none;
+		margin: 0 0 -20px;
 		li {
 			display: inline;
 		}
-	}
-}
-
-nav[role="navigation"] {
-	ul a.button {
-		@extend .round;
-		background-color: $secondaryColor;
-		display: block;
-		margin: 0 (0.75*($navBarHeight));
-		padding-left: 0.25*($navBarHeight);
-		padding-right: 0.25*($navBarHeight);
-		&:hover {
-		}
-	}
-	:target li:last-child {
-		padding-bottom: 0.25*($navBarHeight);
 	}
 }
 

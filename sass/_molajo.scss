@@ -37,3 +37,20 @@ a[href="#expand"] {
 		@extend .icon.fullscreen;
 	}
 }
+
+
+
+	@mixin background-color($color, $transparency:1) {
+		background-color: $color;
+		@if($transparency<1) {
+			background-color: shade($color,$transparency);
+		}
+	}
+
+	@mixin buttonBackground() {
+		@include background-image(linear-gradient(color-stops(rgba(#fff, .3), rgba(#fff, .0) 60%)));
+	}
+
+	@mixin buttonBackgroundHover($color) {
+		@include background-image(linear-gradient(color-stops(rgba($color, .0), rgba($color, .2) 60%)));
+	}

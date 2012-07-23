@@ -27,10 +27,10 @@
 				<dd>
 					<ul class="level-two">
 						<li>
-							<a href="list.php#articles">Articles</a>
+							<a href="list.php#articles"><span>Articles</span></a>
 							<ul id="articles" class="level-three">
 								<li><a href="list.php#articles"><span>Archive</span></a><span><span></span></span></li>
-								<li><a href="list.php#articles" class="button add"><span>Add</span></a></li>
+								<li><a href="list.php#articles" class="add"><span>Add</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -44,7 +44,7 @@
 						<li>
 							<a href="#blog"><span>Blog</span></a>
 							<ul class="level-three" id="blog">
-								<li><a href="#">Articles</a><span><span></span></span></li>
+								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
