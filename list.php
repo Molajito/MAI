@@ -38,7 +38,7 @@ for($i=1; $i<=10; $i++) {
 <?php include('_head.php') ?>
 <body id="expand" class="debuggg">
 
-	<header role="header" class="row">
+	<header role="banner" class="row">
 <?php include('_header.php') ?>
 	</header>
 

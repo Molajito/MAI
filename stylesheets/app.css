@@ -2891,7 +2891,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 
 /* CSS to style glyphs */
 /* line 40, ../sass/_icons.scss */
-.glyph, .icon, a[href="#expand"]:before, header[role="header"] > div:before, nav[role="navigation"] i, a > i, .add:after {
+.glyph, .icon, a[href="#expand"]:before, header[role="banner"] > div:before, nav[role="navigation"] i, a > i, .add:after {
   cursor: default;
   font-size: 16px;
   line-height: 1;
@@ -2899,17 +2899,17 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, .general.icon, a.general[href="#expand"]:before, header[role="header"] > div.general:before, header[role="header"] nav .settings dt a > i, nav[role="navigation"] i, a > i, .add:after {
+.glyph.general, .general.icon, a.general[href="#expand"]:before, header[role="banner"] > div.general:before, header[role="banner"] nav .settings dt a > i, nav[role="navigation"] i, a > i, .add:after {
   font-family: "FoundationIconsGeneral";
 }
 
 /* line 42, ../sass/_icons.scss */
-.glyph.enclosed, .enclosed.icon, a.enclosed[href="#expand"]:before, header[role="header"] > div.enclosed:before, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after {
+.glyph.enclosed, .enclosed.icon, a.enclosed[href="#expand"]:before, header[role="banner"] > div.enclosed:before, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after {
   font-family: "FoundationIconsGeneralEnclosed";
 }
 
 /* line 43, ../sass/_icons.scss */
-.glyph.social, .social.icon, a.social[href="#expand"]:before, header[role="header"] > div.social:before, nav[role="navigation"] i.social, a > i.social, .social.add:after {
+.glyph.social, .social.icon, a.social[href="#expand"]:before, header[role="banner"] > div.social:before, nav[role="navigation"] i.social, a > i.social, .social.add:after {
   font-family: "FoundationIconsSocial
 	";
 }
@@ -2928,45 +2928,45 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 
 /* line 61, ../sass/_icons.scss */
-.icon, a[href="#expand"]:before, header[role="header"] > div:before {
+.icon, a[href="#expand"]:before, header[role="banner"] > div:before {
   font-family: 'molajo';
   content: attr(data-icon);
 }
 
 /* line 66, ../sass/_icons.scss */
-.icon.fullscreen, a[href="#expand"]:before, header[role="header"] > div.fullscreen:before {
+.icon.fullscreen, a[href="#expand"]:before, header[role="banner"] > div.fullscreen:before {
   content: "\21";
 }
 
 /* line 67, ../sass/_icons.scss */
-.icon.molajo, a.molajo[href="#expand"]:before, header[role="header"] > div:before {
+.icon.molajo, a.molajo[href="#expand"]:before, header[role="banner"] > div:before {
   content: "\22";
 }
 
 /* line 68, ../sass/_icons.scss */
-.icon.crocs, a.crocs[href="#expand"]:before, header[role="header"] > div.crocs:before {
+.icon.crocs, a.crocs[href="#expand"]:before, header[role="banner"] > div.crocs:before {
   content: "\23";
 }
 
 /* line 69, ../sass/_icons.scss */
-.icon.crocs-large, a.crocs-large[href="#expand"]:before, header[role="header"] > div.crocs-large:before {
+.icon.crocs-large, a.crocs-large[href="#expand"]:before, header[role="banner"] > div.crocs-large:before {
   content: "\24";
 }
 
 /* line 1, ../sass/_header.scss */
-header[role="header"] {
+header[role="banner"] {
   background: #464646;
   border-bottom: 1px solid #373737;
   color: #fffffd;
   position: relative;
 }
 /* line 8, ../sass/_header.scss */
-header[role="header"] > div {
+header[role="banner"] > div {
   height: 40px;
   width: 100%;
 }
 /* line 12, ../sass/_header.scss */
-header[role="header"] > div:before {
+header[role="banner"] > div:before {
   font-size: 28px;
   font-size: 2.8rem;
   color: white;
@@ -2974,7 +2974,7 @@ header[role="header"] > div:before {
   padding-left: 8px;
 }
 /* line 22, ../sass/_header.scss */
-header[role="header"] h1 {
+header[role="banner"] h1 {
   font-size: 18px;
   font-size: 1.8rem;
   left: 42px;
@@ -2985,21 +2985,21 @@ header[role="header"] h1 {
   top: 0;
 }
 /* line 32, ../sass/_header.scss */
-header[role="header"] h1 a {
+header[role="banner"] h1 a {
   color: inherit;
 }
 /* line 37, ../sass/_header.scss */
-header[role="header"] form[role="search"] fieldset {
+header[role="banner"] form[role="search"] fieldset {
   display: inline;
   padding: 8px 0 0;
   border: 0;
 }
 /* line 42, ../sass/_header.scss */
-header[role="header"] form[role="search"] input[type="search"] {
+header[role="banner"] form[role="search"] input[type="search"] {
   background: #fffffd;
 }
 /* line 46, ../sass/_header.scss */
-header[role="header"] nav {
+header[role="banner"] nav {
   float: right;
   height: 40px;
   position: absolute;
@@ -3009,21 +3009,21 @@ header[role="header"] nav {
   z-index: 10;
 }
 /* line 54, ../sass/_header.scss */
-header[role="header"] nav .settings {
+header[role="banner"] nav .settings {
   width: 100%;
   right: 0;
   text-align: right;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 /* line 59, ../sass/_header.scss */
-header[role="header"] nav .settings dt {
+header[role="banner"] nav .settings dt {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   vertical-align: middle;
 }
 /* line 64, ../sass/_header.scss */
-header[role="header"] nav .settings dt a {
+header[role="banner"] nav .settings dt a {
   display: inline-block;
   color: inherit;
   height: 40px;
@@ -3033,44 +3033,44 @@ header[role="header"] nav .settings dt a {
   vertical-align: middle;
 }
 /* line 72, ../sass/_header.scss */
-header[role="header"] nav .settings dt a > i {
+header[role="banner"] nav .settings dt a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
 /* line 79, ../sass/_header.scss */
-header[role="header"] nav .settings dt a > span {
+header[role="banner"] nav .settings dt a > span {
   display: none;
   float: right;
 }
 /* line 83, ../sass/_header.scss */
-header[role="header"] nav .settings dt a:hover, header[role="header"] nav .settings dt a:active {
+header[role="banner"] nav .settings dt a:hover, header[role="banner"] nav .settings dt a:active {
   background: #373737;
 }
 /* line 87, ../sass/_header.scss */
-header[role="header"] nav .settings dt + dd:target {
+header[role="banner"] nav .settings dt + dd:target {
   display: block;
 }
 /* line 90, ../sass/_header.scss */
-header[role="header"] nav .settings dt.last {
+header[role="banner"] nav .settings dt.last {
   border-right: 0;
 }
 /* line 94, ../sass/_header.scss */
-header[role="header"] nav .settings dt.user a {
+header[role="banner"] nav .settings dt.user a {
   padding: 0;
 }
 /* line 96, ../sass/_header.scss */
-header[role="header"] nav .settings dt.user a > img {
+header[role="banner"] nav .settings dt.user a > img {
   height: 40px;
   width: 40px;
 }
 /* line 100, ../sass/_header.scss */
-header[role="header"] nav .settings dt.user a > span {
+header[role="banner"] nav .settings dt.user a > span {
   padding: 0 10px;
 }
 /* line 106, ../sass/_header.scss */
-header[role="header"] nav .settings dd {
+header[role="banner"] nav .settings dd {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3094,17 +3094,17 @@ header[role="header"] nav .settings dd {
 
 @media only screen and (min-width: 768px) {
   /* line 132, ../sass/_header.scss */
-  header[role="header"] nav dt.user a > span {
+  header[role="banner"] nav dt.user a > span {
     display: inline;
   }
 }
 @media only screen and (max-width: 767px) {
   /* line 142, ../sass/_header.scss */
-  header[role="header"] {
+  header[role="banner"] {
     display: block;
   }
   /* line 144, ../sass/_header.scss */
-  header[role="header"] h1 {
+  header[role="banner"] h1 {
     display: none;
   }
 }
@@ -3115,23 +3115,23 @@ header[role="header"] nav .settings dd {
 
 @media only screen and (min-width: 768px) {
   /* line 10, ../sass/_menu.scss */
-  [role="header"] + div {
+  [role="banner"] + div {
     height: 100%;
     padding-top: 41px;
     margin-top: -41px;
   }
   /* line 14, ../sass/_menu.scss */
-  [role="header"] + div nav[role="navigation"] {
+  [role="banner"] + div nav[role="navigation"] {
     -webkit-box-shadow: inset -2px 1px 2px 0 rgba(0, 0, 0, 0.4);
     -moz-box-shadow: inset -2px 1px 2px 0 rgba(0, 0, 0, 0.4);
     box-shadow: inset -2px 1px 2px 0 rgba(0, 0, 0, 0.4);
   }
   /* line 16, ../sass/_menu.scss */
-  [role="header"] + div nav[role="navigation"]:before {
+  [role="banner"] + div nav[role="navigation"]:before {
     margin-top: 40px;
   }
   /* line 19, ../sass/_menu.scss */
-  [role="header"] + div nav[role="navigation"] dl dd {
+  [role="banner"] + div nav[role="navigation"] dl dd {
     background: #005353;
     -webkit-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);
     -moz-box-shadow: inset -2px 0 2px 0 rgba(0, 0, 0, 0.4);

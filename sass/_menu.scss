@@ -7,7 +7,7 @@
 
 // Force menu over full height
 @media only screen and (min-width: $screenSmall) {
-	[role="header"]+div {
+	[role="banner"]+div {
 		height: 100%;
 		padding-top: $navBarHeight + 1px;
 		margin-top: -($navBarHeight + 1px);

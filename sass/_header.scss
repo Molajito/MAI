@@ -1,4 +1,4 @@
-header[role="header"] {
+header[role="banner"] {
 
 	background: $txtColor;
 	border-bottom: 1px solid darken($txtColor, 6);
@@ -124,7 +124,7 @@ header[role="header"] {
 }
 
 @media only screen and (min-width: $screenSmall) {
-	header[role="header"] {
+	header[role="banner"] {
 		nav {
 			dt {
 				&.user {
@@ -139,7 +139,7 @@ header[role="header"] {
 	}
 }
 @media only screen and (max-width: $screenSmall - 1) {
-	header[role="header"] {
+	header[role="banner"] {
 		display: block;
 		h1 {
 			display: none;
