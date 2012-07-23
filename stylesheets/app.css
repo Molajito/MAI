@@ -3405,6 +3405,27 @@ nav[role="navigation"] :target li:last-child {
   margin-left: 10px;
 }
 
+/* line 34, ../sass/_extensions.scss */
+[role="main"] table.grid {
+  width: 100%;
+}
+/* line 36, ../sass/_extensions.scss */
+[role="main"] table.grid th {
+  vertical-align: top;
+}
+/* line 38, ../sass/_extensions.scss */
+[role="main"] table.grid th span {
+  display: block;
+}
+/* line 42, ../sass/_extensions.scss */
+[role="main"] table.grid th input[type="text"] {
+  width: 10em;
+}
+/* line 45, ../sass/_extensions.scss */
+[role="main"] table.grid th input[type="number"] {
+  width: 3em;
+}
+
 /* Temp Helper Styles */
 /* line 32, ../sass/app.scss */
 [role="main"] {

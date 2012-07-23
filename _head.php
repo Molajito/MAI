@@ -14,6 +14,9 @@
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
 
+	<!-- ZURB Responsive Tables -->
+	<link rel="stylesheet" href="stylesheets/responsive-tables.css">
+
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 
 	<!-- IE Fix for HTML5 Tags -->
