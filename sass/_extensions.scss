@@ -5,6 +5,14 @@
  *
  */
 
+// Move this one somewhere more appropriate:
+a>i {
+	@extend .glyph;
+	@extend .glyph.general;
+	font-style: normal;
+}
+
+
 nav[role="navigation"] {
 	ul a.button {
 		@extend .round;
@@ -29,6 +37,9 @@ nav[role="navigation"] {
 	content: "d";
 	margin-left: 10px;
 }
+.dismiss {
+}
+
 
 [role="main"] {
 	table.grid {
@@ -46,6 +57,53 @@ nav[role="navigation"] {
 					width: 3em;
 				}
 			}
+		}
+	}
+
+	// Table Configuration
+	dl#table_config {
+		margin: 0;
+		text-align: right;
+		width: 100%;
+		dt {
+			i {
+				@include border-top-radius(3px);
+				background: $borderColor;
+				color: $txtColor;
+				display: inline-block;
+				padding: 6px 10px 14px;
+				&+span {
+					display: none;
+				}
+			}
+		}
+		dd {
+			display: none;
+
+			@include border-top-radius(3px);
+			@include border-right-radius(0);
+
+			@include transition();
+
+			background: $borderColor;
+			margin: 0 0 2px;
+			padding: 0.5*$navBarHeight;
+			text-align: left;
+		}
+		&:target {
+			dt {
+				margin-bottom: -2px;
+			}
+			dd {
+				display: block;
+			}
+			&+table {
+				@include border-top-radius(0);
+			}
+		}
+		&+table {
+			@include border-top-radius(0);
+			@include border-left-radius(3px);
 		}
 	}
 }

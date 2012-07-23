@@ -7,7 +7,7 @@ $_columns = array(
 		'three' => array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
 		'four' 	=> array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
 		'five' 	=> array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
-		'six' 	=> array('title'=>'Column', 'data_type'=>'text', 	'filter'=>true),
+		'six' 	=> array('title'=>'State', 'data_type'=>'state', 	'filter'=>true),
 		'seven' => array('title'=>'Column', 'data_type'=>'text', 	'filter'=>false),
 		'id' 	=> array('title'=>'Id', 	'data_type'=>'int',  	'filter'=>true),
 	);
@@ -22,6 +22,9 @@ for($i=1; $i<=10; $i++) {
 		}
 		else if($column == 'owner') {
 			$_rowset[$i][$column] = 'Babs G&ouml;sgens';
+		}
+		else if($column == 'six') {
+			$_rowset[$i][$column] = 'Enabled';
 		}
 		else {
 			$_rowset[$i][$column] = "$column";
@@ -45,8 +48,13 @@ for($i=1; $i<=10; $i++) {
 			<a href="#expand" id="expander"></a>
 			<a href="list.php#articles" id="collapser">Show Menu</a>
 
+			<dl id="table_config">
+				<dt><a href="#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
+				<dd>
+					<a href="list.php#articles" class="dismiss"><i>g</i><span>Close</span></a>
+				</dd>
+			</dl>
 			<table class="responsive grid">
-				<caption>Articles</caption>
 				<tbody>
 					<?php foreach ($_rowset as $row): ?>
 					<tr>
@@ -72,7 +80,10 @@ for($i=1; $i<=10; $i++) {
 										echo '<input type="number" />';
 										break;
 									case 'fk':
-										echo '<select><option>...</option><option>Amy Stephen</option><option>Babs Gösgens</option><option>Cristina Solana</option></select>';
+										echo '<select><option>All</option><option>Amy Stephen</option><option>Babs Gösgens</option><option>Cristina Solana</option></select>';
+										break;
+									case 'state':
+										echo '<select><option>All</option><option>Enabled</option><option>Disabled</option><option>Archived</option><option>Etc.</option></select>';
 										break;
 								}
 							}

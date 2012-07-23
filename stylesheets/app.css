@@ -9,20 +9,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Colors */
 /* Resets */
-/* line 11, ../sass/_molajo.scss */
+/* line 12, ../sass/_molajo.scss */
 * {
   font-family: Ubuntu;
   font-weight: 300;
 }
 
-/* line 15, ../sass/_molajo.scss */
+/* line 16, ../sass/_molajo.scss */
 html, body {
   background: #fffffd;
   min-height: 100%;
   height: 100%;
 }
 
-/* line 22, ../sass/_molajo.scss */
+/* line 23, ../sass/_molajo.scss */
 a[href="#expand"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2891,7 +2891,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 
 /* CSS to style glyphs */
 /* line 40, ../sass/_icons.scss */
-.glyph, .icon, a[href="#expand"]:before, header[role="header"] > div:before, nav[role="navigation"] i, .add:after {
+.glyph, .icon, a[href="#expand"]:before, header[role="header"] > div:before, nav[role="navigation"] i, a > i, .add:after {
   cursor: default;
   font-size: 16px;
   line-height: 1;
@@ -2899,17 +2899,17 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, .general.icon, a.general[href="#expand"]:before, header[role="header"] > div.general:before, header[role="header"] nav .settings dt a > i, nav[role="navigation"] i, .add:after {
+.glyph.general, .general.icon, a.general[href="#expand"]:before, header[role="header"] > div.general:before, header[role="header"] nav .settings dt a > i, nav[role="navigation"] i, a > i, .add:after {
   font-family: "FoundationIconsGeneral";
 }
 
 /* line 42, ../sass/_icons.scss */
-.glyph.enclosed, .enclosed.icon, a.enclosed[href="#expand"]:before, header[role="header"] > div.enclosed:before, nav[role="navigation"] i.enclosed, .enclosed.add:after {
+.glyph.enclosed, .enclosed.icon, a.enclosed[href="#expand"]:before, header[role="header"] > div.enclosed:before, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after {
   font-family: "FoundationIconsGeneralEnclosed";
 }
 
 /* line 43, ../sass/_icons.scss */
-.glyph.social, .social.icon, a.social[href="#expand"]:before, header[role="header"] > div.social:before, nav[role="navigation"] i.social, .social.add:after {
+.glyph.social, .social.icon, a.social[href="#expand"]:before, header[role="header"] > div.social:before, nav[role="navigation"] i.social, a > i.social, .social.add:after {
   font-family: "FoundationIconsSocial
 	";
 }
@@ -3384,6 +3384,11 @@ nav[role="navigation"] a span {
  *
  */
 /* line 9, ../sass/_extensions.scss */
+a > i {
+  font-style: normal;
+}
+
+/* line 17, ../sass/_extensions.scss */
 nav[role="navigation"] ul a.button {
   background-color: cyan;
   display: block;
@@ -3391,12 +3396,12 @@ nav[role="navigation"] ul a.button {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 19, ../sass/_extensions.scss */
+/* line 27, ../sass/_extensions.scss */
 nav[role="navigation"] :target li:last-child {
   padding-bottom: 10px;
 }
 
-/* line 24, ../sass/_extensions.scss */
+/* line 32, ../sass/_extensions.scss */
 .add:after {
   font-size: 10px;
   font-size: 1rem;
@@ -3405,25 +3410,104 @@ nav[role="navigation"] :target li:last-child {
   margin-left: 10px;
 }
 
-/* line 34, ../sass/_extensions.scss */
+/* line 45, ../sass/_extensions.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 36, ../sass/_extensions.scss */
+/* line 47, ../sass/_extensions.scss */
 [role="main"] table.grid th {
   vertical-align: top;
 }
-/* line 38, ../sass/_extensions.scss */
+/* line 49, ../sass/_extensions.scss */
 [role="main"] table.grid th span {
   display: block;
 }
-/* line 42, ../sass/_extensions.scss */
+/* line 53, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="text"] {
   width: 10em;
 }
-/* line 45, ../sass/_extensions.scss */
+/* line 56, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="number"] {
   width: 3em;
+}
+/* line 64, ../sass/_extensions.scss */
+[role="main"] dl#table_config {
+  margin: 0;
+  text-align: right;
+  width: 100%;
+}
+/* line 69, ../sass/_extensions.scss */
+[role="main"] dl#table_config dt i {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #dddddd;
+  color: #464646;
+  display: inline-block;
+  padding: 6px 10px 14px;
+}
+/* line 75, ../sass/_extensions.scss */
+[role="main"] dl#table_config dt i + span {
+  display: none;
+}
+/* line 80, ../sass/_extensions.scss */
+[role="main"] dl#table_config dd {
+  display: none;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: #dddddd;
+  margin: 0 0 2px;
+  padding: 20px;
+  text-align: left;
+}
+/* line 94, ../sass/_extensions.scss */
+[role="main"] dl#table_config:target dt {
+  margin-bottom: -2px;
+}
+/* line 97, ../sass/_extensions.scss */
+[role="main"] dl#table_config:target dd {
+  display: block;
+}
+/* line 100, ../sass/_extensions.scss */
+[role="main"] dl#table_config:target + table {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 104, ../sass/_extensions.scss */
+[role="main"] dl#table_config + table {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 /* Temp Helper Styles */
