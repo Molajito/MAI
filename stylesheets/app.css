@@ -3002,19 +3002,27 @@ header[role="header"] form[role="search"] input[type="search"] {
 header[role="header"] nav {
   float: right;
   height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
-/* line 49, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 header[role="header"] nav .settings {
+  width: 100%;
+  right: 0;
+  text-align: right;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 51, ../sass/_header.scss */
+/* line 59, ../sass/_header.scss */
 header[role="header"] nav .settings dt {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   vertical-align: middle;
 }
-/* line 56, ../sass/_header.scss */
+/* line 64, ../sass/_header.scss */
 header[role="header"] nav .settings dt a {
   display: inline-block;
   color: inherit;
@@ -3024,82 +3032,78 @@ header[role="header"] nav .settings dt a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 64, ../sass/_header.scss */
+/* line 72, ../sass/_header.scss */
 header[role="header"] nav .settings dt a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
-/* line 71, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 header[role="header"] nav .settings dt a > span {
   display: none;
   float: right;
 }
-/* line 75, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 header[role="header"] nav .settings dt a:hover, header[role="header"] nav .settings dt a:active {
   background: #373737;
 }
-/* line 79, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 header[role="header"] nav .settings dt + dd:target {
   display: block;
 }
-/* line 82, ../sass/_header.scss */
+/* line 90, ../sass/_header.scss */
 header[role="header"] nav .settings dt.last {
   border-right: 0;
 }
-/* line 86, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a {
   padding: 0;
 }
-/* line 88, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a > img {
   height: 40px;
   width: 40px;
 }
-/* line 92, ../sass/_header.scss */
+/* line 100, ../sass/_header.scss */
 header[role="header"] nav .settings dt.user a > span {
   padding: 0 10px;
 }
-/* line 98, ../sass/_header.scss */
+/* line 106, ../sass/_header.scss */
 header[role="header"] nav .settings dd {
-  -webkit-transition-property: height;
-  -moz-transition-property: height;
-  -o-transition-property: height;
-  transition-property: height;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
   display: none;
-  position: absolute;
-  z-index: 10;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
 }
 
-/* line 110, ../sass/_header.scss */
+/* line 118, ../sass/_header.scss */
 #settings,
 #user,
 #search {
   background: #373737;
   border-top: 1px solid black;
-  height: 200px;
   right: 0;
   top: 41px;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 125, ../sass/_header.scss */
+  /* line 132, ../sass/_header.scss */
   header[role="header"] nav dt.user a > span {
     display: inline;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 135, ../sass/_header.scss */
+  /* line 142, ../sass/_header.scss */
   header[role="header"] {
     display: block;
   }
-  /* line 137, ../sass/_header.scss */
+  /* line 144, ../sass/_header.scss */
   header[role="header"] h1 {
     display: none;
   }
@@ -3398,12 +3402,17 @@ a > i {
   margin-left: 10px;
 }
 
-/* line 31, ../sass/_extensions.scss */
+/* line 27, ../sass/_extensions.scss */
+.dismiss {
+  display: block;
+  text-align: right;
+}
+/* line 30, ../sass/_extensions.scss */
 .dismiss a {
   color: inherit;
   font-weight: 600;
 }
-/* line 35, ../sass/_extensions.scss */
+/* line 34, ../sass/_extensions.scss */
 .dismiss i {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3418,7 +3427,7 @@ a > i {
   padding: 2px 8px 7px;
 }
 
-/* line 47, ../sass/_extensions.scss */
+/* line 46, ../sass/_extensions.scss */
 nav[role="navigation"] ul a.button {
   background-color: cyan;
   display: block;
@@ -3426,38 +3435,38 @@ nav[role="navigation"] ul a.button {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 57, ../sass/_extensions.scss */
+/* line 56, ../sass/_extensions.scss */
 nav[role="navigation"] :target li:last-child {
   padding-bottom: 10px;
 }
 
-/* line 63, ../sass/_extensions.scss */
+/* line 62, ../sass/_extensions.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 65, ../sass/_extensions.scss */
+/* line 64, ../sass/_extensions.scss */
 [role="main"] table.grid th {
   vertical-align: top;
 }
-/* line 67, ../sass/_extensions.scss */
+/* line 66, ../sass/_extensions.scss */
 [role="main"] table.grid th span {
   display: block;
 }
-/* line 71, ../sass/_extensions.scss */
+/* line 70, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="text"] {
   width: 10em;
 }
-/* line 74, ../sass/_extensions.scss */
+/* line 73, ../sass/_extensions.scss */
 [role="main"] table.grid th input[type="number"] {
   width: 3em;
 }
-/* line 82, ../sass/_extensions.scss */
+/* line 81, ../sass/_extensions.scss */
 [role="main"] dl#table_config {
   margin: 0;
   text-align: right;
   width: 100%;
 }
-/* line 87, ../sass/_extensions.scss */
+/* line 86, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -3470,11 +3479,11 @@ nav[role="navigation"] :target li:last-child {
   display: inline-block;
   padding: 6px 10px 14px;
 }
-/* line 93, ../sass/_extensions.scss */
+/* line 92, ../sass/_extensions.scss */
 [role="main"] dl#table_config dt i + span {
   display: none;
 }
-/* line 98, ../sass/_extensions.scss */
+/* line 97, ../sass/_extensions.scss */
 [role="main"] dl#table_config dd {
   display: none;
   -moz-border-radius-topleft: 3px;
@@ -3499,15 +3508,15 @@ nav[role="navigation"] :target li:last-child {
   position: relative;
   text-align: left;
 }
-/* line 113, ../sass/_extensions.scss */
+/* line 112, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dt {
   margin-bottom: -2px;
 }
-/* line 116, ../sass/_extensions.scss */
+/* line 115, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target dd {
   display: block;
 }
-/* line 119, ../sass/_extensions.scss */
+/* line 118, ../sass/_extensions.scss */
 [role="main"] dl#table_config:target + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -3516,7 +3525,7 @@ nav[role="navigation"] :target li:last-child {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 123, ../sass/_extensions.scss */
+/* line 122, ../sass/_extensions.scss */
 [role="main"] dl#table_config + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;

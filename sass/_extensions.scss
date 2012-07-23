@@ -25,9 +25,8 @@ a>i {
 
 // Move this one somewhere more appropriate:
 .dismiss {
-	// position: absolute;
-	// top: 0.5*$navBarHeight;
-	// right: 0.5*$navBarHeight;
+	display: block;
+	text-align: right;
 	a {
 		color: inherit;
 		font-weight: 600;
