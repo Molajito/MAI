@@ -192,7 +192,7 @@ nav[role="navigation"] {
 
 
 
-#expand>div+:target {
+#expand:target {
 	nav[role="navigation"] {
 		@extend .one;
 		a>span { display: none; }
@@ -205,12 +205,12 @@ nav[role="navigation"] {
 			a>span { display: inline-block; }
 			:target { display: block; }
 		}
+		ul {
+			display: none;
+		}
 	}
 	[role="main"] {
 		@extend .seventeen;
-	}
-	ul {
-		display: none;
 	}
 	#expander {
 		display: none;
