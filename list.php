@@ -53,6 +53,14 @@ for($i=1; $i<=10; $i++) {
 
 			<h1>Articles</h1>
 
+			<nav class="pagination">
+				<ul>
+					<li>Page <select><?php for($i=1; $i<=10; $i++): echo '<option value="'.$i.'">'.$i.'</option>'; endfor ?></select> of <?php echo $i-1 ?> pages</li>
+					<li>View <select><?php for($i=1; $i<=10; $i++): echo '<option value="'.($i*10).'">'.($i*10).'</option>'; endfor ?></select> per page</li>
+					<li>Total number of records: 84</li>
+				</ul>
+			</nav>
+
 			<dl id="table_config">
 				<dt><a href="#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
 				<dd>
@@ -82,7 +90,7 @@ for($i=1; $i<=10; $i++) {
 										echo '<input type="text" />';
 										break;
 									case 'int':
-										echo '<input type="number" />';
+										echo '<input type="number" min="1" />';
 										break;
 									case 'fk':
 										echo '<select><option>All</option><option>Amy Stephen</option><option>Babs Gösgens</option><option>Cristina Solana</option></select>';

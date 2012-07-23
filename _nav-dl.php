@@ -7,7 +7,7 @@
 				<dd>
 					<ul class="level-two">
 						<li>
-							<a href="#build-item-one">Item One</a>
+							<a href="#build-item-one"><span>Item One</span></a>
 							<ul id="build-item-one" class="level-three">
 								<li><a href="#one">One</a><span><span></span></span></li>
 								<li><a href="#two">Two</a></li>
@@ -27,12 +27,13 @@
 				<dd>
 					<ul class="level-two">
 						<li>
-							<a href="list.php#articles"><span>Articles</span></a>
-							<ul class="level-three" id="articles">
-								<li><a href="list.php#articles"><span>Archive</span></a><span><span></span></li>
+							<a href="list.php#articles">Articles</a>
+							<ul id="articles" class="level-three">
+								<li><a href="list.php#articles"><span>Archive</span></a><span><span></span></span></li>
 								<li><a href="list.php#articles" class="button add"><span>Add</span></a></li>
 							</ul>
 						</li>
+					</ul>
 				</dd>
 				<dt id="collections">
 					<a href="#collections"><i data-icon="8"></i><span>Collections</span></a>
@@ -43,28 +44,28 @@
 						<li>
 							<a href="#blog"><span>Blog</span></a>
 							<ul class="level-three" id="blog">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#">Articles</a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#faqs"><span>F.A.Q.'s</span></a>
 							<ul class="level-three" id="faqs">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#contact"><span>Contact</span></a>
 							<ul class="level-three" id="contact">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#downloads"><span>Downloads</span></a>
 							<ul class="level-three" id="downloads">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>

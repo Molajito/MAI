@@ -41,6 +41,10 @@ a>i {
 	}
 }
 
+.pagination {
+	@include font-size(14);
+	list-style-type: none;
+}
 
 nav[role="navigation"] {
 	ul a.button {
@@ -79,6 +83,7 @@ nav[role="navigation"] {
 			tr#batch-actions {
 				th {
 					background: darken($borderColor, 20);
+					font-weight: 400;
 					text-align: right;
 					>div,
 					.dismiss {

@@ -192,7 +192,7 @@ nav[role="navigation"] {
 
 
 
-#expand:target {
+#expand>div+:target {
 	nav[role="navigation"] {
 		@extend .one;
 		a>span { display: none; }

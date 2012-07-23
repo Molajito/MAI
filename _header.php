@@ -11,7 +11,7 @@
 							</fieldset>
 						</form>
 					</dd
-					><dt class="user"><a href="#user"><img src="media/smile.png" width="40" height="40" /><span>Babs G&ouml;sgens</span></a></dt
+					><dt class="user"><a href="#user"><img src="media/smile.png" alt="" width="40" height="40" /><span>Babs G&ouml;sgens</span></a></dt
 					><dd id="user">
 						<a href="#" class="dismiss"><i>g</i><span>Close</span></a>
 						<ul>

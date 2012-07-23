@@ -23,28 +23,28 @@
 						<li>
 							<a href="#blog"><span>Blog</span></a>
 							<ul class="level-three" id="blog">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#faqs"><span>F.A.Q.'s</span></a>
 							<ul class="level-three" id="faqs">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#contact"><span>Contact</span></a>
 							<ul class="level-three" id="contact">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="#downloads"><span>Downloads</span></a>
 							<ul class="level-three" id="downloads">
-								<li><a href="#"><span>Articles</span></a><span><span></span></li>
+								<li><a href="#"><span>Articles</span></a><span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>

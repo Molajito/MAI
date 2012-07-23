@@ -11,4 +11,4 @@
 	<!--script src="javascripts/jquery.flip.min.js"></script-->
 
 	<!-- ZURB Responsive Tables -->
-	<script src="stylesheet" href="javascripts/responsive-tables.js"></script>
+	<script src="javascripts/responsive-tables.js"></script>
