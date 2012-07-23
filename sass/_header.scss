@@ -1,12 +1,12 @@
 header[role="header"] {
 
-	background: $brown;
-	border-bottom: 1px solid darken($brown, 6);
+	background: $txtColor;
+	border-bottom: 1px solid darken($txtColor, 6);
 	color: $offwhite;
 	position: relative;
 
 	>div {
-		height: $headerHeight;
+		height: $navBarHeight;
 		width: 100%;
 
 		&:before {
@@ -14,7 +14,7 @@ header[role="header"] {
 			@extend .icon;
 			@extend .icon.molajo;
 			color: $white;
-			line-height: $headerHeight + 2px;
+			line-height: $navBarHeight + 2px;
 			padding-left: 8px;
 		}
 	}
@@ -23,8 +23,8 @@ header[role="header"] {
 		@include font-size(18);
 		// @extend .columns;
 		// @extend .six;
-		left: $headerHeight + 2px;
-		line-height: $headerHeight;
+		left: $navBarHeight + 2px;
+		line-height: $navBarHeight;
 		position: absolute;
 		margin: 0;
 		text-transform: lowercase;
@@ -45,7 +45,7 @@ header[role="header"] {
 	}
 	nav {
 		float: right;
-		height: $headerHeight;
+		height: $navBarHeight;
 		.settings {
 			border-left: 1px solid rgba(0,0,0,.3);
 			dt {
@@ -56,9 +56,9 @@ header[role="header"] {
 				a {
 					display: inline-block;
 					color: inherit;
-					height: $headerHeight;
-					line-height: $headerHeight;
-					min-width: $headerHeight;
+					height: $navBarHeight;
+					line-height: $navBarHeight;
+					min-width: $navBarHeight;
 					text-align: center;
 					vertical-align: middle;
 					>i {
@@ -73,7 +73,7 @@ header[role="header"] {
 						float: right;
 					}
 					&:hover, &:active {
-						background: darken($brown, 6);
+						background: darken($txtColor, 6);
 					}
 				}
 				&+dd:target {
@@ -86,8 +86,8 @@ header[role="header"] {
 					a {
 						padding: 0;
 						>img {
-							height: $headerHeight;
-							width: $headerHeight;
+							height: $navBarHeight;
+							width: $navBarHeight;
 						}
 						>span {
 							padding: 0 10px;
@@ -108,11 +108,11 @@ header[role="header"] {
 #settings,
 #user,
 #search {
-	background: darken($brown, 6);
+	background: darken($txtColor, 6);
 	border-top: 1px solid $black;
 	height: 200px;
 	right: 0;
-	top: $headerHeight + 1px;
+	top: $navBarHeight + 1px;
 	width: 100%;
 }
 

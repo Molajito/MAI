@@ -27,10 +27,10 @@
 				<dd>
 					<ul class="level-two">
 						<li>
-							<a href="#articles"><span>Articles</span></a>
+							<a href="list.php#articles"><span>Articles</span></a>
 							<ul class="level-three" id="articles">
-								<li><a href="#"><span>Archive</span></a><span><span></span></li>
-								<li><a href="#" class="button"><span>Add article</span></a></li>
+								<li><a href="list.php#articles"><span>Archive</span></a><span><span></span></li>
+								<li><a href="list.php#articles" class="button add"><span>Add</span></a></li>
 							</ul>
 						</li>
 				</dd>

@@ -1,0 +1,31 @@
+/*
+ * This stylesheet contains styling for extensions.
+ *
+ *
+ *
+ */
+
+nav[role="navigation"] {
+	ul a.button {
+		@extend .round;
+		background-color: $secondaryColor;
+		display: block;
+		margin: 0 (0.75*($navBarHeight));
+		padding-left: 0.25*($navBarHeight);
+		padding-right: 0.25*($navBarHeight);
+		&:hover {
+		}
+	}
+	:target li:last-child {
+		padding-bottom: 0.25*($navBarHeight);
+	}
+}
+
+.add:after {
+	@extend .glyph;
+	@extend .glyph.general;
+	@include font-size(10);
+	color: darken($mainColor, 2);
+	content: "d";
+	margin-left: 10px;
+}

@@ -1,16 +1,23 @@
+
+.debug {
+	nav[role="navigation"] * {
+		display: block;
+	}
+}
+
 // Force menu over full height
 @media only screen and (min-width: $screenSmall) {
 	[role="header"]+div {
 		height: 100%;
-		padding-top: $headerHeight + 1px;
-		margin-top: -($headerHeight + 1px);
+		padding-top: $navBarHeight + 1px;
+		margin-top: -($navBarHeight + 1px);
 		nav[role="navigation"] {
 			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
 			&:before {
-				margin-top: $headerHeight;
+				margin-top: $navBarHeight;
 			}
 			dl dd {
-				background: darken($teal, 4);
+				background: darken($mainColor, 4);
 				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
 			}
 		}
@@ -27,7 +34,7 @@ nav[role="navigation"] {
 	@include transition-property(width);
 	@include transition();
 
-	background: $teal;
+	background: $mainColor;
 	color: $white;
 	height: 100%;
 	padding: 0;
@@ -36,7 +43,7 @@ nav[role="navigation"] {
 	a {
 		position: relative;
 		&+span {
-			@include cssTriangle(11px, darken($teal, 6), top);
+			@include cssTriangle(11px, darken($mainColor, 6), top);
 			@include transition-property(color);
 			@include transition();
 			display: none;
@@ -44,7 +51,7 @@ nav[role="navigation"] {
 			position: absolute;
 			z-index: 10;
 			>span {
-				@include cssTriangle(10px, darken($teal, 0), top);
+				@include cssTriangle(10px, darken($mainColor, 0), top);
 				@include transition-property(color);
 				@include transition();
 				left: -10px;
@@ -53,10 +60,10 @@ nav[role="navigation"] {
 			}
 		}
 		&:hover {
-			background: darken($teal, 6);
+			background: darken($mainColor, 6);
 			&+span {
 				>span {
-					border-top-color: darken($teal, 6);
+					border-top-color: darken($mainColor, 6);
 				}
 			}
 		}
@@ -106,20 +113,20 @@ nav[role="navigation"] {
 	.level-one {
 		>dt:first-child a,
 		>li:first-child a { border-top: 0; }
-		background: darken($teal, 6);
+		background: darken($mainColor, 6);
 		>:target {
 			>a+span { 
-				border-top-color: darken($teal, 8);
+				border-top-color: darken($mainColor, 8);
 				display: block;
 				>span {
-					border-top-color: darken($teal, 6);
+					border-top-color: darken($mainColor, 6);
 				}
 			}
 			&:hover {
 				>a+span {
-					// border-top-color: darken($teal, 8);
+					// border-top-color: darken($mainColor, 8);
 					>span {
-						// border-top-color: darken($teal, 6);
+						// border-top-color: darken($mainColor, 6);
 					}
 				}
 			}
@@ -129,13 +136,13 @@ nav[role="navigation"] {
 	.level-two,
 	.level-three {
 		@include transition();
-		background: darken($teal, 2);
+		background: darken($mainColor, 2);
 		// display: none;
 		margin-bottom: 0;
 		a+span {
 			top: 0;
 			>span {
-				border-top-color: darken($teal, 2);
+				border-top-color: darken($mainColor, 2);
 			}
 		}
 		&:target {
@@ -145,18 +152,18 @@ nav[role="navigation"] {
 			}
 		}
 		:hover+:target li a+span {
-				border-top-color: darken($teal, 8);
+				border-top-color: darken($mainColor, 8);
 			>span {
-				border-top-color: darken($teal, 6);
+				border-top-color: darken($mainColor, 6);
 			}
 		}
 		:target li:hover a+span {
-			border-top-color: darken($teal, 9);
+			border-top-color: darken($mainColor, 9);
 		}
 	}
 	.level-three {
 		display: none;
-		background: $teal;
+		background: $mainColor;
 
 		a { border: 0; }
 	}
@@ -211,11 +218,6 @@ nav[role="navigation"] {
 }
 
 
-.debug {
-	#resources {
-		display: block;
-	}
-}
 
 /* CSS3 Enhancements */
 @media only screen  {
