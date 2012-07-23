@@ -92,10 +92,10 @@
 				<dd>
 					<ul class="level-two">
 						<li>
-							<a href="list.html#articles">Articles</a>
+							<a href="list.html#articles"><span>Articles</span></a>
 							<ul id="articles" class="level-three">
 								<li><a href="list.html#articles"><span>Archive</span></a><span><span></span></span></li>
-								<li><a href="list.html#articles" class="button add"><span>Add</span></a></li>
+								<li><a href="list.html#articles" class="add"><span>Add</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -109,7 +109,7 @@
 						<li>
 							<a href="#blog"><span>Blog</span></a>
 							<ul class="level-three" id="blog">
-								<li><a href="#">Articles</a><span><span></span></span></li>
+								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
@@ -141,13 +141,13 @@
 		<section role="main">
 
 			<a href="#expand" id="expander"></a>
-			<a href="list.html#articles" id="collapser">Show Menu</a>
+			<!-- <a href="list.html#articles" id="collapser">Show Menu</a> -->
 
 			<h1>Articles</h1>
 
 			<nav class="pagination">
 				<ul>
-					<li>Page <select><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select> of 10 pages</li>
+					<li>Page <input type="number" min="1" max="9" /> of 9 pages</li>
 					<li>View <select><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="40">40</option><option value="50">50</option><option value="60">60</option><option value="70">70</option><option value="80">80</option><option value="90">90</option><option value="100">100</option></select> per page</li>
 					<li>Total number of records: 84</li>
 				</ul>
@@ -157,6 +157,58 @@
 				<dt><a href="#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
 				<dd>
 					<a href="list.html#articles" class="dismiss"><i>g</i><span>Close</span></a>
+					<table>
+						<thead>
+							<tr>
+								<th>Column</th>
+								<th>Show</th>
+								<th>Use as Filter</th>
+							</tr>
+						</thead>
+						<tbody>
+														<tr>
+								<td>Title</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Owner</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Column 3</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1">Yes</option><option value="0" selected="selected">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Column 4</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1">Yes</option><option value="0" selected="selected">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Column 5</td>
+								<td><select><option value="1">Yes</option><option value="0" selected="selected">No</option></select></td>
+								<td><select><option value="1">Yes</option><option value="0" selected="selected">No</option></select></td>
+							</tr>
+														<tr>
+								<td>State</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Column</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1">Yes</option><option value="0" selected="selected">No</option></select></td>
+							</tr>
+														<tr>
+								<td>Id</td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+								<td><select><option value="1" selected="selected">Yes</option><option value="0">No</option></select></td>
+							</tr>
+													</tbody>
+					</table>
+					<button>Apply</button>
 				</dd>
 			</dl>
 			<table class="responsive grid">
@@ -164,113 +216,103 @@
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>1</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>1</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>2</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>2</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>3</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>3</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>4</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>4</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>5</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>5</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>6</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>6</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>7</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>7</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>8</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>8</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>9</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>9</td>
+											</tr>
 										<tr>
 						<td><input type="checkbox"></td>
 												<td>Lorem ipsum dolor sit amet</td>
-											<td>Babs G&ouml;sgens</td>
-											<td>three</td>
-											<td>four</td>
-											<td>five</td>
-											<td>Enabled</td>
-											<td>seven</td>
-											<td>10</td>
-										</tr>
+												<td>Babs G&ouml;sgens</td>
+												<td>three</td>
+												<td>four</td>
+												<td>Enabled</td>
+												<td>seven</td>
+												<td>10</td>
+											</tr>
 									</tbody>
 				<thead>
 					<tr>
@@ -282,13 +324,10 @@
 							<span>Owner</span>
 							<select><option>All</option><option>Amy Stephen</option><option>Babs Gösgens</option><option>Cristina Solana</option></select>						</th>
 												<th id="three">
-							<span>Column</span>
+							<span>Column 3</span>
 													</th>
 												<th id="four">
-							<span>Column</span>
-													</th>
-												<th id="five">
-							<span>Column</span>
+							<span>Column 4</span>
 													</th>
 												<th id="six">
 							<span>State</span>
@@ -301,7 +340,7 @@
 							<input type="number" min="1" />						</th>
 											</tr>
 					<tr id="batch-actions">
-						<th colspan="9">
+						<th colspan="8">
 							With selected: <select id="batch-options"><option>Enable</option><option>Disable</option><option>Archive</option><option>Delete</option><option value="more">More options...</option></select>
 							<a href="list.html#articles" class="dismiss"><i>g</i><span>Close</span></a>
 							<div>
