@@ -1,0 +1,5 @@
+# Use this gitignore file for use in a production environment
+.sass-cache/
+config.rb
+sass
+MIT-LICENSE.txt

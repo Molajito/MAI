@@ -1,11 +1,11 @@
 /* Foundation Icons General */
 @font-face {
   font-family: 'FoundationIconsGeneral';
-  src: url('../fonts/foundation-icons-general/foundation-icons-general.eot');
-  src: url('../fonts/foundation-icons-general/foundation-icons-general.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/foundation-icons-general/foundation-icons-general.woff') format('woff'),
-       url('../fonts/foundation-icons-general/foundation-icons-general.ttf') format('truetype'),
-       url('../fonts/foundation-icons-general/foundation-icons-general.svg#FoundationIconsGeneral') format('svg');
+  src: url('../Fonts/foundation-icons-general/foundation-icons-general.eot');
+  src: url('../Fonts/foundation-icons-general/foundation-icons-general.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/foundation-icons-general/foundation-icons-general.woff') format('woff'),
+       url('../Fonts/foundation-icons-general/foundation-icons-general.ttf') format('truetype'),
+       url('../Fonts/foundation-icons-general/foundation-icons-general.svg#FoundationIconsGeneral') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,11 +13,11 @@
 /* Foundation Icons General Enclosed */
 @font-face {
     font-family: 'FoundationIconsGeneralEnclosed';
-    src: url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot');
-    src: url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.woff') format('woff'),
-         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.ttf') format('truetype'),
-         url('../fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.svg#FoundationIconsGeneralEnclosed') format('svg');
+    src: url('../Fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot');
+    src: url('../Fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.woff') format('woff'),
+         url('../Fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.ttf') format('truetype'),
+         url('../Fonts/foundation-icons-general-enclosed/foundation-icons-general-enclosed.svg#FoundationIconsGeneralEnclosed') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -26,11 +26,11 @@
 /* Foundation Icons Social */
 @font-face {
     font-family: 'FoundationIconsSocial';
-    src: url('../fonts/foundation-icons-social/foundation-icons-social.eot');
-    src: url('../fonts/foundation-icons-social/foundation-icons-social.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/foundation-icons-social/foundation-icons-social.woff') format('woff'),
-         url('../fonts/foundation-icons-social/foundation-icons-social.ttf') format('truetype'),
-         url('../fonts/foundation-icons-social/foundation-icons-social.svg#FoundationIconsSocial') format('svg');
+    src: url('../Fonts/foundation-icons-social/foundation-icons-social.eot');
+    src: url('../Fonts/foundation-icons-social/foundation-icons-social.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/foundation-icons-social/foundation-icons-social.woff') format('woff'),
+         url('../Fonts/foundation-icons-social/foundation-icons-social.ttf') format('truetype'),
+         url('../Fonts/foundation-icons-social/foundation-icons-social.svg#FoundationIconsSocial') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -44,11 +44,15 @@
 	"; }
 
 
+a .glyph {
+  cursor: pointer;
+}
+
 /* Molajo Custom Icons */
 
 @font-face {
   font-family: 'molajo';
-  src: url('../fonts/MolajoFont.eot');
+  src: url('../Fonts/MolajoFont.eot');
 }
 @font-face {
   font-family: 'molajo';
@@ -67,3 +71,11 @@
 .icon.molajo { content: "\22"; }
 .icon.crocs { content: "\23"; }
 .icon.crocs-large { content: "\24"; }
+
+.glyph.resources:before { content: "j"; }
+.glyph.collections:before { content: "8"; }
+.glyph.data-dictionary:before { content: "3"; }
+.glyph.hierarchies:before { content: "-"; }
+.glyph.access:before { content: "o"; }
+.glyph.build:before { content: "k"; }
+.glyph.settings:before { content: "a"; }

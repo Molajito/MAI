@@ -1,21 +1,23 @@
 header[role="banner"] {
 
+	@extend .row;
 	background: $txtColor;
 	border-bottom: 1px solid darken($txtColor, 6);
 	color: $offwhite;
 	position: relative;
 
 	>div {
+
+		@include transition-property(width);
+		@include transition();
+
+		@extend .column;
+		@extend .push-#{convert-number-to-word($defaultMenuWidth)};
+		@extend .#{convert-number-to-word($defaultContentWidth)};
 		height: $navBarHeight;
-		width: 100%;
+		// width: 100%;
 
 		&:before {
-			@include font-size(28);
-			@extend .icon;
-			@extend .icon.molajo;
-			color: $white;
-			line-height: $navBarHeight + 2px;
-			padding-left: 8px;
 		}
 	}
 
@@ -23,14 +25,26 @@ header[role="banner"] {
 		@include font-size(18);
 		// @extend .columns;
 		// @extend .six;
-		left: $navBarHeight + 2px;
 		line-height: $navBarHeight;
 		position: absolute;
 		margin: 0;
 		text-transform: lowercase;
 		top: 0;
+		z-index: 20;
 		a {
 			color: inherit;
+			min-width: $navBarHeight + 2px;
+		}
+		i {
+			@include font-size(28);
+			@extend .icon;
+			color: $white;
+			font-style: normal;
+			line-height: $navBarHeight + 2px;
+			position: absolute;
+			&+span {
+				padding-left: $navBarHeight + 2px;
+			}
 		}
 	}
 	form[role="search"] {
@@ -113,7 +127,7 @@ header[role="banner"] {
 		}
 	}
 }
-#settings,
+#molajo-settings,
 #user,
 #search {
 	background: darken($txtColor, 6);
@@ -142,7 +156,9 @@ header[role="banner"] {
 	header[role="banner"] {
 		display: block;
 		h1 {
-			display: none;
+			span {
+				display: none;
+			}
 		}
 	}
 }

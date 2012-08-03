@@ -1,3 +1,5 @@
+@import "foundation/functions/modular-scale";
+
 // Settings file containing Foundation defaults
 
 // Grid Settings
@@ -19,6 +21,15 @@ $txtColor: #464646;
 // $white: #fff;
 // $shinyEdge: rgba(#fff, .5);
 // $darkEdge: rgba(#000, .2);
+
+// Typography Settings
+
+// $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// $headerFontWeight: bold;
+// $headerFontColor: #222;
+// $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// $bodyFontWeight: normal;
+// $bodyFontColor: #222;
 
 // Button Settings
 
@@ -45,4 +56,3 @@ $navBarHeight: 40px;
 // Modular Scale
 // $ratio: $golden;
 // $base-size: 14px 44px;
-

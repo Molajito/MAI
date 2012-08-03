@@ -1,14 +1,20 @@
 /* Typography*/
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic,500italic&subset=cyrillic-ext,latin-ext);
 
-h1, h2, h3, h4, h5, h6 { font-weight: 400;}
+/* Widths */
+$defaultMenuWidth: 3;
+$defaultContentWidth: $totalColumns - $defaultMenuWidth;
+$focusMenuWidth: 1;
+$focusContentWidth: $totalColumns - $focusMenuWidth;
 
 /* Colors */
 $white: #ffffff;
 $offwhite: #fffffd;
 $borderColor: #ddd;
 
-/* Resets */
+h1, h2, h3, h4, h5, h6 { font-weight: 400;}
+
+/* Additional Resets */
 * {
 	font-family: Ubuntu;
 	font-weight: 400;
@@ -20,37 +26,43 @@ html, body {
 	height: 100%;
 }
 
-a[href="#expand"] {
+a#expander {
 
 	@include border-radius(5px);
 	@include single-box-shadow(rgba(0,0,0,.4), 0, 1px, 2px, 0, true);
 
 	color: $txtColor;
 	display: inline-block;
+	margin-bottom: 15px;
 	padding: 8px;
 
-	// @extend .small.button;
-	// @extend .secondary.button;
-
+	span {
+		display: none;
+	}
 	&:before {
 		@extend .icon;
 		@extend .icon.fullscreen;
 	}
 }
 
-
-
-	@mixin background-color($color, $transparency:1) {
-		background-color: $color;
-		@if($transparency<1) {
-			background-color: shade($color,$transparency);
-		}
+@mixin background-color($color, $transparency:1) {
+	background-color: $color;
+	@if($transparency<1) {
+		background-color: shade($color,$transparency);
 	}
+}
 
-	@mixin buttonBackground() {
-		@include background-image(linear-gradient(color-stops(rgba(#fff, .3), rgba(#fff, .0) 60%)));
-	}
+@mixin buttonBackground() {
+	@include background-image(linear-gradient(color-stops(rgba(#fff, .3), rgba(#fff, .0) 60%)));
+}
 
-	@mixin buttonBackgroundHover($color) {
-		@include background-image(linear-gradient(color-stops(rgba($color, .0), rgba($color, .2) 60%)));
-	}
+@mixin buttonBackgroundHover($color) {
+	@include background-image(linear-gradient(color-stops(rgba($color, .0), rgba($color, .2) 60%)));
+}
+
+// /* Custom */
+@import "icons";
+@import "header";
+@import "menu";
+@import "extensions";
+

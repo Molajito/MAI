@@ -9,30 +9,31 @@
 }
 
 // Force menu over full height
-@media only screen and (min-width: $screenSmall) {
-	[role="banner"]+div {
-		height: 100%;
-		padding-top: $navBarHeight + 1px;
-		margin-top: -($navBarHeight + 1px);
-		nav[role="navigation"] {
-			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
-			&:before {
-				margin-top: $navBarHeight;
-			}
-			dl dd {
-				background: darken($mainColor, 4);
-				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
-			}
-		}
-	}
+body {
+	min-height: 100%;
+	height: auto !important;
 }
+// @media only screen and (min-width: $screenSmall) {
+// 	[role="banner"]+div {
+// 		height: 100%;
+// 		padding-top: $navBarHeight + 1px;
+// 		margin-top: -($navBarHeight + 1px);
+// 		nav[role="navigation"] {
+// 			@include single-box-shadow(rgba(0,0,0,.4), -2px, 1px, 2px, 0, true);
+// 			&:before {
+// 				margin-top: $navBarHeight;
+// 			}
+// 			dl dd {
+// 				background: darken($mainColor, 4);
+// 				@include single-box-shadow(rgba(0,0,0,.4), -2px, 0, 2px, 0, true);
+// 			}
+// 		}
+// 	}
+// }
 nav[role="navigation"] {
 
-	// @include border-left-radius(5px);
-	// @include border-top-radius(0);
-
 	@extend .column;
-	@extend .three;
+	@extend .#{convert-number-to-word($defaultMenuWidth)}; 
 
 	@include transition-property(width);
 	@include transition();
@@ -40,8 +41,14 @@ nav[role="navigation"] {
 	background: $mainColor;
 	color: $white;
 	height: 100%;
-	padding: 0;
+	left: 0;
 	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+
+	// Temp, user config needs to move here
+	padding-top: $navBarHeight + 1px;
 
 	a {
 		position: relative;
@@ -91,6 +98,21 @@ nav[role="navigation"] {
 
 	ul { list-style-type: none; }
 
+	// Hide level-two items
+	.level-one {
+		>dt {
+			&+dd {
+				display: none;
+			}
+			&.current,
+			&:target {
+				&+dd {
+					display: block;
+				}
+			}
+		}
+	}
+
 	.level-one,
 	.level-two,
 	.level-three {
@@ -117,20 +139,12 @@ nav[role="navigation"] {
 		>dt:first-child a,
 		>li:first-child a { border-top: 0; }
 		background: darken($mainColor, 6);
-		>:target {
+		>:target, >.current {
 			>a+span { 
 				border-top-color: darken($mainColor, 8);
 				display: block;
 				>span {
 					border-top-color: darken($mainColor, 6);
-				}
-			}
-			&:hover {
-				>a+span {
-					// border-top-color: darken($mainColor, 8);
-					>span {
-						// border-top-color: darken($mainColor, 6);
-					}
 				}
 			}
 		}
@@ -215,44 +229,106 @@ nav[role="navigation"] {
 	}
 }
 
-[role="main"] {
+[role="main"], footer {
 
 	@extend .column;
-	@extend .fifteen;
+	@extend .#{convert-number-to-word($defaultContentWidth)};
+	@extend .push-#{convert-number-to-word($defaultMenuWidth)};
 
 	@include transition-property(width);
 	@include transition();
 }
 
-
-
-#expand:target {
+#focus:target {
 	nav[role="navigation"] {
-		@extend .one;
+		@extend .#{convert-number-to-word($focusMenuWidth)};
 		a>span { display: none; }
+		i {
+			width: 100%;
+		}
+		dd {
+			display: none;
+		}
 		&:hover {
+			dd {
+				display: block;
+			}
+			@extend .#{convert-number-to-word($defaultMenuWidth)};
 
-			@extend .three;
-
-			+[role="main"] { @extend .fifteen; }
+			i {
+				width: $navBarHeight;
+			}
+			+[role="main"] { 
+				@extend .#{convert-number-to-word($defaultContentWidth)};
+				@extend .push-#{convert-number-to-word($defaultMenuWidth)};
+			}
 
 			a>span { display: inline-block; }
 			:target { display: block; }
 		}
-		ul {
-			display: none;
-		}
 	}
+	header[role="banner"]>div,
 	[role="main"] {
-		@extend .seventeen;
+		@extend .#{convert-number-to-word($focusContentWidth)};
+		@extend .push-#{convert-number-to-word($focusMenuWidth)};
+		left: 5.556%;
 	}
 	#expander {
 		display: none;
 	}
 }
 
-
-
-/* CSS3 Enhancements */
-@media only screen  {
+@media only screen and (max-width: $screenSmall - 1px) {
+	nav[role="navigation"] {
+		height: auto;
+		overflow: visible;
+		padding: 0;
+		position: relative;
+		z-index: 100;
+		dl {
+			width: 100%;
+			text-align: center;
+		}
+		dt {
+			display: inline;
+			>a {
+				border: 0 !important;
+				display: inline-block;
+				height: $navBarHeight;
+				text-align: center;
+			}
+			span {
+				display: none;
+			}
+			+dd {
+				text-align: left;
+				left: 0;
+				position: absolute;
+				top: $navBarHeight;
+				width: 100%;
+			}
+		}
+	}
+	#focus:target {
+		nav[role="navigation"] {
+			i {
+				width: 20px;
+			}
+			dd {
+				display: none;
+			}
+			&:hover {
+				dd {
+					display: block;
+				}
+				i {
+					width: 20px;
+				}
+				dt>a>span { display: none; }
+			}
+		}
+	}
+	a#expander {
+		display: none;
+	}
 }
