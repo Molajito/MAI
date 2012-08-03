@@ -1,0 +1,5 @@
+<trigger name="Rownumber"/>
+<trigger name="Dateformats"/>
+<trigger name="Publishedstatus"/>
+<trigger name="Version"/>
+<trigger name="Ordering"/>

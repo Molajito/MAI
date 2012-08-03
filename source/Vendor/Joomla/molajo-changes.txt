@@ -1,0 +1,11 @@
+/**
+ * Molajo Hacks
+ */
+
+Added namespaces to all classes.
+Added use statements for all classes used in the class.
+Commented out all JImports, JLoader, includes, requires, imports, etc.
+Changed all PHP classes to default (ex. stdClass to /stdClass, Exception to /Exception, etc).
+Added phpConsole logger
+
+Hacked JFactory and JText
