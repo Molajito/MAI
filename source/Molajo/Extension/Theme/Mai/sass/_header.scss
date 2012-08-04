@@ -1,36 +1,25 @@
 header[role="banner"] {
 
-	@extend .row;
 	background: $txtColor;
 	border-bottom: 1px solid darken($txtColor, 6);
 	color: $offwhite;
 	position: relative;
 
+	// Make sure dropdowns overlap left menu
+	z-index: 100;
+
 	>div {
-
-		@include transition-property(width);
-		@include transition();
-
-		@extend .column;
-		@extend .push-#{convert-number-to-word($defaultMenuWidth)};
-		@extend .#{convert-number-to-word($defaultContentWidth)};
 		height: $navBarHeight;
-		// width: 100%;
-
-		&:before {
-		}
+		@include transition();
+		@include transition-property(width);
 	}
 
+	h1, nav { display: inline;}
 	h1 {
 		@include font-size(18);
-		// @extend .columns;
-		// @extend .six;
 		line-height: $navBarHeight;
-		position: absolute;
 		margin: 0;
 		text-transform: lowercase;
-		top: 0;
-		z-index: 20;
 		a {
 			color: inherit;
 			min-width: $navBarHeight + 2px;
@@ -60,11 +49,6 @@ header[role="banner"] {
 	nav {
 		float: right;
 		height: $navBarHeight;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 100%;
-		z-index: 10;
 		.settings {
 			width: 100%;
 			right: 0;

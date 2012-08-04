@@ -9,8 +9,6 @@ use Molajo\Service\Services;
 defined('MOLAJO') or die; ?>
 <include:head/>
 
-    <include:template name=Adminheader/>
-
     <div class="row">
     <?php if (file_exists(Services::Registry()->get('Parameters', 'page_view_path_include'))) {
         include Services::Registry()->get('Parameters', 'page_view_path_include');

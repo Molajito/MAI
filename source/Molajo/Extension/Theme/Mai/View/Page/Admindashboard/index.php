@@ -10,12 +10,14 @@ defined('MOLAJO') or die;
 
 $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 ?>
+    <include:template name=Adminheader/>
 
 	<nav role="navigation">
 		<include:template name=Adminnavigationbar/>
 	</nav>
 
-	<section role="main">
+	<div role="main">
+	<section>
 		<include:message/>
 
 		<a href="<?php echo $_baseUri ?>#focus" id="expander"><span>Expand working area</span></a>
@@ -362,3 +364,4 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 						</div>
 	</section>
 
+	</div>

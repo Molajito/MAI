@@ -1,3 +1,5 @@
-body {
-	
+[role="main"] {
+	@extend .column;
+	@extend .push-#{convert-number-to-word($defaultMenuWidth)};
+	@extend .#{convert-number-to-word($defaultContentWidth)};
 }

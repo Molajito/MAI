@@ -107,44 +107,44 @@ p a, p a:visited {
 
 /* The Grid ---------------------- */
 /* line 3, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row, header[role="banner"] {
+.row {
   width: 100%;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto;
 }
 /* line 4, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .row, header[role="banner"] .row, .row header[role="banner"], header[role="banner"] header[role="banner"] {
+.row .row {
   width: auto;
   max-width: none;
   min-width: 0;
   margin: 0 -15px;
 }
 /* line 7, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row.collapse .column, header.collapse[role="banner"] .column, .row.collapse header[role="banner"] > div, header.collapse[role="banner"] header[role="banner"] > div, .row.collapse nav[role="navigation"], header.collapse[role="banner"] nav[role="navigation"], .row.collapse [role="main"], header.collapse[role="banner"] [role="main"], .row.collapse footer, header.collapse[role="banner"] footer, .row.collapse .columns, header.collapse[role="banner"] .columns {
+.row.collapse .column, .row.collapse nav[role="navigation"], .row.collapse [role="main"], .row.collapse footer, .row.collapse .columns {
   padding: 0;
 }
 /* line 9, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .row, header[role="banner"] .row, .row header[role="banner"], header[role="banner"] header[role="banner"] {
+.row .row {
   width: auto;
   max-width: none;
   min-width: 0;
   margin: 0 -15px;
 }
 /* line 10, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .row.collapse, header[role="banner"] .row.collapse, .row header.collapse[role="banner"], header[role="banner"] header.collapse[role="banner"] {
+.row .row.collapse {
   margin: 0;
 }
 
 /* line 14, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.column, header[role="banner"] > div, nav[role="navigation"], [role="main"], footer, .columns {
+.column, nav[role="navigation"], [role="main"], footer, .columns {
   float: left;
   min-height: 1px;
   padding: 0 15px;
   position: relative;
 }
 /* line 15, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.column.centered, header[role="banner"] > div.centered, nav.centered[role="navigation"], .centered[role="main"], footer.centered, .columns.centered {
+.column.centered, nav.centered[role="navigation"], .centered[role="main"], footer.centered, .columns.centered {
   float: none;
   margin: 0 auto;
 }
@@ -160,173 +160,173 @@ p a, p a:visited {
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.one, .row .one, header[role="banner"] .one, #focus:target nav[role="navigation"] {
+.one, .row .one, #focus:target nav[role="navigation"] {
   width: 5.556%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.two, .row .two, header[role="banner"] .two {
+.two, .row .two {
   width: 11.111%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.three, .row .three, header[role="banner"] .three, nav[role="navigation"], #focus:target nav[role="navigation"]:hover {
+.three, .row .three, nav[role="navigation"], #focus:target nav[role="navigation"]:hover {
   width: 16.667%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.four, .row .four, header[role="banner"] .four {
+.four, .row .four {
   width: 22.222%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.five, .row .five, header[role="banner"] .five {
+.five, .row .five {
   width: 27.778%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.six, .row .six, header[role="banner"] .six {
+.six, .row .six {
   width: 33.333%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.seven, .row .seven, header[role="banner"] .seven {
+.seven, .row .seven {
   width: 38.889%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.eight, .row .eight, header[role="banner"] .eight {
+.eight, .row .eight {
   width: 44.444%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.nine, .row .nine, header[role="banner"] .nine {
+.nine, .row .nine {
   width: 50%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.ten, .row .ten, header[role="banner"] .ten {
+.ten, .row .ten {
   width: 55.556%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.eleven, .row .eleven, header[role="banner"] .eleven {
+.eleven, .row .eleven {
   width: 61.111%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.twelve, .row .twelve, header[role="banner"] .twelve {
+.twelve, .row .twelve {
   width: 66.667%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.thirteen, .row .thirteen, header[role="banner"] .thirteen {
+.thirteen, .row .thirteen {
   width: 72.222%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.fourteen, .row .fourteen, header[role="banner"] .fourteen {
+.fourteen, .row .fourteen {
   width: 77.778%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.fifteen, .row .fifteen, header[role="banner"] .fifteen, header[role="banner"] > div, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"] {
+.fifteen, .row .fifteen, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"] {
   width: 83.333%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.sixteen, .row .sixteen, header[role="banner"] .sixteen {
+.sixteen, .row .sixteen {
   width: 88.889%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.seventeen, .row .seventeen, header[role="banner"] .seventeen, #focus:target header[role="banner"] > div,
+.seventeen, .row .seventeen, #focus:target header[role="banner"] > div,
 #focus:target [role="main"] {
   width: 94.444%;
 }
 
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.eighteen, .row .eighteen, header[role="banner"] .eighteen {
+.eighteen, .row .eighteen {
   width: 100%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-one, header[role="banner"] .offset-by-one {
+.row .offset-by-one {
   margin-left: 5.556%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-two, header[role="banner"] .offset-by-two {
+.row .offset-by-two {
   margin-left: 11.111%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-three, header[role="banner"] .offset-by-three {
+.row .offset-by-three {
   margin-left: 16.667%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-four, header[role="banner"] .offset-by-four {
+.row .offset-by-four {
   margin-left: 22.222%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-five, header[role="banner"] .offset-by-five {
+.row .offset-by-five {
   margin-left: 27.778%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-six, header[role="banner"] .offset-by-six {
+.row .offset-by-six {
   margin-left: 33.333%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-seven, header[role="banner"] .offset-by-seven {
+.row .offset-by-seven {
   margin-left: 38.889%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-eight, header[role="banner"] .offset-by-eight {
+.row .offset-by-eight {
   margin-left: 44.444%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-nine, header[role="banner"] .offset-by-nine {
+.row .offset-by-nine {
   margin-left: 50%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-ten, header[role="banner"] .offset-by-ten {
+.row .offset-by-ten {
   margin-left: 55.556%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-eleven, header[role="banner"] .offset-by-eleven {
+.row .offset-by-eleven {
   margin-left: 61.111%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-twelve, header[role="banner"] .offset-by-twelve {
+.row .offset-by-twelve {
   margin-left: 66.667%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-thirteen, header[role="banner"] .offset-by-thirteen {
+.row .offset-by-thirteen {
   margin-left: 72.222%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-fourteen, header[role="banner"] .offset-by-fourteen {
+.row .offset-by-fourteen {
   margin-left: 77.778%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-fifteen, header[role="banner"] .offset-by-fifteen {
+.row .offset-by-fifteen {
   margin-left: 83.333%;
 }
 
 /* line 36, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row .offset-by-sixteen, header[role="banner"] .offset-by-sixteen {
+.row .offset-by-sixteen {
   margin-left: 88.889%;
 }
 
@@ -341,7 +341,7 @@ p a, p a:visited {
 }
 
 /* line 42, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.push-three, header[role="banner"] > div, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"] {
+.push-three, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"] {
   left: 16.667%;
 }
 
@@ -498,16 +498,16 @@ img {
 
 /* Nicolas Gallagher's micro clearfix */
 /* line 51, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-.row, header[role="banner"] {
+.row {
   *zoom: 1;
 }
 /* line 4, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/mixins/_clearfix.scss */
-.row:before, header[role="banner"]:before, .row:after, header[role="banner"]:after {
+.row:before, .row:after {
   content: "";
   display: table;
 }
 /* line 5, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/mixins/_clearfix.scss */
-.row:after, header[role="banner"]:after {
+.row:after {
   clear: both;
 }
 
@@ -526,7 +526,7 @@ img {
   }
 
   /* line 58, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row, header[role="banner"] {
+  .row {
     width: auto;
     min-width: 0;
     margin-left: 0;
@@ -534,13 +534,13 @@ img {
   }
 
   /* line 59, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .column, header[role="banner"] > div, nav[role="navigation"], [role="main"], footer, .columns {
+  .column, nav[role="navigation"], [role="main"], footer, .columns {
     width: auto !important;
     float: none;
   }
 
   /* line 60, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .column:last-child, header[role="banner"] > div:last-child, nav[role="navigation"]:last-child, [role="main"]:last-child, footer:last-child, .columns:last-child {
+  .column:last-child, nav[role="navigation"]:last-child, [role="main"]:last-child, footer:last-child, .columns:last-child {
     float: none;
   }
 
@@ -550,13 +550,13 @@ img {
   }
 
   /* line 62, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .column:before, header[role="banner"] > div:before, nav[role="navigation"]:before, [role="main"]:before, footer:before, .columns:before, .column:after, header[role="banner"] > div:after, nav[role="navigation"]:after, [role="main"]:after, footer:after, .columns:after {
+  .column:before, nav[role="navigation"]:before, [role="main"]:before, footer:before, .columns:before, .column:after, nav[role="navigation"]:after, [role="main"]:after, footer:after, .columns:after {
     content: "";
     display: table;
   }
 
   /* line 63, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .column:after, header[role="banner"] > div:after, nav[role="navigation"]:after, [role="main"]:after, footer:after, .columns:after {
+  .column:after, nav[role="navigation"]:after, [role="main"]:after, footer:after, .columns:after {
     clear: both;
   }
 
@@ -566,7 +566,7 @@ img {
   }
 
   /* line 67, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .push-two, .push-three, header[role="banner"] > div, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"], .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten, .push-eleven, .push-twelve, .push-thirteen, .push-fourteen, .push-fifteen, .push-sixteen {
+  .push-two, .push-three, [role="main"], footer, #focus:target nav[role="navigation"]:hover + [role="main"], .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten, .push-eleven, .push-twelve, .push-thirteen, .push-fourteen, .push-fifteen, .push-sixteen {
     left: auto;
   }
 
@@ -577,62 +577,62 @@ img {
 
   /* Mobile 4-column Grid */
   /* line 81, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-one, header[role="banner"] .mobile-one {
+  .row .mobile-one {
     width: 25% !important;
     float: left;
     padding: 0 15px;
   }
   /* line 82, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-one:last-child, header[role="banner"] .mobile-one:last-child {
+  .row .mobile-one:last-child {
     float: right;
   }
   /* line 85, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row.collapse .mobile-one, header.collapse[role="banner"] .mobile-one {
+  .row.collapse .mobile-one {
     padding: 0;
   }
 
   /* line 81, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-two, header[role="banner"] .mobile-two {
+  .row .mobile-two {
     width: 50% !important;
     float: left;
     padding: 0 15px;
   }
   /* line 82, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-two:last-child, header[role="banner"] .mobile-two:last-child {
+  .row .mobile-two:last-child {
     float: right;
   }
   /* line 85, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row.collapse .mobile-two, header.collapse[role="banner"] .mobile-two {
+  .row.collapse .mobile-two {
     padding: 0;
   }
 
   /* line 81, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-three, header[role="banner"] .mobile-three {
+  .row .mobile-three {
     width: 75% !important;
     float: left;
     padding: 0 15px;
   }
   /* line 82, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-three:last-child, header[role="banner"] .mobile-three:last-child {
+  .row .mobile-three:last-child {
     float: right;
   }
   /* line 85, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row.collapse .mobile-three, header.collapse[role="banner"] .mobile-three {
+  .row.collapse .mobile-three {
     padding: 0;
   }
 
   /* line 81, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-four, header[role="banner"] .mobile-four {
+  .row .mobile-four {
     width: 100% !important;
     float: left;
     padding: 0 15px;
   }
   /* line 82, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row .mobile-four:last-child, header[role="banner"] .mobile-four:last-child {
+  .row .mobile-four:last-child {
     float: right;
   }
   /* line 85, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/_grid.scss */
-  .row.collapse .mobile-four, header.collapse[role="banner"] .mobile-four {
+  .row.collapse .mobile-four {
     padding: 0;
   }
 
@@ -3495,36 +3495,38 @@ header[role="banner"] {
   border-bottom: 1px solid #373737;
   color: #fffffd;
   position: relative;
+  z-index: 100;
 }
-/* line 9, ../sass/_header.scss */
+/* line 11, ../sass/_header.scss */
 header[role="banner"] > div {
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
+  height: 40px;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  height: 40px;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
 }
-/* line 24, ../sass/_header.scss */
+/* line 17, ../sass/_header.scss */
+header[role="banner"] h1, header[role="banner"] nav {
+  display: inline;
+}
+/* line 18, ../sass/_header.scss */
 header[role="banner"] h1 {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 40px;
-  position: absolute;
   margin: 0;
   text-transform: lowercase;
-  top: 0;
-  z-index: 20;
 }
-/* line 34, ../sass/_header.scss */
+/* line 23, ../sass/_header.scss */
 header[role="banner"] h1 a {
   color: inherit;
   min-width: 42px;
 }
-/* line 38, ../sass/_header.scss */
+/* line 27, ../sass/_header.scss */
 header[role="banner"] h1 i {
   font-size: 28px;
   font-size: 2.8rem;
@@ -3533,45 +3535,40 @@ header[role="banner"] h1 i {
   line-height: 42px;
   position: absolute;
 }
-/* line 45, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 header[role="banner"] h1 i + span {
   padding-left: 42px;
 }
-/* line 51, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 header[role="banner"] form[role="search"] fieldset {
   display: inline;
   padding: 8px 0 0;
   border: 0;
 }
-/* line 56, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 header[role="banner"] form[role="search"] input[type="search"] {
   background: #fffffd;
 }
-/* line 60, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 header[role="banner"] nav {
   float: right;
   height: 40px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 10;
 }
-/* line 68, ../sass/_header.scss */
+/* line 52, ../sass/_header.scss */
 header[role="banner"] nav .settings {
   width: 100%;
   right: 0;
   text-align: right;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 73, ../sass/_header.scss */
+/* line 57, ../sass/_header.scss */
 header[role="banner"] nav .settings dt {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   vertical-align: middle;
 }
-/* line 78, ../sass/_header.scss */
+/* line 62, ../sass/_header.scss */
 header[role="banner"] nav .settings dt a {
   display: inline-block;
   color: inherit;
@@ -3581,44 +3578,44 @@ header[role="banner"] nav .settings dt a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 86, ../sass/_header.scss */
+/* line 70, ../sass/_header.scss */
 header[role="banner"] nav .settings dt a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
-/* line 93, ../sass/_header.scss */
+/* line 77, ../sass/_header.scss */
 header[role="banner"] nav .settings dt a > span {
   display: none;
   float: right;
 }
-/* line 97, ../sass/_header.scss */
+/* line 81, ../sass/_header.scss */
 header[role="banner"] nav .settings dt a:hover, header[role="banner"] nav .settings dt a:active {
   background: #373737;
 }
-/* line 101, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
 header[role="banner"] nav .settings dt + dd:target {
   display: block;
 }
-/* line 104, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 header[role="banner"] nav .settings dt.last {
   border-right: 0;
 }
-/* line 108, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 header[role="banner"] nav .settings dt.user a {
   padding: 0;
 }
-/* line 110, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 header[role="banner"] nav .settings dt.user a > img {
   height: 40px;
   width: 40px;
 }
-/* line 114, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 header[role="banner"] nav .settings dt.user a > span {
   padding: 0 10px;
 }
-/* line 120, ../sass/_header.scss */
+/* line 104, ../sass/_header.scss */
 header[role="banner"] nav .settings dd {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -3630,7 +3627,7 @@ header[role="banner"] nav .settings dd {
   width: 100%;
 }
 
-/* line 132, ../sass/_header.scss */
+/* line 116, ../sass/_header.scss */
 #molajo-settings,
 #user,
 #search {
@@ -3642,17 +3639,17 @@ header[role="banner"] nav .settings dd {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 146, ../sass/_header.scss */
+  /* line 130, ../sass/_header.scss */
   header[role="banner"] nav dt.user a > span {
     display: inline;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 156, ../sass/_header.scss */
+  /* line 140, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 159, ../sass/_header.scss */
+  /* line 143, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
@@ -3688,14 +3685,13 @@ nav[role="navigation"] {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 0;
-  padding-top: 41px;
+  top: 41px;
 }
-/* line 53, ../sass/_menu.scss */
+/* line 56, ../sass/_menu.scss */
 nav[role="navigation"] a {
   position: relative;
 }
-/* line 55, ../sass/_menu.scss */
+/* line 58, ../sass/_menu.scss */
 nav[role="navigation"] a + span {
   content: "";
   display: block;
@@ -3716,7 +3712,7 @@ nav[role="navigation"] a + span {
   position: absolute;
   z-index: 10;
 }
-/* line 63, ../sass/_menu.scss */
+/* line 66, ../sass/_menu.scss */
 nav[role="navigation"] a + span > span {
   content: "";
   display: block;
@@ -3736,20 +3732,20 @@ nav[role="navigation"] a + span > span {
   position: absolute;
   top: -12px;
 }
-/* line 72, ../sass/_menu.scss */
+/* line 75, ../sass/_menu.scss */
 nav[role="navigation"] a:hover {
   background: #004848;
 }
-/* line 75, ../sass/_menu.scss */
+/* line 78, ../sass/_menu.scss */
 nav[role="navigation"] a:hover + span > span {
   border-top-color: #004848;
 }
-/* line 83, ../sass/_menu.scss */
+/* line 86, ../sass/_menu.scss */
 nav[role="navigation"] ul,
 nav[role="navigation"] dl {
   margin: 0;
 }
-/* line 84, ../sass/_menu.scss */
+/* line 87, ../sass/_menu.scss */
 nav[role="navigation"] i {
   font-size: 18px;
   font-size: 1.8rem;
@@ -3760,29 +3756,29 @@ nav[role="navigation"] i {
   margin-right: 8px;
   text-align: center;
 }
-/* line 94, ../sass/_menu.scss */
+/* line 97, ../sass/_menu.scss */
 nav[role="navigation"] i:before {
   content: attr(data-icon);
 }
-/* line 99, ../sass/_menu.scss */
+/* line 102, ../sass/_menu.scss */
 nav[role="navigation"] ul {
   list-style-type: none;
 }
-/* line 104, ../sass/_menu.scss */
+/* line 107, ../sass/_menu.scss */
 nav[role="navigation"] .level-one > dt + dd {
   display: none;
 }
-/* line 109, ../sass/_menu.scss */
+/* line 112, ../sass/_menu.scss */
 nav[role="navigation"] .level-one > dt.current + dd, nav[role="navigation"] .level-one > dt:target + dd {
   display: block;
 }
-/* line 118, ../sass/_menu.scss */
+/* line 121, ../sass/_menu.scss */
 nav[role="navigation"] .level-one,
 nav[role="navigation"] .level-two,
 nav[role="navigation"] .level-three {
   position: relative;
 }
-/* line 120, ../sass/_menu.scss */
+/* line 123, ../sass/_menu.scss */
 nav[role="navigation"] .level-one dt, nav[role="navigation"] .level-one li,
 nav[role="navigation"] .level-two dt,
 nav[role="navigation"] .level-two li,
@@ -3790,36 +3786,36 @@ nav[role="navigation"] .level-three dt,
 nav[role="navigation"] .level-three li {
   position: relative;
 }
-/* line 125, ../sass/_menu.scss */
+/* line 128, ../sass/_menu.scss */
 nav[role="navigation"] .level-one ul a {
   padding-left: 42px;
 }
-/* line 131, ../sass/_menu.scss */
+/* line 134, ../sass/_menu.scss */
 nav[role="navigation"] .level-one a,
 nav[role="navigation"] .level-two a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   white-space: nowrap;
 }
-/* line 138, ../sass/_menu.scss */
+/* line 141, ../sass/_menu.scss */
 nav[role="navigation"] .level-one {
   background: #004848;
 }
-/* line 140, ../sass/_menu.scss */
+/* line 143, ../sass/_menu.scss */
 nav[role="navigation"] .level-one > dt:first-child a,
 nav[role="navigation"] .level-one > li:first-child a {
   border-top: 0;
 }
-/* line 143, ../sass/_menu.scss */
+/* line 146, ../sass/_menu.scss */
 nav[role="navigation"] .level-one > :target > a + span, nav[role="navigation"] .level-one > .current > a + span {
   border-top-color: #003e3e;
   display: block;
 }
-/* line 146, ../sass/_menu.scss */
+/* line 149, ../sass/_menu.scss */
 nav[role="navigation"] .level-one > :target > a + span > span, nav[role="navigation"] .level-one > .current > a + span > span {
   border-top-color: #004848;
 }
-/* line 154, ../sass/_menu.scss */
+/* line 157, ../sass/_menu.scss */
 nav[role="navigation"] .level-two,
 nav[role="navigation"] .level-three {
   -webkit-transition: all 1s;
@@ -3829,47 +3825,47 @@ nav[role="navigation"] .level-three {
   background: #005d5d;
   margin-bottom: 0;
 }
-/* line 159, ../sass/_menu.scss */
+/* line 162, ../sass/_menu.scss */
 nav[role="navigation"] .level-two a + span,
 nav[role="navigation"] .level-three a + span {
   top: 0;
 }
-/* line 161, ../sass/_menu.scss */
+/* line 164, ../sass/_menu.scss */
 nav[role="navigation"] .level-two a + span > span,
 nav[role="navigation"] .level-three a + span > span {
   border-top-color: #005d5d;
 }
-/* line 165, ../sass/_menu.scss */
+/* line 168, ../sass/_menu.scss */
 nav[role="navigation"] .level-two:target,
 nav[role="navigation"] .level-three:target {
   display: block;
 }
-/* line 167, ../sass/_menu.scss */
+/* line 170, ../sass/_menu.scss */
 nav[role="navigation"] .level-two:target a + span,
 nav[role="navigation"] .level-three:target a + span {
   display: block;
 }
-/* line 171, ../sass/_menu.scss */
+/* line 174, ../sass/_menu.scss */
 nav[role="navigation"] .level-two :hover + :target li a + span,
 nav[role="navigation"] .level-three :hover + :target li a + span {
   border-top-color: #003e3e;
 }
-/* line 173, ../sass/_menu.scss */
+/* line 176, ../sass/_menu.scss */
 nav[role="navigation"] .level-two :hover + :target li a + span > span,
 nav[role="navigation"] .level-three :hover + :target li a + span > span {
   border-top-color: #004848;
 }
-/* line 177, ../sass/_menu.scss */
+/* line 180, ../sass/_menu.scss */
 nav[role="navigation"] .level-two :target li:hover a + span,
 nav[role="navigation"] .level-three :target li:hover a + span {
   border-top-color: #003939;
 }
-/* line 181, ../sass/_menu.scss */
+/* line 184, ../sass/_menu.scss */
 nav[role="navigation"] .level-three {
   display: none;
   background: #006767;
 }
-/* line 185, ../sass/_menu.scss */
+/* line 188, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li a {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3882,12 +3878,12 @@ nav[role="navigation"] .level-three li a {
   margin: 0 30px;
   padding: 4px 10px;
 }
-/* line 192, ../sass/_menu.scss */
+/* line 195, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li a.add {
   background-color: #04a4a5;
   position: relative;
 }
-/* line 195, ../sass/_menu.scss */
+/* line 198, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li a.add:after {
   font-size: 12px;
   font-size: 1.2rem;
@@ -3896,7 +3892,7 @@ nav[role="navigation"] .level-three li a.add:after {
   right: 8px;
   top: 4px;
 }
-/* line 202, ../sass/_menu.scss */
+/* line 205, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li a.add:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(60%, rgba(255, 255, 255, 0.2)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 60%);
@@ -3904,7 +3900,7 @@ nav[role="navigation"] .level-three li a.add:hover {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 60%);
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 60%);
 }
-/* line 206, ../sass/_menu.scss */
+/* line 209, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li a:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(4, 164, 165, 0)), color-stop(60%, rgba(4, 164, 165, 0.2)));
   background-image: -webkit-linear-gradient(rgba(4, 164, 165, 0), rgba(4, 164, 165, 0.2) 60%);
@@ -3912,19 +3908,19 @@ nav[role="navigation"] .level-three li a:hover {
   background-image: -o-linear-gradient(rgba(4, 164, 165, 0), rgba(4, 164, 165, 0.2) 60%);
   background-image: linear-gradient(rgba(4, 164, 165, 0), rgba(4, 164, 165, 0.2) 60%);
 }
-/* line 210, ../sass/_menu.scss */
+/* line 213, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li {
   padding: 6px 0;
 }
-/* line 212, ../sass/_menu.scss */
+/* line 215, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li:first-child {
   padding-top: 20px;
 }
-/* line 215, ../sass/_menu.scss */
+/* line 218, ../sass/_menu.scss */
 nav[role="navigation"] .level-three li:last-child {
   padding-bottom: 20px;
 }
-/* line 220, ../sass/_menu.scss */
+/* line 223, ../sass/_menu.scss */
 nav[role="navigation"] a {
   -webkit-transition-property: width, color;
   -moz-transition-property: width, color;
@@ -3938,12 +3934,12 @@ nav[role="navigation"] a {
   display: block;
   padding: 7px 8px;
 }
-/* line 226, ../sass/_menu.scss */
+/* line 229, ../sass/_menu.scss */
 nav[role="navigation"] a span {
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
 }
 
-/* line 232, ../sass/_menu.scss */
+/* line 235, ../sass/_menu.scss */
 [role="main"], footer {
   -webkit-transition-property: width;
   -moz-transition-property: width;
@@ -3955,46 +3951,46 @@ nav[role="navigation"] a span {
   transition: all 1s;
 }
 
-/* line 245, ../sass/_menu.scss */
+/* line 248, ../sass/_menu.scss */
 #focus:target nav[role="navigation"] a > span {
   display: none;
 }
-/* line 246, ../sass/_menu.scss */
+/* line 249, ../sass/_menu.scss */
 #focus:target nav[role="navigation"] i {
   width: 100%;
 }
-/* line 249, ../sass/_menu.scss */
+/* line 252, ../sass/_menu.scss */
 #focus:target nav[role="navigation"] dd {
   display: none;
 }
-/* line 253, ../sass/_menu.scss */
+/* line 256, ../sass/_menu.scss */
 #focus:target nav[role="navigation"]:hover dd {
   display: block;
 }
-/* line 258, ../sass/_menu.scss */
+/* line 261, ../sass/_menu.scss */
 #focus:target nav[role="navigation"]:hover i {
   width: 40px;
 }
-/* line 266, ../sass/_menu.scss */
+/* line 269, ../sass/_menu.scss */
 #focus:target nav[role="navigation"]:hover a > span {
   display: inline-block;
 }
-/* line 267, ../sass/_menu.scss */
+/* line 270, ../sass/_menu.scss */
 #focus:target nav[role="navigation"]:hover :target {
   display: block;
 }
-/* line 271, ../sass/_menu.scss */
+/* line 274, ../sass/_menu.scss */
 #focus:target header[role="banner"] > div,
 #focus:target [role="main"] {
   left: 5.556%;
 }
-/* line 276, ../sass/_menu.scss */
+/* line 279, ../sass/_menu.scss */
 #focus:target #expander {
   display: none;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 282, ../sass/_menu.scss */
+  /* line 285, ../sass/_menu.scss */
   nav[role="navigation"] {
     height: auto;
     overflow: visible;
@@ -4002,27 +3998,27 @@ nav[role="navigation"] a span {
     position: relative;
     z-index: 100;
   }
-  /* line 288, ../sass/_menu.scss */
+  /* line 291, ../sass/_menu.scss */
   nav[role="navigation"] dl {
     width: 100%;
     text-align: center;
   }
-  /* line 292, ../sass/_menu.scss */
+  /* line 295, ../sass/_menu.scss */
   nav[role="navigation"] dt {
     display: inline;
   }
-  /* line 294, ../sass/_menu.scss */
+  /* line 297, ../sass/_menu.scss */
   nav[role="navigation"] dt > a {
     border: 0 !important;
     display: inline-block;
     height: 40px;
     text-align: center;
   }
-  /* line 300, ../sass/_menu.scss */
+  /* line 303, ../sass/_menu.scss */
   nav[role="navigation"] dt span {
     display: none;
   }
-  /* line 303, ../sass/_menu.scss */
+  /* line 306, ../sass/_menu.scss */
   nav[role="navigation"] dt + dd {
     text-align: left;
     left: 0;
@@ -4031,28 +4027,28 @@ nav[role="navigation"] a span {
     width: 100%;
   }
 
-  /* line 314, ../sass/_menu.scss */
+  /* line 317, ../sass/_menu.scss */
   #focus:target nav[role="navigation"] i {
     width: 20px;
   }
-  /* line 317, ../sass/_menu.scss */
+  /* line 320, ../sass/_menu.scss */
   #focus:target nav[role="navigation"] dd {
     display: none;
   }
-  /* line 321, ../sass/_menu.scss */
+  /* line 324, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover dd {
     display: block;
   }
-  /* line 324, ../sass/_menu.scss */
+  /* line 327, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover i {
     width: 20px;
   }
-  /* line 327, ../sass/_menu.scss */
+  /* line 330, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover dt > a > span {
     display: none;
   }
 
-  /* line 331, ../sass/_menu.scss */
+  /* line 334, ../sass/_menu.scss */
   a#expander {
     display: none;
   }
@@ -4118,10 +4114,6 @@ a > i {
   display: inline;
 }
 
-/* line 63, ../sass/_extensions.scss */
-[role="main"] {
-  margin-top: 15px;
-}
 /* line 65, ../sass/_extensions.scss */
 [role="main"] table.grid {
   width: 100%;

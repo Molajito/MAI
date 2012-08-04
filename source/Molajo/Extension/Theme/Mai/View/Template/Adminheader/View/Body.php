@@ -22,6 +22,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 		<div>
 			<h1><a href="<?php echo $homeURL ?>"><i>"</i><span><strong>Molajo</strong> Admin Interface</span></a></h1>
 			<nav>
+				
 				<dl class="settings">
 					<dt><a href="<?php echo $pageURL ?>#search"><i>=</i><span>Search</span></a></dt
 					><dd id="search">
@@ -49,6 +50,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 					</dd>
 				</dl>
+
 			</nav>
 		</div>
     </header>
