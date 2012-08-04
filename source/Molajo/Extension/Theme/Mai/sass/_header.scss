@@ -54,11 +54,12 @@ header[role="banner"] {
 			right: 0;
 			text-align: right;
 			border-left: 1px solid rgba(0,0,0,.3);
-			dt {
+			li {
 				border-left: 1px solid rgba(255,255,255,.3);
 				border-right: 1px solid rgba(0,0,0,.3);
 				display: inline-block;
 				vertical-align: middle;
+				&:hover, &:active { background: darken($txtColor, 6); }
 				a {
 					display: inline-block;
 					color: inherit;
@@ -76,14 +77,7 @@ header[role="banner"] {
 					}
 					>span {
 						display: none;
-						float: right;
 					}
-					&:hover, &:active {
-						background: darken($txtColor, 6);
-					}
-				}
-				&+dd:target {
-					display: block;
 				}
 				&.last {
 					border-right: 0;
@@ -91,46 +85,24 @@ header[role="banner"] {
 				&.user {
 					a {
 						padding: 0;
+						text-align: left;
 						>img {
+							display: inline;
 							height: $navBarHeight;
+							vertical-align: middle;
 							width: $navBarHeight;
+
+							// Find out why the img is pushed down by 2 px
+							margin-top: -2px;
 						}
 						>span {
+							display: inline;
 							padding: 0 10px;
 						}
 					}
 				}
-			}
-			dd {
-				@include transition-property(all);
-				display: none;
-				padding: 0.5*$navBarHeight;
-				text-align: left;
-				width: 100%;
-			}
-		}
-	}
-}
-#molajo-settings,
-#user,
-#search {
-	background: darken($txtColor, 6);
-	border-top: 1px solid $black;
-	right: 0;
-	top: $navBarHeight + 1px;
-	width: 100%;
-}
-
-@media only screen and (min-width: $screenSmall) {
-	header[role="banner"] {
-		nav {
-			dt {
-				&.user {
-					a {
-						>span {
-							display: inline;
-						}
-					}
+				&.config {
+					&:hover, &:active { background: darken($mainColor, 6); }
 				}
 			}
 		}

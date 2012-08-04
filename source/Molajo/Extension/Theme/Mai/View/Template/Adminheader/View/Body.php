@@ -22,34 +22,32 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 		<div>
 			<h1><a href="<?php echo $homeURL ?>"><i>"</i><span><strong>Molajo</strong> Admin Interface</span></a></h1>
 			<nav>
-				
-				<dl class="settings">
-					<dt><a href="<?php echo $pageURL ?>#search"><i>=</i><span>Search</span></a></dt
-					><dd id="search">
-						<a href="<?php echo $pageURL ?>#" class="dismiss"><i>g</i><span>Close</span></a>
+
+				<ul class="suckerfish settings">
+					<li class="search">
+						<a href="<?php echo $pageURL ?>#search"><i>=</i><span>Search</span></a>
 						<form role="search">
 							<fieldset>
 								<input type="search" placeholder="Search Resources">
 							</fieldset>
 						</form>
-					</dd
-					><dt class="user"><a href="<?php echo $pageURL ?>#user"><img src="/source/Molajo/Extension/Theme/Mai/Images/smile.png" alt="" width="40" height="40" /><span>Babs G&ouml;sgens</span></a></dt
-					><dd id="user">
-						<a href="<?php echo $pageURL ?>#" class="dismiss"><i>g</i><span>Close</span></a>
-						<ul>
+					</li
+					><li class="user">
+						<a href="<?php echo $pageURL ?>#user">
+							<img src="/source/Molajo/Extension/Theme/Mai/Images/smile.png" alt="" with="40" height="40" />
+							<span>Babs G&ouml;sgens</span>
+						</a>
+						<ul id="user" class="right">
 							<li><a href="<?php echo $pageURL ?>#">Dropdown Item</a></li>
 							<li><a href="<?php echo $pageURL ?>#">Another Dropdown Item</a></li>
 							<li class="divider"></li>
 							<li><a href="<?php echo $pageURL ?>#">Last Item</a></li>
 						</ul>
-					</dd
-					><dt class="last"><a href="<?php echo $pageURL ?>#molajo-settings"><i>a</i><span>Settings</span></a></dt
-					><dd id="molajo-settings">
-						<a href="<?php echo $pageURL ?>#" class="dismiss"><i>g</i><span>Close</span></a>
-
-
-					</dd>
-				</dl>
+					</li
+					><li class="config last">
+						<a href="<?php echo $pageURL ?>#molajo-settings"><i>a</i><span>Settings</span></a>
+					</li>
+				</ul>
 
 			</nav>
 		</div>

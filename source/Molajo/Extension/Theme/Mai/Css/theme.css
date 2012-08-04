@@ -3395,7 +3395,7 @@ a#expander span {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings dt a > i, nav[role="navigation"] i, a > i, .add:after {
+.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings li a > i, nav[role="navigation"] i, a > i, .add:after {
   font-family: "FoundationIconsGeneral";
 }
 
@@ -3562,14 +3562,18 @@ header[role="banner"] nav .settings {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 /* line 57, ../sass/_header.scss */
-header[role="banner"] nav .settings dt {
+header[role="banner"] nav .settings li {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   display: inline-block;
   vertical-align: middle;
 }
 /* line 62, ../sass/_header.scss */
-header[role="banner"] nav .settings dt a {
+header[role="banner"] nav .settings li:hover, header[role="banner"] nav .settings li:active {
+  background: #373737;
+}
+/* line 63, ../sass/_header.scss */
+header[role="banner"] nav .settings li a {
   display: inline-block;
   color: inherit;
   height: 40px;
@@ -3578,78 +3582,50 @@ header[role="banner"] nav .settings dt a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 70, ../sass/_header.scss */
-header[role="banner"] nav .settings dt a > i {
+/* line 71, ../sass/_header.scss */
+header[role="banner"] nav .settings li a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
-/* line 77, ../sass/_header.scss */
-header[role="banner"] nav .settings dt a > span {
+/* line 78, ../sass/_header.scss */
+header[role="banner"] nav .settings li a > span {
   display: none;
-  float: right;
 }
-/* line 81, ../sass/_header.scss */
-header[role="banner"] nav .settings dt a:hover, header[role="banner"] nav .settings dt a:active {
-  background: #373737;
-}
-/* line 85, ../sass/_header.scss */
-header[role="banner"] nav .settings dt + dd:target {
-  display: block;
-}
-/* line 88, ../sass/_header.scss */
-header[role="banner"] nav .settings dt.last {
+/* line 82, ../sass/_header.scss */
+header[role="banner"] nav .settings li.last {
   border-right: 0;
 }
-/* line 92, ../sass/_header.scss */
-header[role="banner"] nav .settings dt.user a {
+/* line 86, ../sass/_header.scss */
+header[role="banner"] nav .settings li.user a {
   padding: 0;
+  text-align: left;
 }
-/* line 94, ../sass/_header.scss */
-header[role="banner"] nav .settings dt.user a > img {
+/* line 89, ../sass/_header.scss */
+header[role="banner"] nav .settings li.user a > img {
+  display: inline;
   height: 40px;
+  vertical-align: middle;
   width: 40px;
+  margin-top: -2px;
 }
 /* line 98, ../sass/_header.scss */
-header[role="banner"] nav .settings dt.user a > span {
+header[role="banner"] nav .settings li.user a > span {
+  display: inline;
   padding: 0 10px;
 }
-/* line 104, ../sass/_header.scss */
-header[role="banner"] nav .settings dd {
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  display: none;
-  padding: 20px;
-  text-align: left;
-  width: 100%;
+/* line 105, ../sass/_header.scss */
+header[role="banner"] nav .settings li.config:hover, header[role="banner"] nav .settings li.config:active {
+  background: #004848;
 }
 
-/* line 116, ../sass/_header.scss */
-#molajo-settings,
-#user,
-#search {
-  background: #373737;
-  border-top: 1px solid black;
-  right: 0;
-  top: 41px;
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* line 130, ../sass/_header.scss */
-  header[role="banner"] nav dt.user a > span {
-    display: inline;
-  }
-}
 @media only screen and (max-width: 767px) {
-  /* line 140, ../sass/_header.scss */
+  /* line 112, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 143, ../sass/_header.scss */
+  /* line 115, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
@@ -4053,6 +4029,32 @@ nav[role="navigation"] a span {
     display: none;
   }
 }
+/* line 2, ../sass/_suckerfish.scss */
+.suckerfish li {
+  position: relative;
+}
+/* line 4, ../sass/_suckerfish.scss */
+.suckerfish li a + * {
+  display: none;
+}
+/* line 8, ../sass/_suckerfish.scss */
+.suckerfish li:hover a + * {
+  background: inherit;
+  clear: both;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+/* line 16, ../sass/_suckerfish.scss */
+.suckerfish li.right {
+  right: 0;
+}
+
+/* line 29, ../sass/_suckerfish.scss */
+.suckerfish li.search:hover a + * {
+  position: relative;
+}
+
 /*
  * This stylesheet contains styling for extensions.
  *
