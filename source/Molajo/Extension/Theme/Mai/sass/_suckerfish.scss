@@ -1,0 +1,88 @@
+.suckerfish {
+	li {
+		position: relative;
+		a+* {
+			display: none;
+			text-align: left;
+			background: inherit;
+			clear: both;
+			min-width: inherit;
+			position: absolute;
+			left: 0;
+		}
+		&:hover {
+			a+* {
+				display: inline-block;
+				min-width: $navFlyoutBaseWidth;
+				width: $navFlyoutBaseWidth;
+			}
+		}
+		&.align-right {
+			a+* {
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+}
+// Additional styles and override for header suckerfish
+.suckerfish {
+	li {
+		&:hover {
+			a+* {
+				// IE and FF need a top value for absolutely positioned elements
+				top: $navBarHeight + 1px;
+				h2 {
+					color: lighten($txtColor, 20);
+					@include font-size(14);
+					padding: 5px 20px;
+				}
+			}
+			ul {
+				// ZURB Foundation override for this one
+				margin: 0;
+				list-style-type: none;
+				a {
+					color: $white;
+					display: block;
+					padding: 5px 20px;
+					border-top: 1px solid rgba(255,255,255, .2);
+					border-bottom: 1px solid rgba(0,0,0, .1);
+					&:hover {
+						background: rgba(0,0,0,.2);
+					}
+				}
+			}
+		}
+		&.search {
+			&:hover {
+				a+* {
+					position: relative;
+					top: 0;
+				}
+			}
+			a+* {
+				margin: 0;
+				width: 0.5*$navFlyoutBaseWidth;
+			}
+		}
+		&.config {
+			a+* {
+				h2 {
+					color: lighten($mainColor, 10);
+				}
+				form {
+					color: $white;
+					display: block;
+					margin: 0;
+					padding: 5px 20px;
+					border-top: 1px solid rgba(255,255,255, .2);
+					border-bottom: 1px solid rgba(0,0,0, .1);
+					&:hover {
+						// background: rgba(0,0,0,.2);
+					}					
+				}
+			}
+		}
+	}
+}

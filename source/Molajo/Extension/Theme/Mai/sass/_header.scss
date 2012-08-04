@@ -6,7 +6,7 @@ header[role="banner"] {
 	position: relative;
 
 	// Make sure dropdowns overlap left menu
-	z-index: 100;
+	z-index: 200;
 
 	>div {
 		height: $navBarHeight;
@@ -47,6 +47,7 @@ header[role="banner"] {
 		}
 	}
 	nav {
+		background: inherit;
 		float: right;
 		height: $navBarHeight;
 		.settings {
@@ -54,13 +55,14 @@ header[role="banner"] {
 			right: 0;
 			text-align: right;
 			border-left: 1px solid rgba(0,0,0,.3);
-			li {
+			>li {
+				background: inherit;
 				border-left: 1px solid rgba(255,255,255,.3);
 				border-right: 1px solid rgba(0,0,0,.3);
 				display: inline-block;
 				vertical-align: middle;
 				&:hover, &:active { background: darken($txtColor, 6); }
-				a {
+				>a {
 					display: inline-block;
 					color: inherit;
 					height: $navBarHeight;
@@ -83,7 +85,7 @@ header[role="banner"] {
 					border-right: 0;
 				}
 				&.user {
-					a {
+					>a {
 						padding: 0;
 						text-align: left;
 						>img {
@@ -114,6 +116,70 @@ header[role="banner"] {
 		h1 {
 			span {
 				display: none;
+			}
+		}
+	}
+}
+
+// settings
+[id^="application-"].reveal-modal {
+	background: $mainColor;
+	color: $white;
+	left: 0;
+	margin: 0;
+	min-height: 100%;
+	position: absolute;
+	top: $navBarHeight + 1px;
+	width: 100% !important;
+	z-index: 300;
+	.close-reveal-modal {
+		color: $white;
+		&:hover {
+			color: #aaa;
+		}
+	}
+	.vertical.tabs {
+		border-bottom: 0;
+	}
+	.contained.tabs-content {
+		>li {
+			@include border-top-radius($buttonRadius);
+			@include border-left-radius(0);
+			@include border-right-radius($buttonRadius);
+			@include border-bottom-radius($buttonRadius);
+			background: lighten($black, 30%);		
+			border: 0;
+			// Close the gap between vertical tabs and tabs-content
+			margin-left: -1px;
+			padding: 10px;
+			ul.accordion {
+				border: 0;
+				li {
+					border: 0;
+					.title {
+						// @include border-radius($buttonRadius);
+						@include font-size(14);
+						padding: 5px 20px;
+						background: transparent;
+						border-width: 1px 0;
+						border-top: 1px solid rgba(255,255,255,.3);
+						border-bottom: 1px solid rgba(0,0,0,.3);
+						line-height: $navBarHeight;
+					}
+					.content {
+						background: transparent;
+					}
+					&.active {
+						border: 0;
+						.title {
+							background: rgba(0,0,0,.2);
+						}
+						.content {
+							background: darken($white, 5%);
+							border: 0;
+						}
+					}
+				}
 			}
 		}
 	}

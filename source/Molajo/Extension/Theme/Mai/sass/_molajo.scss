@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 400;}
 /* Additional Resets */
 * {
 	font-family: Ubuntu;
-	font-weight: 400;
+	font-weight: 300;
 }
 html, body {
 	background: $offwhite;
@@ -66,4 +66,5 @@ a#expander {
 @import "menu";
 @import "suckerfish";
 @import "extensions";
+@import "buttons";
 

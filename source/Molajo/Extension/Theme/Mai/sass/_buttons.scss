@@ -1,0 +1,28 @@
+.helper-info {
+	@extend .button;
+	@extend .radius;
+	@extend .button.secondary;
+	@extend .tiny;
+	color: $white;
+	height: (ms(0) + ($formSpacing * 1.5));
+	padding: 0;
+	position: relative;
+	width: (ms(0) + ($formSpacing * 1.5));
+	small {
+		display: none;
+	}
+	i {
+		@extend .glyph;
+		@extend .glyph.general;
+		left: 0;
+		position: absolute;
+		height: (ms(0) + ($formSpacing * 1.5));
+		line-height: .6*((ms(0) + ($formSpacing * 1.5)));
+		text-align: center;
+		top: 0;
+		width: (ms(0) + ($formSpacing * 1.5));
+	}
+	&:hover {
+		color: $successColor;
+	}
+}

@@ -34,7 +34,7 @@
 // Control which common styles get compiled
 
 @import "foundation/common/typography";
-// @import "foundation/common/forms";
+@import "foundation/common/forms";
 
 // Control which components you get if customizing
 
@@ -42,8 +42,8 @@
 @import "foundation/components/modules/tabs";
 @import "foundation/components/modules/ui";
 @import "foundation/components/modules/navbar";
-// @import "foundation/components/modules/orbit";
-// @import "foundation/components/modules/reveal";
+@import "foundation/components/modules/orbit";
+@import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
 // @import "settings";
