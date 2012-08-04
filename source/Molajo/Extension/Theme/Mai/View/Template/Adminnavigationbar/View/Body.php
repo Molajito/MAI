@@ -30,29 +30,29 @@ foreach (Services::Registry()->get('Triggerdata','Adminbreadcrumbs') as $breadcr
 	<?php else: ?>
 					<ul class="level-two">
 						<li>
-							<a href="#blog"><span>Blog</span></a>
-							<ul class="level-three" id="blog">
+							<a href="#"><span>Blog</span></a>
+							<ul class="level-three">
 								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="#faqs"><span>F.A.Q.'s</span></a>
-							<ul class="level-three" id="faqs">
+							<a href="#"><span>F.A.Q.'s</span></a>
+							<ul class="level-three">
 								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="#contact"><span>Contact</span></a>
-							<ul class="level-three" id="contact">
+							<a href="#"><span>Contact</span></a>
+							<ul class="level-three">
 								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="#downloads"><span>Downloads</span></a>
-							<ul class="level-three" id="downloads">
+							<a href="#"><span>Downloads</span></a>
+							<ul class="level-three">
 								<li><a href="#"><span>Articles</span></a><span><span></span></span></li>
 								<li><a href="#"><span>Images</span></a></li>
 							</ul>
