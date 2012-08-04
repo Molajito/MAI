@@ -140,6 +140,7 @@ header[role="banner"] {
 	}
 	.vertical.tabs {
 		border-bottom: 0;
+		margin-bottom: 0;
 	}
 	.contained.tabs-content {
 		>li {
@@ -180,6 +181,16 @@ header[role="banner"] {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: $screenSmall - 1) {
+	header[role="banner"] {
+		display: block;
+		h1 {
+			span {
+				display: none;
 			}
 		}
 	}

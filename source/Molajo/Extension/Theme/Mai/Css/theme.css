@@ -4591,8 +4591,9 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
 /* line 141, ../sass/_header.scss */
 [id^="application-"].reveal-modal .vertical.tabs {
   border-bottom: 0;
+  margin-bottom: 0;
 }
-/* line 145, ../sass/_header.scss */
+/* line 146, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -4623,15 +4624,15 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   margin-left: -1px;
   padding: 10px;
 }
-/* line 155, ../sass/_header.scss */
+/* line 156, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion {
   border: 0;
 }
-/* line 157, ../sass/_header.scss */
+/* line 158, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li {
   border: 0;
 }
-/* line 159, ../sass/_header.scss */
+/* line 160, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li .title {
   font-size: 14px;
   font-size: 1.4rem;
@@ -4642,24 +4643,34 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   line-height: 40px;
 }
-/* line 169, ../sass/_header.scss */
+/* line 170, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li .content {
   background: transparent;
 }
-/* line 172, ../sass/_header.scss */
+/* line 173, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active {
   border: 0;
 }
-/* line 174, ../sass/_header.scss */
+/* line 175, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .title {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 177, ../sass/_header.scss */
+/* line 178, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .content {
   background: #f2f2f2;
   border: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 189, ../sass/_header.scss */
+  header[role="banner"] {
+    display: block;
+  }
+  /* line 192, ../sass/_header.scss */
+  header[role="banner"] h1 span {
+    display: none;
+  }
+}
 /* To Do:
  * Swap level two and three a styling
  */
