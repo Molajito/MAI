@@ -1140,7 +1140,7 @@ label.inline {
 }
 
 /* line 28, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/common/_forms.scss */
-a.button.prefix, a.prefix.helper-info, a.button.postfix, a.postfix.helper-info {
+a.button.prefix, a.prefix.form-helper, a.button.postfix, a.postfix.form-helper {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -1601,7 +1601,7 @@ form.custom .custom.disabled {
    globals.css */
 /* Normal Buttons ---------------------- */
 /* line 6, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button, button, .helper-info {
+.button, button, .form-helper {
   width: auto;
   background: #006767;
   border: 1px solid #001a1a;
@@ -1633,110 +1633,110 @@ form.custom .custom.disabled {
   /* Disabled ---------- */
 }
 /* line 9, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button:hover, button:hover, .helper-info:hover {
+.button:hover, button:hover, .form-helper:hover {
   color: white;
   background-color: #003434;
 }
 /* line 10, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button:active, button:active, .helper-info:active {
+.button:active, button:active, .form-helper:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
 /* line 11, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button:focus, button:focus, .helper-info:focus {
+.button:focus, button:focus, .form-helper:focus {
   -webkit-box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   color: white;
 }
 /* line 14, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.large, button.large, .large.helper-info {
+.button.large, button.large, .large.form-helper {
   font-size: 17px;
   padding: 15px 30px 16px;
 }
 /* line 15, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.medium, button.medium, .medium.helper-info {
+.button.medium, button.medium, .medium.form-helper {
   font-size: 14px;
 }
 /* line 16, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.small, button.small, .small.helper-info {
+.button.small, button.small, .small.form-helper {
   font-size: 11px;
   padding: 7px 14px 8px;
 }
 /* line 17, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.tiny, button.tiny, button.helper-info, .helper-info {
+.button.tiny, button.tiny, button.form-helper, .form-helper {
   font-size: 10px;
   padding: 5px 10px 6px;
 }
 /* line 18, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.expand, button.expand, .expand.helper-info {
+.button.expand, button.expand, .expand.form-helper {
   width: 100%;
   text-align: center;
 }
 /* line 21, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.primary, button.primary, .primary.helper-info {
+.button.primary, button.primary, .primary.form-helper {
   background-color: #006767;
   border: 1px solid #001a1a;
 }
 /* line 22, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.primary:hover, button.primary:hover, .primary.helper-info:hover {
+.button.primary:hover, button.primary:hover, .primary.form-helper:hover {
   background-color: #003434;
 }
 /* line 23, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.primary:focus, button.primary:focus, .primary.helper-info:focus {
+.button.primary:focus, button.primary:focus, .primary.form-helper:focus {
   -webkit-box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #006767, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 25, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.success, button.success, .success.helper-info {
+.button.success, button.success, .success.form-helper {
   background-color: #5da423;
   border: 1px solid #396516;
 }
 /* line 26, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.success:hover, button.success:hover, .success.helper-info:hover {
+.button.success:hover, button.success:hover, .success.form-helper:hover {
   background-color: #457a1a;
 }
 /* line 27, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.success:focus, button.success:focus, .success.helper-info:focus {
+.button.success:focus, button.success:focus, .success.form-helper:focus {
   -webkit-box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 29, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.alert, button.alert, .alert.helper-info {
+.button.alert, button.alert, .alert.form-helper {
   background-color: #c60f13;
   border: 1px solid #7f0a0c;
 }
 /* line 30, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.alert:hover, button.alert:hover, .alert.helper-info:hover {
+.button.alert:hover, button.alert:hover, .alert.form-helper:hover {
   background-color: #970b0e;
 }
 /* line 31, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.alert:focus, button.alert:focus, .alert.helper-info:focus {
+.button.alert:focus, button.alert:focus, .alert.form-helper:focus {
   -webkit-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 33, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.secondary, button.secondary, .helper-info {
+.button.secondary, button.secondary, .form-helper {
   background-color: #d4d4d4;
   color: #080808;
   border: 1px solid #aeaeae;
 }
 /* line 34, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.secondary:hover, button.secondary:hover, .helper-info:hover {
+.button.secondary:hover, button.secondary:hover, .form-helper:hover {
   background-color: #bbbbbb;
 }
 /* line 35, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.secondary:focus, button.secondary:focus, .helper-info:focus {
+.button.secondary:focus, button.secondary:focus, .form-helper:focus {
   -webkit-box-shadow: 0 0 5px #d4d4d4, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 5px #d4d4d4, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 5px #d4d4d4, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 39, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.radius, button.radius, button.helper-info, .helper-info {
+.button.radius, button.radius, button.form-helper, .form-helper {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1744,7 +1744,7 @@ form.custom .custom.disabled {
   border-radius: 3px;
 }
 /* line 40, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.round, button.round, .round.helper-info {
+.button.round, button.round, .round.form-helper {
   -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
   -ms-border-radius: 1000px;
@@ -1752,19 +1752,19 @@ form.custom .custom.disabled {
   border-radius: 1000px;
 }
 /* line 43, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.full-width, button.full-width, .full-width.helper-info {
+.button.full-width, button.full-width, .full-width.form-helper {
   width: 100%;
   text-align: center;
   padding-left: 0 !important;
   padding-right: !important;
 }
 /* line 44, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.left-align, button.left-align, .left-align.helper-info {
+.button.left-align, button.left-align, .left-align.form-helper {
   text-align: left;
   text-indent: 12px;
 }
 /* line 47, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled, button.disabled, .disabled.helper-info, .button[disabled], button[disabled], [disabled].helper-info {
+.button.disabled, button.disabled, .disabled.form-helper, .button[disabled], button[disabled], [disabled].form-helper {
   opacity: 0.6;
   cursor: default;
   background: #006767;
@@ -1773,48 +1773,48 @@ form.custom .custom.disabled {
   box-shadow: none;
 }
 /* line 48, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled :hover, button.disabled :hover, .disabled.helper-info :hover, .button[disabled] :hover, button[disabled] :hover, [disabled].helper-info :hover {
+.button.disabled :hover, button.disabled :hover, .disabled.form-helper :hover, .button[disabled] :hover, button[disabled] :hover, [disabled].form-helper :hover {
   background: #006767;
 }
 /* line 50, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.success, button.disabled.success, .disabled.success.helper-info, .button[disabled].success, button[disabled].success, [disabled].success.helper-info {
+.button.disabled.success, button.disabled.success, .disabled.success.form-helper, .button[disabled].success, button[disabled].success, [disabled].success.form-helper {
   background-color: #5da423;
 }
 /* line 51, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.success:hover, button.disabled.success:hover, .disabled.success.helper-info:hover, .button[disabled].success:hover, button[disabled].success:hover, [disabled].success.helper-info:hover {
+.button.disabled.success:hover, button.disabled.success:hover, .disabled.success.form-helper:hover, .button[disabled].success:hover, button[disabled].success:hover, [disabled].success.form-helper:hover {
   background-color: #5da423;
 }
 /* line 53, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.alert, button.disabled.alert, .disabled.alert.helper-info, .button[disabled].alert, button[disabled].alert, [disabled].alert.helper-info {
+.button.disabled.alert, button.disabled.alert, .disabled.alert.form-helper, .button[disabled].alert, button[disabled].alert, [disabled].alert.form-helper {
   background-color: #c60f13;
 }
 /* line 54, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.alert:hover, button.disabled.alert:hover, .disabled.alert.helper-info:hover, .button[disabled].alert:hover, button[disabled].alert:hover, [disabled].alert.helper-info:hover {
+.button.disabled.alert:hover, button.disabled.alert:hover, .disabled.alert.form-helper:hover, .button[disabled].alert:hover, button[disabled].alert:hover, [disabled].alert.form-helper:hover {
   background-color: #c60f13;
 }
 /* line 56, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary, button.disabled.secondary, .disabled.helper-info, .button[disabled].secondary, button[disabled].secondary, [disabled].helper-info {
+.button.disabled.secondary, button.disabled.secondary, .disabled.form-helper, .button[disabled].secondary, button[disabled].secondary, [disabled].form-helper {
   background-color: #d4d4d4;
 }
 /* line 57, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.disabled.secondary:hover, button.disabled.secondary:hover, .disabled.helper-info:hover, .button[disabled].secondary:hover, button[disabled].secondary:hover, [disabled].helper-info:hover {
+.button.disabled.secondary:hover, button.disabled.secondary:hover, .disabled.form-helper:hover, .button[disabled].secondary:hover, button[disabled].secondary:hover, [disabled].form-helper:hover {
   background-color: #d4d4d4;
 }
 
 /* Don't use native buttons on iOS */
 /* line 63, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-input[type=submit].button, input[type=submit].helper-info, button.button, button, button.helper-info {
+input[type=submit].button, input[type=submit].form-helper, button.button, button, button.form-helper {
   -webkit-appearance: none;
 }
 
 @media only screen and (max-width: 767px) {
   /* line 66, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button, button, .helper-info {
+  .button, button, .form-helper {
     display: block;
   }
 
   /* line 67, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  button.button, button, button.helper-info, input[type="submit"].button, input[type="submit"].helper-info {
+  button.button, button, button.form-helper, input[type="submit"].button, input[type="submit"].form-helper {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -1829,29 +1829,29 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   }
 
   /* line 73, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  input[type="submit"].tiny.button, input[type="submit"].helper-info {
+  input[type="submit"].tiny.button, input[type="submit"].form-helper {
     padding: 3px 10px 4px;
   }
 
   /* line 74, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  input[type="submit"].small.button, input[type="submit"].small.helper-info {
+  input[type="submit"].small.button, input[type="submit"].small.form-helper {
     padding: 5px 14px 6px;
   }
 
   /* line 75, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  input[type="submit"].button, input[type="submit"].helper-info, input[type=submit].medium.button, input[type=submit].medium.helper-info {
+  input[type="submit"].button, input[type="submit"].form-helper, input[type=submit].medium.button, input[type=submit].medium.form-helper {
     padding: 8px 20px 9px;
   }
 
   /* line 76, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  input[type="submit"].large.button, input[type="submit"].large.helper-info {
+  input[type="submit"].large.button, input[type="submit"].large.form-helper {
     padding: 13px 30px 14px;
   }
 }
 
 /* Buttons with Dropdowns ---------------------- */
 /* line 81, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown, button.dropdown, .dropdown.helper-info {
+.button.dropdown, button.dropdown, .dropdown.form-helper {
   position: relative;
   padding-right: 44px;
   /* Sizes */
@@ -1860,19 +1860,19 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   /* Split Dropdown Buttons */
 }
 /* line 84, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.large, button.dropdown.large, .dropdown.large.helper-info {
+.button.dropdown.large, button.dropdown.large, .dropdown.large.form-helper {
   padding-right: 60px;
 }
 /* line 85, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.small, button.dropdown.small, .dropdown.small.helper-info {
+.button.dropdown.small, button.dropdown.small, .dropdown.small.form-helper {
   padding-right: 28px;
 }
 /* line 86, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.tiny, button.dropdown.tiny, .dropdown.helper-info {
+.button.dropdown.tiny, button.dropdown.tiny, .dropdown.form-helper {
   padding-right: 20px;
 }
 /* line 89, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown:after, button.dropdown:after, .dropdown.helper-info:after {
+.button.dropdown:after, button.dropdown:after, .dropdown.form-helper:after {
   content: "";
   display: block;
   width: 0;
@@ -1885,7 +1885,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   margin-top: -2px;
 }
 /* line 90, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.large:after, button.dropdown.large:after, .dropdown.large.helper-info:after {
+.button.dropdown.large:after, button.dropdown.large:after, .dropdown.large.form-helper:after {
   content: "";
   display: block;
   width: 0;
@@ -1896,7 +1896,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   right: 30px;
 }
 /* line 91, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.small:after, button.dropdown.small:after, .dropdown.small.helper-info:after {
+.button.dropdown.small:after, button.dropdown.small:after, .dropdown.small.form-helper:after {
   content: "";
   display: block;
   width: 0;
@@ -1907,7 +1907,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   right: 14px;
 }
 /* line 92, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.tiny:after, button.dropdown.tiny:after, .dropdown.helper-info:after {
+.button.dropdown.tiny:after, button.dropdown.tiny:after, .dropdown.form-helper:after {
   content: "";
   display: block;
   width: 0;
@@ -1918,7 +1918,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   right: 10px;
 }
 /* line 95, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul, button.dropdown > ul, .dropdown.helper-info > ul {
+.button.dropdown > ul, button.dropdown > ul, .dropdown.form-helper > ul {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -1936,7 +1936,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   z-index: 40;
 }
 /* line 97, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li, button.dropdown > ul li, .dropdown.helper-info > ul li {
+.button.dropdown > ul li, button.dropdown > ul li, .dropdown.form-helper > ul li {
   cursor: pointer;
   padding: 0;
   min-height: 18px;
@@ -1946,7 +1946,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   list-style: none;
 }
 /* line 98, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li a, button.dropdown > ul li a, .dropdown.helper-info > ul li a {
+.button.dropdown > ul li a, button.dropdown > ul li a, .dropdown.form-helper > ul li a {
   display: block;
   color: #555;
   font-size: 13px;
@@ -1955,12 +1955,12 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   text-align: left;
 }
 /* line 99, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li:hover, button.dropdown > ul li:hover, .dropdown.helper-info > ul li:hover {
+.button.dropdown > ul li:hover, button.dropdown > ul li:hover, .dropdown.form-helper > ul li:hover {
   background-color: #4dffff;
   color: #222;
 }
 /* line 100, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown > ul li.divider, button.dropdown > ul li.divider, .dropdown.helper-info > ul li.divider {
+.button.dropdown > ul li.divider, button.dropdown > ul li.divider, .dropdown.form-helper > ul li.divider {
   min-height: 0;
   padding: 0;
   height: 1px;
@@ -1968,20 +1968,20 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   background: #ededed;
 }
 /* line 104, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.up > ul, button.dropdown.up > ul, .dropdown.up.helper-info > ul {
+.button.dropdown.up > ul, button.dropdown.up > ul, .dropdown.up.form-helper > ul {
   border-top: 1px solid #cccccc;
   border-bottom: none;
 }
 /* line 106, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown ul.no-hover.show-dropdown, button.dropdown ul.no-hover.show-dropdown, .dropdown.helper-info ul.no-hover.show-dropdown {
+.button.dropdown ul.no-hover.show-dropdown, button.dropdown ul.no-hover.show-dropdown, .dropdown.form-helper ul.no-hover.show-dropdown {
   display: block !important;
 }
 /* line 108, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown:hover > ul.no-hover, button.dropdown:hover > ul.no-hover, .dropdown.helper-info:hover > ul.no-hover {
+.button.dropdown:hover > ul.no-hover, button.dropdown:hover > ul.no-hover, .dropdown.form-helper:hover > ul.no-hover {
   display: none;
 }
 /* line 114, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split, button.dropdown.split, .dropdown.split.helper-info {
+.button.dropdown.split, button.dropdown.split, .dropdown.split.form-helper {
   padding: 0;
   position: relative;
   /* Sizes */
@@ -1989,27 +1989,27 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   /* Colors */
 }
 /* line 116, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split:after, button.dropdown.split:after, .dropdown.split.helper-info:after {
+.button.dropdown.split:after, button.dropdown.split:after, .dropdown.split.form-helper:after {
   display: none;
 }
 /* line 117, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split:hover, button.dropdown.split:hover, .dropdown.split.helper-info:hover {
+.button.dropdown.split:hover, button.dropdown.split:hover, .dropdown.split.form-helper:hover {
   background-color: #006767;
 }
 /* line 118, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert:hover, button.dropdown.split.alert:hover, .dropdown.split.alert.helper-info:hover {
+.button.dropdown.split.alert:hover, button.dropdown.split.alert:hover, .dropdown.split.alert.form-helper:hover {
   background-color: #c60f13;
 }
 /* line 119, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success:hover, button.dropdown.split.success:hover, .dropdown.split.success.helper-info:hover {
+.button.dropdown.split.success:hover, button.dropdown.split.success:hover, .dropdown.split.success.form-helper:hover {
   background-color: #5da423;
 }
 /* line 120, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary:hover, button.dropdown.split.secondary:hover, .dropdown.split.helper-info:hover {
+.button.dropdown.split.secondary:hover, button.dropdown.split.secondary:hover, .dropdown.split.form-helper:hover {
   background-color: #d4d4d4;
 }
 /* line 123, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > a, button.dropdown.split > a, .dropdown.split.helper-info > a {
+.button.dropdown.split > a, button.dropdown.split > a, .dropdown.split.form-helper > a {
   color: white;
   display: block;
   padding: 10px 50px 11px 20px;
@@ -2019,23 +2019,23 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   transition: background-color 0.15s ease-in-out;
 }
 /* line 124, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > a:hover, button.dropdown.split > a:hover, .dropdown.split.helper-info > a:hover {
+.button.dropdown.split > a:hover, button.dropdown.split > a:hover, .dropdown.split.form-helper > a:hover {
   background-color: #003434;
 }
 /* line 126, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large > a, button.dropdown.split.large > a, .dropdown.split.large.helper-info > a {
+.button.dropdown.split.large > a, button.dropdown.split.large > a, .dropdown.split.large.form-helper > a {
   padding: 15px 75px 16px 30px;
 }
 /* line 127, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small > a, button.dropdown.split.small > a, .dropdown.split.small.helper-info > a {
+.button.dropdown.split.small > a, button.dropdown.split.small > a, .dropdown.split.small.form-helper > a {
   padding: 7px 35px 8px 14px;
 }
 /* line 128, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny > a, button.dropdown.split.tiny > a, .dropdown.split.helper-info > a {
+.button.dropdown.split.tiny > a, button.dropdown.split.tiny > a, .dropdown.split.form-helper > a {
   padding: 5px 25px 6px 10px;
 }
 /* line 131, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span, button.dropdown.split > span, .dropdown.split.helper-info > span {
+.button.dropdown.split > span, button.dropdown.split > span, .dropdown.split.form-helper > span {
   background-color: #006767;
   position: absolute;
   right: 0;
@@ -2052,11 +2052,11 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   transition: background-color 0.15s ease-in-out;
 }
 /* line 132, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span:hover, button.dropdown.split > span:hover, .dropdown.split.helper-info > span:hover {
+.button.dropdown.split > span:hover, button.dropdown.split > span:hover, .dropdown.split.form-helper > span:hover {
   background-color: #003434;
 }
 /* line 133, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split > span:after, button.dropdown.split > span:after, .dropdown.split.helper-info > span:after {
+.button.dropdown.split > span:after, button.dropdown.split > span:after, .dropdown.split.form-helper > span:after {
   content: "";
   display: block;
   width: 0;
@@ -2070,7 +2070,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   margin-top: -2px;
 }
 /* line 135, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span:after, button.dropdown.split.secondary > span:after, .dropdown.split.helper-info > span:after {
+.button.dropdown.split.secondary > span:after, button.dropdown.split.secondary > span:after, .dropdown.split.form-helper > span:after {
   content: "";
   display: block;
   width: 0;
@@ -2079,19 +2079,19 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   border-color: #080808 transparent transparent transparent;
 }
 /* line 137, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large span, button.dropdown.split.large span, .dropdown.split.large.helper-info span {
+.button.dropdown.split.large span, button.dropdown.split.large span, .dropdown.split.large.form-helper span {
   width: 45px;
 }
 /* line 138, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small span, button.dropdown.split.small span, .dropdown.split.small.helper-info span {
+.button.dropdown.split.small span, button.dropdown.split.small span, .dropdown.split.small.form-helper span {
   width: 21px;
 }
 /* line 139, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny span, button.dropdown.split.tiny span, .dropdown.split.helper-info span {
+.button.dropdown.split.tiny span, button.dropdown.split.tiny span, .dropdown.split.form-helper span {
   width: 15px;
 }
 /* line 141, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.large span:after, button.dropdown.split.large span:after, .dropdown.split.large.helper-info span:after {
+.button.dropdown.split.large span:after, button.dropdown.split.large span:after, .dropdown.split.large.form-helper span:after {
   content: "";
   display: block;
   width: 0;
@@ -2102,7 +2102,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   margin-left: -7px;
 }
 /* line 142, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.small span:after, button.dropdown.split.small span:after, .dropdown.split.small.helper-info span:after {
+.button.dropdown.split.small span:after, button.dropdown.split.small span:after, .dropdown.split.small.form-helper span:after {
   content: "";
   display: block;
   width: 0;
@@ -2113,7 +2113,7 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   margin-left: -4px;
 }
 /* line 143, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.tiny span:after, button.dropdown.split.tiny span:after, .dropdown.split.helper-info span:after {
+.button.dropdown.split.tiny span:after, button.dropdown.split.tiny span:after, .dropdown.split.form-helper span:after {
   content: "";
   display: block;
   width: 0;
@@ -2124,34 +2124,34 @@ input[type=submit].button, input[type=submit].helper-info, button.button, button
   margin-left: -3px;
 }
 /* line 146, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert > span, button.dropdown.split.alert > span, .dropdown.split.alert.helper-info > span {
+.button.dropdown.split.alert > span, button.dropdown.split.alert > span, .dropdown.split.alert.form-helper > span {
   background-color: #c60f13;
   border-left-color: #7f0a0c;
 }
 /* line 147, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success > span, button.dropdown.split.success > span, .dropdown.split.success.helper-info > span {
+.button.dropdown.split.success > span, button.dropdown.split.success > span, .dropdown.split.success.form-helper > span {
   background-color: #5da423;
   border-left-color: #396516;
 }
 /* line 148, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > span, button.dropdown.split.secondary > span, .dropdown.split.helper-info > span {
+.button.dropdown.split.secondary > span, button.dropdown.split.secondary > span, .dropdown.split.form-helper > span {
   background-color: #d4d4d4;
   border-left-color: #aeaeae;
 }
 /* line 149, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a, button.dropdown.split.secondary > a, .dropdown.split.helper-info > a {
+.button.dropdown.split.secondary > a, button.dropdown.split.secondary > a, .dropdown.split.form-helper > a {
   color: #080808;
 }
 /* line 151, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.alert > a:hover, button.dropdown.split.alert > a:hover, .dropdown.split.alert.helper-info > a:hover, .button.dropdown.split.alert > span:hover, button.dropdown.split.alert > span:hover, .dropdown.split.alert.helper-info > span:hover {
+.button.dropdown.split.alert > a:hover, button.dropdown.split.alert > a:hover, .dropdown.split.alert.form-helper > a:hover, .button.dropdown.split.alert > span:hover, button.dropdown.split.alert > span:hover, .dropdown.split.alert.form-helper > span:hover {
   background-color: #970b0e;
 }
 /* line 152, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.success > a:hover, button.dropdown.split.success > a:hover, .dropdown.split.success.helper-info > a:hover, .button.dropdown.split.success > span:hover, button.dropdown.split.success > span:hover, .dropdown.split.success.helper-info > span:hover {
+.button.dropdown.split.success > a:hover, button.dropdown.split.success > a:hover, .dropdown.split.success.form-helper > a:hover, .button.dropdown.split.success > span:hover, button.dropdown.split.success > span:hover, .dropdown.split.success.form-helper > span:hover {
   background-color: #457a1a;
 }
 /* line 153, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-.button.dropdown.split.secondary > a:hover, button.dropdown.split.secondary > a:hover, .dropdown.split.helper-info > a:hover, .button.dropdown.split.secondary > span:hover, button.dropdown.split.secondary > span:hover, .dropdown.split.helper-info > span:hover {
+.button.dropdown.split.secondary > a:hover, button.dropdown.split.secondary > a:hover, .dropdown.split.form-helper > a:hover, .button.dropdown.split.secondary > span:hover, button.dropdown.split.secondary > span:hover, .dropdown.split.form-helper > span:hover {
   background-color: #bbbbbb;
 }
 
@@ -2183,7 +2183,7 @@ ul.button-group li:first-child {
   margin-left: 0;
 }
 /* line 166, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:first-child .button, ul.button-group.helper-info li:first-child .button, ul.button-group.radius li:first-child button, ul.button-group.helper-info li:first-child button, ul.button-group.radius li:first-child .helper-info, ul.button-group.helper-info li:first-child .helper-info, ul.button-group.radius li:first-child .button.radius, ul.button-group.helper-info li:first-child .button.radius, ul.button-group.radius li:first-child button.radius, ul.button-group.helper-info li:first-child button.radius, ul.button-group.radius li:first-child .helper-info, ul.button-group.helper-info li:first-child .helper-info, ul.button-group.radius li:first-child .button.rounded, ul.button-group.helper-info li:first-child .button.rounded, ul.button-group.radius li:first-child button.rounded, ul.button-group.helper-info li:first-child button.rounded, ul.button-group.radius li:first-child .rounded.helper-info, ul.button-group.helper-info li:first-child .rounded.helper-info {
+ul.button-group.radius li:first-child .button, ul.button-group.form-helper li:first-child .button, ul.button-group.radius li:first-child button, ul.button-group.form-helper li:first-child button, ul.button-group.radius li:first-child .form-helper, ul.button-group.form-helper li:first-child .form-helper, ul.button-group.radius li:first-child .button.radius, ul.button-group.form-helper li:first-child .button.radius, ul.button-group.radius li:first-child button.radius, ul.button-group.form-helper li:first-child button.radius, ul.button-group.radius li:first-child .form-helper, ul.button-group.form-helper li:first-child .form-helper, ul.button-group.radius li:first-child .button.rounded, ul.button-group.form-helper li:first-child .button.rounded, ul.button-group.radius li:first-child button.rounded, ul.button-group.form-helper li:first-child button.rounded, ul.button-group.radius li:first-child .rounded.form-helper, ul.button-group.form-helper li:first-child .rounded.form-helper {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -2193,11 +2193,11 @@ ul.button-group.radius li:first-child .button, ul.button-group.helper-info li:fi
   border-bottom-left-radius: 3px;
 }
 /* line 167, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li + li .button, ul.button-group.helper-info li + li .button, ul.button-group.radius li + li button, ul.button-group.helper-info li + li button, ul.button-group.radius li + li .helper-info, ul.button-group.helper-info li + li .helper-info, ul.button-group.radius li + li .button.radius, ul.button-group.helper-info li + li .button.radius, ul.button-group.radius li + li button.radius, ul.button-group.helper-info li + li button.radius, ul.button-group.radius li + li .helper-info, ul.button-group.helper-info li + li .helper-info, ul.button-group.radius li + li .button.rounded, ul.button-group.helper-info li + li .button.rounded, ul.button-group.radius li + li button.rounded, ul.button-group.helper-info li + li button.rounded, ul.button-group.radius li + li .rounded.helper-info, ul.button-group.helper-info li + li .rounded.helper-info {
+ul.button-group.radius li + li .button, ul.button-group.form-helper li + li .button, ul.button-group.radius li + li button, ul.button-group.form-helper li + li button, ul.button-group.radius li + li .form-helper, ul.button-group.form-helper li + li .form-helper, ul.button-group.radius li + li .button.radius, ul.button-group.form-helper li + li .button.radius, ul.button-group.radius li + li button.radius, ul.button-group.form-helper li + li button.radius, ul.button-group.radius li + li .form-helper, ul.button-group.form-helper li + li .form-helper, ul.button-group.radius li + li .button.rounded, ul.button-group.form-helper li + li .button.rounded, ul.button-group.radius li + li button.rounded, ul.button-group.form-helper li + li button.rounded, ul.button-group.radius li + li .rounded.form-helper, ul.button-group.form-helper li + li .rounded.form-helper {
   border-radius: 0;
 }
 /* line 168, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.radius li:last-child .button, ul.button-group.helper-info li:last-child .button, ul.button-group.radius li:last-child button, ul.button-group.helper-info li:last-child button, ul.button-group.radius li:last-child .helper-info, ul.button-group.helper-info li:last-child .helper-info, ul.button-group.radius li:last-child .button.radius, ul.button-group.helper-info li:last-child .button.radius, ul.button-group.radius li:last-child button.radius, ul.button-group.helper-info li:last-child button.radius, ul.button-group.radius li:last-child .helper-info, ul.button-group.helper-info li:last-child .helper-info, ul.button-group.radius li:last-child .button.rounded, ul.button-group.helper-info li:last-child .button.rounded, ul.button-group.radius li:last-child button.rounded, ul.button-group.helper-info li:last-child button.rounded, ul.button-group.radius li:last-child .rounded.helper-info, ul.button-group.helper-info li:last-child .rounded.helper-info {
+ul.button-group.radius li:last-child .button, ul.button-group.form-helper li:last-child .button, ul.button-group.radius li:last-child button, ul.button-group.form-helper li:last-child button, ul.button-group.radius li:last-child .form-helper, ul.button-group.form-helper li:last-child .form-helper, ul.button-group.radius li:last-child .button.radius, ul.button-group.form-helper li:last-child .button.radius, ul.button-group.radius li:last-child button.radius, ul.button-group.form-helper li:last-child button.radius, ul.button-group.radius li:last-child .form-helper, ul.button-group.form-helper li:last-child .form-helper, ul.button-group.radius li:last-child .button.rounded, ul.button-group.form-helper li:last-child .button.rounded, ul.button-group.radius li:last-child button.rounded, ul.button-group.form-helper li:last-child button.rounded, ul.button-group.radius li:last-child .rounded.form-helper, ul.button-group.form-helper li:last-child .rounded.form-helper {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -2207,7 +2207,7 @@ ul.button-group.radius li:last-child .button, ul.button-group.helper-info li:las
   border-bottom-right-radius: 3px;
 }
 /* line 172, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.rounded li:first-child .button, ul.button-group.rounded li:first-child button, ul.button-group.rounded li:first-child .helper-info, ul.button-group.rounded li:first-child .button.radius, ul.button-group.rounded li:first-child button.radius, ul.button-group.rounded li:first-child .helper-info, ul.button-group.rounded li:first-child .button.rounded, ul.button-group.rounded li:first-child button.rounded, ul.button-group.rounded li:first-child .rounded.helper-info {
+ul.button-group.rounded li:first-child .button, ul.button-group.rounded li:first-child button, ul.button-group.rounded li:first-child .form-helper, ul.button-group.rounded li:first-child .button.radius, ul.button-group.rounded li:first-child button.radius, ul.button-group.rounded li:first-child .form-helper, ul.button-group.rounded li:first-child .button.rounded, ul.button-group.rounded li:first-child button.rounded, ul.button-group.rounded li:first-child .rounded.form-helper {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -2217,11 +2217,11 @@ ul.button-group.rounded li:first-child .button, ul.button-group.rounded li:first
   border-bottom-left-radius: 1000px;
 }
 /* line 173, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.rounded li + li .button, ul.button-group.rounded li + li button, ul.button-group.rounded li + li .helper-info, ul.button-group.rounded li + li .button.radius, ul.button-group.rounded li + li button.radius, ul.button-group.rounded li + li .helper-info, ul.button-group.rounded li + li .button.rounded, ul.button-group.rounded li + li button.rounded, ul.button-group.rounded li + li .rounded.helper-info {
+ul.button-group.rounded li + li .button, ul.button-group.rounded li + li button, ul.button-group.rounded li + li .form-helper, ul.button-group.rounded li + li .button.radius, ul.button-group.rounded li + li button.radius, ul.button-group.rounded li + li .form-helper, ul.button-group.rounded li + li .button.rounded, ul.button-group.rounded li + li button.rounded, ul.button-group.rounded li + li .rounded.form-helper {
   border-radius: 0;
 }
 /* line 174, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.rounded li:last-child .button, ul.button-group.rounded li:last-child button, ul.button-group.rounded li:last-child .helper-info, ul.button-group.rounded li:last-child .button.radius, ul.button-group.rounded li:last-child button.radius, ul.button-group.rounded li:last-child .helper-info, ul.button-group.rounded li:last-child .button.rounded, ul.button-group.rounded li:last-child button.rounded, ul.button-group.rounded li:last-child .rounded.helper-info {
+ul.button-group.rounded li:last-child .button, ul.button-group.rounded li:last-child button, ul.button-group.rounded li:last-child .form-helper, ul.button-group.rounded li:last-child .button.radius, ul.button-group.rounded li:last-child button.radius, ul.button-group.rounded li:last-child .form-helper, ul.button-group.rounded li:last-child .button.rounded, ul.button-group.rounded li:last-child button.rounded, ul.button-group.rounded li:last-child .rounded.form-helper {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -2231,7 +2231,7 @@ ul.button-group.rounded li:last-child .button, ul.button-group.rounded li:last-c
   border-bottom-right-radius: 1000px;
 }
 /* line 178, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-ul.button-group.even a.button, ul.button-group.even a.helper-info {
+ul.button-group.even a.button, ul.button-group.even a.form-helper {
   width: 100%;
 }
 /* line 179, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
@@ -2257,28 +2257,28 @@ ul.button-group.even.five-up li {
 
 @media only screen and (max-width: 767px) {
   /* line 189, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group button.button, .button-group button, .button-group input[type="submit"].button, .button-group input[type="submit"].helper-info {
+  .button-group button.button, .button-group button, .button-group input[type="submit"].button, .button-group input[type="submit"].form-helper {
     width: auto;
     padding: 10px 20px 11px;
   }
   /* line 190, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group button.button.large, .button-group button.large, .button-group input[type="submit"].button.large, .button-group input[type="submit"].large.helper-info {
+  .button-group button.button.large, .button-group button.large, .button-group input[type="submit"].button.large, .button-group input[type="submit"].large.form-helper {
     padding: 15px 30px 16px;
   }
   /* line 191, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group button.button.medium, .button-group button.medium, .button-group input[type="submit"].button.medium, .button-group input[type="submit"].medium.helper-info {
+  .button-group button.button.medium, .button-group button.medium, .button-group input[type="submit"].button.medium, .button-group input[type="submit"].medium.form-helper {
     padding: 10px 20px 11px;
   }
   /* line 192, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group button.button.small, .button-group button.small, .button-group input[type="submit"].button.small, .button-group input[type="submit"].small.helper-info {
+  .button-group button.button.small, .button-group button.small, .button-group input[type="submit"].button.small, .button-group input[type="submit"].small.form-helper {
     padding: 7px 14px 8px;
   }
   /* line 193, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group button.button.tiny, .button-group button.tiny, .button-group button.helper-info, .button-group input[type="submit"].button.tiny, .button-group input[type="submit"].helper-info {
+  .button-group button.button.tiny, .button-group button.tiny, .button-group button.form-helper, .button-group input[type="submit"].button.tiny, .button-group input[type="submit"].form-helper {
     padding: 5px 10px 6px;
   }
   /* line 195, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_buttons.scss */
-  .button-group.even button.button, .button-group.even button, .button-group.even input[type="submit"].button, .button-group.even input[type="submit"].helper-info {
+  .button-group.even button.button, .button-group.even button, .button-group.even input[type="submit"].button, .button-group.even input[type="submit"].form-helper {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -2865,7 +2865,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   background: #006767;
 }
 /* line 158, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_ui.scss */
-.label.radius, .label.helper-info {
+.label.radius, .label.form-helper {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3043,18 +3043,18 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   color: #fff;
 }
 /* line 217, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_ui.scss */
-.panel.callout .button, .panel.callout button, .panel.callout .helper-info {
+.panel.callout .button, .panel.callout button, .panel.callout .form-helper {
   background: white;
   border: none;
   color: #006767;
   text-shadow: none;
 }
 /* line 219, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_ui.scss */
-.panel.callout .button:hover, .panel.callout button:hover, .panel.callout .helper-info:hover {
+.panel.callout .button:hover, .panel.callout button:hover, .panel.callout .form-helper:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 /* line 223, ../../../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/zurb-foundation-3.0.7/stylesheets/foundation/components/modules/_ui.scss */
-.panel.radius, .panel.helper-info {
+.panel.radius, .panel.form-helper {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -4322,7 +4322,7 @@ a#expander span {
 
 /* CSS to style glyphs */
 /* line 40, ../sass/_icons.scss */
-.glyph, .icon, a#expander:before, header[role="banner"] h1 i, nav[role="navigation"] i, a > i, .add:after, .helper-info i {
+.glyph, .icon, a#expander:before, header[role="banner"] h1 i, nav[role="navigation"] i, a > i, .add:after, .form-helper i {
   cursor: default;
   font-size: 16px;
   font-weight: normal;
@@ -4331,23 +4331,23 @@ a#expander span {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings > li > a > i, nav[role="navigation"] i, a > i, .add:after, .helper-info i {
+.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings > li > a > i, nav[role="navigation"] i, a > i, .add:after, .form-helper i {
   font-family: "FoundationIconsGeneral";
 }
 
 /* line 42, ../sass/_icons.scss */
-.glyph.enclosed, .enclosed.icon, a.enclosed#expander:before, header[role="banner"] h1 i.enclosed, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after, .helper-info i.enclosed {
+.glyph.enclosed, .enclosed.icon, a.enclosed#expander:before, header[role="banner"] h1 i.enclosed, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after, .form-helper i.enclosed {
   font-family: "FoundationIconsGeneralEnclosed";
 }
 
 /* line 43, ../sass/_icons.scss */
-.glyph.social, .social.icon, a.social#expander:before, header[role="banner"] h1 i.social, nav[role="navigation"] i.social, a > i.social, .social.add:after, .helper-info i.social {
+.glyph.social, .social.icon, a.social#expander:before, header[role="banner"] h1 i.social, nav[role="navigation"] i.social, a > i.social, .social.add:after, .form-helper i.social {
   font-family: "FoundationIconsSocial
 	";
 }
 
 /* line 47, ../sass/_icons.scss */
-a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[role="banner"] h1 a i, a nav[role="navigation"] i, nav[role="navigation"] a i, a > i, a .add:after, a .helper-info i, .helper-info a i {
+a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[role="banner"] h1 a i, a nav[role="navigation"] i, nav[role="navigation"] a i, a > i, a .add:after, a .form-helper i, .form-helper a i {
   cursor: pointer;
 }
 
@@ -4391,37 +4391,37 @@ a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[rol
 }
 
 /* line 75, ../sass/_icons.scss */
-.glyph.resources:before, .resources.icon:before, a.resources#expander:before:before, header[role="banner"] h1 i.resources:before, nav[role="navigation"] i.resources:before, a > i.resources:before, .resources.add:before:after, .helper-info i.resources:before {
+.glyph.resources:before, .resources.icon:before, a.resources#expander:before:before, header[role="banner"] h1 i.resources:before, nav[role="navigation"] i.resources:before, a > i.resources:before, .resources.add:before:after, .form-helper i.resources:before {
   content: "j";
 }
 
 /* line 76, ../sass/_icons.scss */
-.glyph.collections:before, .collections.icon:before, a.collections#expander:before:before, header[role="banner"] h1 i.collections:before, nav[role="navigation"] i.collections:before, a > i.collections:before, .collections.add:before:after, .helper-info i.collections:before {
+.glyph.collections:before, .collections.icon:before, a.collections#expander:before:before, header[role="banner"] h1 i.collections:before, nav[role="navigation"] i.collections:before, a > i.collections:before, .collections.add:before:after, .form-helper i.collections:before {
   content: "8";
 }
 
 /* line 77, ../sass/_icons.scss */
-.glyph.data-dictionary:before, .data-dictionary.icon:before, a.data-dictionary#expander:before:before, header[role="banner"] h1 i.data-dictionary:before, nav[role="navigation"] i.data-dictionary:before, a > i.data-dictionary:before, .data-dictionary.add:before:after, .helper-info i.data-dictionary:before {
+.glyph.data-dictionary:before, .data-dictionary.icon:before, a.data-dictionary#expander:before:before, header[role="banner"] h1 i.data-dictionary:before, nav[role="navigation"] i.data-dictionary:before, a > i.data-dictionary:before, .data-dictionary.add:before:after, .form-helper i.data-dictionary:before {
   content: "3";
 }
 
 /* line 78, ../sass/_icons.scss */
-.glyph.hierarchies:before, .hierarchies.icon:before, a.hierarchies#expander:before:before, header[role="banner"] h1 i.hierarchies:before, nav[role="navigation"] i.hierarchies:before, a > i.hierarchies:before, .hierarchies.add:before:after, .helper-info i.hierarchies:before {
+.glyph.hierarchies:before, .hierarchies.icon:before, a.hierarchies#expander:before:before, header[role="banner"] h1 i.hierarchies:before, nav[role="navigation"] i.hierarchies:before, a > i.hierarchies:before, .hierarchies.add:before:after, .form-helper i.hierarchies:before {
   content: "-";
 }
 
 /* line 79, ../sass/_icons.scss */
-.glyph.access:before, .access.icon:before, a.access#expander:before:before, header[role="banner"] h1 i.access:before, nav[role="navigation"] i.access:before, a > i.access:before, .access.add:before:after, .helper-info i.access:before {
+.glyph.access:before, .access.icon:before, a.access#expander:before:before, header[role="banner"] h1 i.access:before, nav[role="navigation"] i.access:before, a > i.access:before, .access.add:before:after, .form-helper i.access:before {
   content: "o";
 }
 
 /* line 80, ../sass/_icons.scss */
-.glyph.build:before, .build.icon:before, a.build#expander:before:before, header[role="banner"] h1 i.build:before, nav[role="navigation"] i.build:before, a > i.build:before, .build.add:before:after, .helper-info i.build:before {
+.glyph.build:before, .build.icon:before, a.build#expander:before:before, header[role="banner"] h1 i.build:before, nav[role="navigation"] i.build:before, a > i.build:before, .build.add:before:after, .form-helper i.build:before {
   content: "k";
 }
 
 /* line 81, ../sass/_icons.scss */
-.glyph.settings:before, .settings.icon:before, a.settings#expander:before:before, header[role="banner"] h1 i.settings:before, nav[role="navigation"] i.settings:before, a > i.settings:before, .settings.add:before:after, .helper-info i.settings:before {
+.glyph.settings:before, .settings.icon:before, a.settings#expander:before:before, header[role="banner"] h1 i.settings:before, nav[role="navigation"] i.settings:before, a > i.settings:before, .settings.add:before:after, .form-helper i.settings:before {
   content: "a";
 }
 
@@ -4646,27 +4646,33 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
 /* line 170, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li .content {
   background: transparent;
+  color: #464646;
 }
-/* line 173, ../sass/_header.scss */
+/* line 174, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active {
   border: 0;
 }
-/* line 175, ../sass/_header.scss */
+/* line 176, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .title {
   background: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
 }
-/* line 178, ../sass/_header.scss */
+/* line 180, ../sass/_header.scss */
 [id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .content {
   background: #f2f2f2;
   border: 0;
 }
+/* line 185, ../sass/_header.scss */
+[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li h6 {
+  color: #999;
+}
 
 @media only screen and (max-width: 767px) {
-  /* line 189, ../sass/_header.scss */
+  /* line 194, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 192, ../sass/_header.scss */
+  /* line 197, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
@@ -5331,19 +5337,21 @@ a > i {
 }
 
 /* line 1, ../sass/_buttons.scss */
-.helper-info {
+.form-helper {
   color: white;
+  float: right;
   height: 32px;
   padding: 0;
   position: relative;
   width: 32px;
 }
-/* line 11, ../sass/_buttons.scss */
-.helper-info small {
+/* line 12, ../sass/_buttons.scss */
+.form-helper small {
   display: none;
 }
-/* line 14, ../sass/_buttons.scss */
-.helper-info i {
+/* line 15, ../sass/_buttons.scss */
+.form-helper i {
+  font-style: normal;
   left: 0;
   position: absolute;
   height: 32px;
@@ -5351,8 +5359,4 @@ a > i {
   text-align: center;
   top: 0;
   width: 32px;
-}
-/* line 25, ../sass/_buttons.scss */
-.helper-info:hover {
-  color: #5da423;
 }

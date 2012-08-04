@@ -169,16 +169,21 @@ header[role="banner"] {
 					}
 					.content {
 						background: transparent;
+						color: $txtColor;
 					}
 					&.active {
 						border: 0;
 						.title {
 							background: rgba(0,0,0,.2);
+							font-weight: 700;
 						}
 						.content {
 							background: darken($white, 5%);
 							border: 0;
 						}
+					}
+					h6 {
+						color: #999;
 					}
 				}
 			}

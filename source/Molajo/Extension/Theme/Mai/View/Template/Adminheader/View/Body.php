@@ -83,54 +83,55 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 					
 					<ul class="accordion">
 						<li class="active">
-							<h5 class="title"><?php echo Services::Language()->translate('Site'); ?></h5>
+							<h5 class="title"><?php echo Services::Language()->translate('Application'); ?></h5>
 							<div class="content">
 
 								<div class="row">
 									<div class="five columns">
-										<label class="right inline" for="application_name"><?php echo Services::Language()->translate('application_name'); ?></label>
+										<label class="inline" for="application_name">
+											<?php echo Services::Language()->translate('application_name'); ?>
+										</label>
 									</div>
-									<div class="ten columns">
-										<input type="text" placeholder="<?php echo Services::Language()->translate('A name for your website'); ?>" name="application_name" id="application_name" class="eight" value="Site 2" /> 
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('A name for your website'); ?>" 
+											name="application_name" 
+											id="application_name" 
+											class="eighteen" 
+											value="Site 2" />
 									</div>
-									<div class="three columns">
-										<a href="<?php echo $pageURL ?>" data-reveal-id="application_name_info" class="helper-info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></a>
-										<div id="application_name_info" class="reveal-modal">
-											This is the name of your website. It will be put in the browser title of your site and Google will use it in its search results.
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="five columns">
-										<label class="right inline" for="application_home_catalog_id"><?php echo Services::Language()->translate('application_home_catalog_id'); ?></label>
-									</div>
-									<div class="ten columns">
-										<select name="application_home_catalog_id" id="application_home_catalog_id"><option value="423"></option></select>
-									</div>
-									<div class="three columns">
-										<a href="<?php echo $pageURL ?>" data-reveal-id="application_name_info" class="helper-info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></a>
-										<div id="application_name_info" class="reveal-modal">
-											This is the name of your website. It will be put in the browser title of your site and Google will use it in its search results.
-										</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="This is the name of your website. It will be put in the browser title of your site and Google will use it in its search results."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="five columns">
-										<label class="right inline" for="application_logon_requirement"><?php echo Services::Language()->translate('application_logon_requirement'); ?></label>
+										<label class="inline" for="application_home_catalog_id"><?php echo Services::Language()->translate('application_home_catalog_id'); ?></label>
 									</div>
-									<div class="ten columns">
+									<div class="eleven columns">
+										<select name="application_home_catalog_id" id="application_home_catalog_id">
+											<option value="423">Label</option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="???"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="application_logon_requirement"><?php echo Services::Language()->translate('application_logon_requirement'); ?></label>
+									</div>
+									<div class="eleven columns">
 										<select name="application_logon_requirement" id="application_logon_requirement">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="three columns">
-										<a href="<?php echo $pageURL ?>" data-reveal-id="application_name_info" class="helper-info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></a>
-										<div id="application_name_info" class="reveal-modal">
-											This is the name of your website. It will be put in the browser title of your site and Google will use it in its search results.
-										</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="When set to Yes, users will be required to log on to get access."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
 
@@ -139,32 +140,134 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 						</li>
 						<li>
 							<h5 class="title"><?php echo Services::Language()->translate('Url'); ?></h5>
-							<dl class="content">
-								<dt><?php echo Services::Language()->translate('url_sef'); ?></dt>
-								<dd>yn (1)</dd>	
+							<div class="content">
 
-								<dt><?php echo Services::Language()->translate('url_unicode_slugs'); ?></dt>
-								<dd>yn (0)</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="url_sef">
+											<?php echo Services::Language()->translate('url_sef'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="url_sef" id="url_sef">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('url_force_ssl'); ?></dt>
-								<dd>yn (0)</dd>	
-							</dl>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="url_unicode_slugs">
+											<?php echo Services::Language()->translate('url_unicode_slugs'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="url_unicode_slugs" id="url_unicode_slugs">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="url_force_ssl">
+											<?php echo Services::Language()->translate('url_force_ssl'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="url_force_ssl" id="url_force_ssl">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+							</div>
+
 						</li>
 						<li>
 							<h5 class="title"><?php echo Services::Language()->translate('Language'); ?></h5>
-							<dl class="content">
-								<dt><?php echo Services::Language()->translate('language'); ?></dt>
-								<dd>en-GB</dd>	
+							<div class="content">
 
-								<dt><?php echo Services::Language()->translate('language_direction'); ?></dt>
-								<dd>ltr</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="language">
+											<?php echo Services::Language()->translate('language'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="language" id="language">
+											<option value="en-GB" selected="selected"><?php echo Services::Language()->translate('English (GB)'); ?></option>
+											<option value="nl-NL"><?php echo Services::Language()->translate('Dutch (NL)'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('language_multilingual'); ?></dt>
-								<dd>yn (0)</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="language_direction">
+											<?php echo Services::Language()->translate('language_direction'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="language_direction" id="language_direction">
+											<option value="rtl" selected="selected"><?php echo Services::Language()->translate('Left to Right'); ?></option>
+											<option value="ltr"><?php echo Services::Language()->translate('Right to Left'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('language_utc_offset'); ?></dt>
-								<dd>UTC</dd>	
-							</dl>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="language_multilingual">
+											<?php echo Services::Language()->translate('language_multilingual'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="language_multilingual" id="language_multilingual">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="language_utc_offset">
+											<?php echo Services::Language()->translate('language_utc_offset'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="language_utc_offset" id="language_utc_offset">
+											<option value="UTC" selected="selected"><?php echo Services::Language()->translate('UTC'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+							</div>
 						</li>
 					</ul>
 
@@ -174,37 +277,239 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 					<ul class="accordion">
 						<li class="active">
 							<h5 class="title"><?php echo Services::Language()->translate('Profiler'); ?></h5>
-							<dl class="content">
-								<dt><?php echo Services::Language()->translate('profiler'); ?></dt>
-								<dd>yn (0)</dd>	
+							<div class="content">
 
-								<dt><?php echo Services::Language()->translate('profiler_verbose'); ?></dt>
-								<dd>yn (0)</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler">
+											<?php echo Services::Language()->translate('profiler'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler" id="profiler">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_start_with'); ?></dt>
-								<dd>Initialise</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler">
+											<?php echo Services::Language()->translate('profiler_verbose'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_verbose" id="profiler_verbose">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_end_with'); ?></dt>
-								<dd>Response</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler">
+											<?php echo Services::Language()->translate('profiler_start_with'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_start_with" id="profiler_start_with">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_output'); ?></dt>
-								<dd>Actions,Application,Authorisation,Queries,Rendering,Routing,Services,Triggers</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_start_with">
+											<?php echo Services::Language()->translate('profiler_start_with'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('Initialise'); ?>" 
+											name="profiler_start_with" 
+											id="profiler_start_with" 
+											class="eighteen" 
+											value="Initialise" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_output_queries_table_registry'); ?></dt>
-								<dd>yn (0)</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_end_with">
+											<?php echo Services::Language()->translate('profiler_end_with'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('Response'); ?>" 
+											name="profiler_end_with" 
+											id="profiler_end_with" 
+											class="eighteen" 
+											value="Response" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_output_queries_sql'); ?></dt>
-								<dd>yn (0)</dd>	
+								<!-- <div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_output">
+											<?php echo Services::Language()->translate('profiler_output'); ?>
+										</label>
+									</div>
+									<div class="eleven columns"><?php
+											$outputTypes = explode(",",'Actions,Application,Authorisation,Queries,Rendering,Routing,Services,Triggers');
+											foreach ($outputTypes as $type):
+										?>
+										<label>
+											<input 
+												type="checkbox" 
+												placeholder="<?php echo Services::Language()->translate('Response'); ?>" 
+												name="profiler_output[]" 
+												id="profiler_output[]" 
+												value="<?php echo $type ?>"
+												checked="checked"/>&nbsp;<?php echo Services::Language()->translate($type); ?>
+										</label><?php
+											endforeach; ?>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div> -->
 
-								<dt><?php echo Services::Language()->translate('profiler_output_queries_query_results'); ?></dt>
-								<dd>yn (0)</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_output">
+											<?php echo Services::Language()->translate('profiler_output'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<div class="row">
+											<?php
+											$outputTypes = explode(",",'Actions,Application,Authorisation,Queries,Rendering,Routing,Services,Triggers');
+											foreach ($outputTypes as $type):
+										?>
+										<div class="five columns">
+											<label class="inline"><?php echo Services::Language()->translate($type); ?></label>
+										</div>
+										<div class="thirteen columns">
+											<select name="profiler_output_queries_table_registry" id="profiler_output_queries_table_registry">
+												<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+												<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+											</select>
+										</div>
+										<?php
+											endforeach; ?>
+										</div>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_console_template_view_id'); ?></dt>
-								<dd>1385</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_output_queries_table_registry">
+											<?php echo Services::Language()->translate('profiler_output_queries_table_registry'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_output_queries_table_registry" id="profiler_output_queries_table_registry">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-								<dt><?php echo Services::Language()->translate('profiler_console_wrap_view_id'); ?></dt>
-								<dd>2090</dd>	
-							</dl>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_output_queries_sql">
+											<?php echo Services::Language()->translate('profiler_output_queries_sql'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_output_queries_sql" id="profiler_output_queries_sql">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_output_queries_query_results">
+											<?php echo Services::Language()->translate('profiler_output_queries_query_results'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_output_queries_query_results" id="profiler_output_queries_query_results">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_console_template_view_id">
+											<?php echo Services::Language()->translate('profiler_console_template_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_console_template_view_id" id="profiler_console_template_view_id">
+											<option value="1385" selected="selected"><?php echo Services::Language()->translate('Profiler'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="profiler_console_wrap_view_id">
+											<?php echo Services::Language()->translate('profiler_console_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="profiler_console_template_view_id" id="profiler_console_wrap_view_id">
+											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+							</div>
 						</li>
 					</ul>
 
@@ -213,91 +518,264 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 					<ul class="accordion">
 						<li class="active">
-							<h5 class="title"><?php echo Services::Language()->translate('Mustache'); ?></h5>
-							<div class="content">
-								"mustache":"0",
-							</div>
-						</li>
-						<li>
 							<h5 class="title"><?php echo Services::Language()->translate('Views'); ?></h5>
 							<div class="content">
-								<ul class="block-grid two-up">
-									<li>
-										<fieldset>
-											<legend><?php echo Services::Language()->translate('Head'); ?></legend>
-											<dl>
-												<dt><?php echo Services::Language()->translate('head_template_view_id'); ?></dt>
-												<dd>1340</dd>	
 
-												<dt><?php echo Services::Language()->translate('head_wrap_view_id'); ?></dt>
-												<dd>2090</dd>	
-											</dl>
-										</fieldset>
-									</li>
-									<li>
-										<fieldset>
-											<legend><?php echo Services::Language()->translate('Defer'); ?></legend>
-											<dl>
-												<dt><?php echo Services::Language()->translate('defer_template_view_id'); ?></dt>
-												<dd>1240</dd>	
+								<h6><?php echo Services::Language()->translate('Head'); ?></h6>
 
-												<dt><?php echo Services::Language()->translate('defer_wrap_view_id'); ?></dt>
-												<dd>2090</dd>	
-											</dl>
-										</fieldset>
-									</li>
-									<li>
-										<fieldset>
-											<legend><?php echo Services::Language()->translate('Message'); ?></legend>
-											<dl>
-												<dt><?php echo Services::Language()->translate('message_template_view_id'); ?></dt>
-												<dd>1350</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="head_template_view_id">
+											<?php echo Services::Language()->translate('head_template_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="head_template_view_id" id="head_template_view_id">
+											<option value="1340" selected="selected"><?php echo Services::Language()->translate('Head'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-												<dt><?php echo Services::Language()->translate('message_wrap_view_id'); ?></dt>
-												<dd>2030</dd>	
-											</dl>
-										</fieldset>
-									</li>
-									<li>
-										<fieldset>
-											<legend><?php echo Services::Language()->translate('Offline'); ?></legend>
-											<dl>
-												<dt><?php echo Services::Language()->translate('offline_theme_id'); ?></dt>
-												<dd>9000</dd>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="head_wrap_view_id">
+											<?php echo Services::Language()->translate('head_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="head_wrap_view_id" id="head_wrap_view_id">
+											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-												<dt><?php echo Services::Language()->translate('offline_page_view_id'); ?></dt>
-												<dd>260</dd>
+								<h6><?php echo Services::Language()->translate('Defer'); ?></h6>
 
-												<dt><?php echo Services::Language()->translate('offline_message'); ?></dt>
-												<dd>This site is not available</dd>
-											</dl>
-										</fieldset>
-									</li>
-									<li>
-										<fieldset>
-											<legend><?php echo Services::Language()->translate('Error'); ?></legend>
-											<dl>
-												<dt><?php echo Services::Language()->translate('error_page_view_id'); ?></dt>
-												<dd>9000</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="defer_template_view_id">
+											<?php echo Services::Language()->translate('defer_template_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="defer_template_view_id" id="defer_template_view_id">
+											<option value="1240" selected="selected"><?php echo Services::Language()->translate('Defer'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-												<dt><?php echo Services::Language()->translate('head_wrap_view_id'); ?></dt>
-												<dd>250</dd>	
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="defer_wrap_view_id">
+											<?php echo Services::Language()->translate('defer_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="defer_wrap_view_id" id="defer_wrap_view_id">
+											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-												<dt><?php echo Services::Language()->translate('error_404_message'); ?></dt>
-												<dd>Page not found</dd>	
+								<h6><?php echo Services::Language()->translate('Message'); ?></h6>
 
-												<dt><?php echo Services::Language()->translate('error_403_message'); ?></dt>
-												<dd>Not authorised</dd>	
-											</dl>
-										</fieldset>
-									</li>
-								</ul>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="message_template_view_id">
+											<?php echo Services::Language()->translate('message_template_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="message_template_view_id" id="message_template_view_id">
+											<option value="1350" selected="selected"><?php echo Services::Language()->translate('Message'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="message_wrap_view_id">
+											<?php echo Services::Language()->translate('message_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="message_wrap_view_id" id="message_wrap_view_id">
+											<option value="2030" selected="selected"><?php echo Services::Language()->translate('Div'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<h6><?php echo Services::Language()->translate('Offline'); ?></h6>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="offline_theme_id">
+											<?php echo Services::Language()->translate('offline_theme_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="offline_theme_id" id="offline_theme_id">
+											<option value="9000" selected="selected"><?php echo Services::Language()->translate('System'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="offline_page_view_id">
+											<?php echo Services::Language()->translate('offline_page_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="offline_page_view_id" id="offline_page_view_id">
+											<option value="260" selected="selected"><?php echo Services::Language()->translate('???'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="offline_message">
+											<?php echo Services::Language()->translate('offline_message'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('This site is not available'); ?>" 
+											name="offline_message" 
+											id="offline_message" 
+											class="eighteen" 
+											value="This site is not available" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<h6><?php echo Services::Language()->translate('Error'); ?></h6>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="error_page_view_id">
+											<?php echo Services::Language()->translate('error_page_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="error_page_view_id" id="error_page_view_id">
+											<option value="9000" selected="selected"><?php echo Services::Language()->translate('System'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="head_wrap_view_id">
+											<?php echo Services::Language()->translate('head_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="head_wrap_view_id" id="head_wrap_view_id">
+											<option value="250" selected="selected"><?php echo Services::Language()->translate('???'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="error_404_message">
+											<?php echo Services::Language()->translate('error_404_message'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('Page not found'); ?>" 
+											name="error_404_message" 
+											id="error_404_message" 
+											class="eighteen" 
+											value="Page not found" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="error_403_message">
+											<?php echo Services::Language()->translate('error_403_message'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate('Not authorised'); ?>" 
+											name="error_403_message" 
+											id="error_403_message" 
+											class="eighteen" 
+											value="Not authorised" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
 							</div>
 						</li>
 						<li>
 
 							<h5 class="title"><?php echo Services::Language()->translate('Theme'); ?></h5>
 							<div class="content">
+
+								<h6><?php echo Services::Language()->translate('Theme'); ?></h6>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_theme_id">
+											<?php echo Services::Language()->translate('menuitem_theme_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_theme_id" id="menuitem_theme_id">
+											<option value="9050" selected="selected"><?php echo Services::Language()->translate('MAI'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
 
 									<ul class="block-grid two-up">
 									<li>
@@ -430,6 +908,29 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 							</div>
 							
+						</li>
+						<li>
+							<h5 class="title"><?php echo Services::Language()->translate('Mustache'); ?></h5>
+							<div class="content">
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="mustache">
+											<?php echo Services::Language()->translate('mustache'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="mustache" id="mustache">
+											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
+											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+							</div>
 						</li>
 					</ul>
 

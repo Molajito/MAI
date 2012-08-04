@@ -1,9 +1,10 @@
-.helper-info {
+.form-helper {
 	@extend .button;
 	@extend .radius;
 	@extend .button.secondary;
 	@extend .tiny;
 	color: $white;
+	float: right;
 	height: (ms(0) + ($formSpacing * 1.5));
 	padding: 0;
 	position: relative;
@@ -14,6 +15,7 @@
 	i {
 		@extend .glyph;
 		@extend .glyph.general;
+		font-style: normal;
 		left: 0;
 		position: absolute;
 		height: (ms(0) + ($formSpacing * 1.5));
@@ -23,6 +25,5 @@
 		width: (ms(0) + ($formSpacing * 1.5));
 	}
 	&:hover {
-		color: $successColor;
 	}
 }
