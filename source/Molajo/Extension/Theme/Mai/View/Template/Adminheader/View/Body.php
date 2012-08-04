@@ -776,30 +776,226 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 									</div>
 								</div>
 
+								<h6><?php echo Services::Language()->translate('Menu Item'); ?></h6>
 
-									<ul class="block-grid two-up">
-									<li>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_page_view_id">
+											<?php echo Services::Language()->translate('menuitem_page_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_page_view_id" id="menuitem_page_view_id">
+											<option value="200" selected="selected"><?php echo Services::Language()->translate('Admin'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-										<h6><?php echo Services::Language()->translate('Menu Item'); ?></h6>
-										<dl class="content">
-											<dd>
-											    "menuitem_theme_id":"9050",
-											    "menuitem_page_view_id":"200",
-											    "menuitem_page_view_css_id":"",
-											    "menuitem_page_view_css_class":"",
-											    "menuitem_template_view_id":"1030",
-											    "menuitem_template_view_css_id":"",
-											    "menuitem_template_view_css_class":"",
-											    "menuitem_wrap_view_id":"2030",
-											    "menuitem_wrap_view_css_id":"",
-											    "menuitem_wrap_view_css_class":"",
-											    "menuitem_model_name":"Content",
-											    "menuitem_model_type":"Menuitem",
-											    "menuitem_model_query_object":"List",
-						    				</dd>
-						    			</dl>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_page_view_css_id">
+											<?php echo Services::Language()->translate('menuitem_page_view_css_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_page_view_css_id" 
+											id="menuitem_page_view_css_id" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
 
-									</li>
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_page_view_css_class">
+											<?php echo Services::Language()->translate('menuitem_page_view_css_class'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_page_view_css_class" 
+											id="menuitem_page_view_css_class" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_template_view_id">
+											<?php echo Services::Language()->translate('menuitem_template_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_template_view_id" id="menuitem_template_view_id">
+											<option value="1030" selected="selected"><?php echo Services::Language()->translate('Admindashboard'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_template_view_css_id">
+											<?php echo Services::Language()->translate('menuitem_template_view_css_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_template_view_css_id" 
+											id="menuitem_template_view_css_id" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_template_view_css_class">
+											<?php echo Services::Language()->translate('menuitem_template_view_css_class'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_template_view_css_class" 
+											id="menuitem_template_view_css_class" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_wrap_view_id">
+											<?php echo Services::Language()->translate('menuitem_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_wrap_view_id" id="menuitem_wrap_view_id">
+											<option value="2030" selected="selected"><?php echo Services::Language()->translate('Div'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_wrap_view_id">
+											<?php echo Services::Language()->translate('menuitem_wrap_view_id'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_wrap_view_id" 
+											id="menuitem_wrap_view_id" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_wrap_view_css_class">
+											<?php echo Services::Language()->translate('menuitem_wrap_view_css_class'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<input 
+											type="text" 
+											placeholder="<?php echo Services::Language()->translate(''); ?>" 
+											name="menuitem_wrap_view_css_class" 
+											id="menuitem_wrap_view_css_class" 
+											class="eighteen" 
+											value="" />
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_model_name">
+											<?php echo Services::Language()->translate('menuitem_model_name'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_model_name" id="menuitem_model_name">
+											<option value="Content" selected="selected"><?php echo Services::Language()->translate('Content'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_model_type">
+											<?php echo Services::Language()->translate('menuitem_model_type'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_model_type" id="menuitem_model_type">
+											<option value="Menuitem" selected="selected"><?php echo Services::Language()->translate('Menuitem'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="five columns">
+										<label class="inline" for="menuitem_model_query_object">
+											<?php echo Services::Language()->translate('menuitem_model_query_object'); ?>
+										</label>
+									</div>
+									<div class="eleven columns">
+										<select name="menuitem_model_query_object" id="menuitem_model_query_object">
+											<option value="List" selected="selected"><?php echo Services::Language()->translate('List'); ?></option>
+										</select>
+									</div>
+									<div class="two columns">
+										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
+									</div>
+								</div>
+
+
+									<!-- <ul class="block-grid two-up">
 									<li>
 
 										<h6><?php echo Services::Language()->translate('List View'); ?></h6>
@@ -903,7 +1099,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 										</dl>
 										
 									</li>
-								</ul>
+								</ul> -->
 
 
 							</div>
