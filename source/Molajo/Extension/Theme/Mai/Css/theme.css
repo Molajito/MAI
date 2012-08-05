@@ -5140,18 +5140,34 @@ nav[role="navigation"] a span {
   margin: 0;
   width: 125px;
 }
+/* line 69, ../sass/_suckerfish.scss */
+.suckerfish li.config {
+  z-index: 400;
+}
 /* line 71, ../sass/_suckerfish.scss */
-.suckerfish li.config a + * h2 {
-  color: #009a9a;
+.suckerfish li.config .switch {
+  color: white;
+  padding: 5px 20px;
 }
 /* line 74, ../sass/_suckerfish.scss */
-.suckerfish li.config a + * form {
-  color: white;
-  display: block;
-  margin: 0;
-  padding: 5px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.suckerfish li.config .switch .button, .suckerfish li.config .switch button, .suckerfish li.config .switch .form-helper {
+  display: inline;
+}
+/* line 77, ../sass/_suckerfish.scss */
+.suckerfish li.config .switch .reveal-modal {
+  color: #464646;
+  background: whitesmoke;
+  padding: 20px;
+}
+/* line 81, ../sass/_suckerfish.scss */
+.suckerfish li.config .switch .reveal-modal .button-group {
+  background: #cccccc;
+  margin: 0 -20px -20px;
+  padding: 20px;
+}
+/* line 89, ../sass/_suckerfish.scss */
+.suckerfish li.config a + * h2 {
+  color: #009a9a;
 }
 
 /*

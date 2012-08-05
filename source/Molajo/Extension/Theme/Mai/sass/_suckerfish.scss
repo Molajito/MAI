@@ -67,21 +67,37 @@
 			}
 		}
 		&.config {
+			z-index: 400;
+			.switch {
+				color: $white;
+				padding: 5px 20px;
+				.button {
+					display: inline;
+				}
+				.reveal-modal {
+					color: $txtColor;
+					background: darken($white, 4);
+					padding: 20px;
+					.button-group {
+						background: darken($white, 20);
+						margin: 0 -20px -20px;
+						padding: 20px;
+					}
+				}
+			}
 			a+* {
 				h2 {
 					color: lighten($mainColor, 10);
 				}
-				form {
-					color: $white;
-					display: block;
-					margin: 0;
-					padding: 5px 20px;
-					border-top: 1px solid rgba(255,255,255, .2);
-					border-bottom: 1px solid rgba(0,0,0, .1);
-					&:hover {
-						// background: rgba(0,0,0,.2);
-					}					
-				}
+				// form {
+				// 	color: $white;
+				// 	margin: 0;
+				// 	border-top: 1px solid rgba(255,255,255, .2);
+				// 	border-bottom: 1px solid rgba(0,0,0, .1);
+				// 	&:hover {
+				// 		// background: rgba(0,0,0,.2);
+				// 	}					
+				// }
 			}
 		}
 	}
