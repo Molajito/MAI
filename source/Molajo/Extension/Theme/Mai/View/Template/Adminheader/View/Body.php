@@ -54,10 +54,20 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 								<li><a href="<?php echo $pageURL ?>" data-reveal-id="application-options"><?php echo Services::Language()->translate('Applications&hellip;'); ?></a></li>
 								<li class="divider"></li>
 								<li class="switch">
-									<form class="custom">
+
+									<?php echo Services::Language()->translate('This&nbsp;application&nbsp;is'); ?>&nbsp;&nbsp;<a href="<?php echo $pageURL ?>" class="tiny success radius button" data-reveal-id="offline-switch"><?php echo Services::Language()->translate('Online'); ?></a>
+									<div id="offline-switch" class="reveal-modal">
+										Clicking on 'Continue' will put this website in offline maintenance mode. <label for="offline_message">You can edit the site's offline message if you like:</label>
+
+										<form action="<?php echo $pageURL ?>" class="custom">
 										<input type="hidden" name="offline" value="1" />
-										<button class="tiny alert radius button"><?php echo Services::Language()->translate('Offline'); ?></button>
-									</form>
+
+										<textarea name="offline_message" id="offline_message" id="offline_message">This site is not available</textarea>
+
+										<button class="tiny alert button">Cancel</button><button class="tiny button">continue</button>
+										</form>
+										
+									</div>
 								</li>
 							</ul>
 						</div>
