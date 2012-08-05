@@ -105,7 +105,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('application_name'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('A name for your website'); ?>" 
@@ -114,7 +114,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="Site 2" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="This is the name of your website. It will be put in the browser title of your site and Google will use it in its search results."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -123,12 +123,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 									<div class="five columns">
 										<label class="inline" for="application_home_catalog_id"><?php echo Services::Language()->translate('application_home_catalog_id'); ?></label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="application_home_catalog_id" id="application_home_catalog_id">
 											<option value="423">Label</option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="???"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -137,13 +137,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 									<div class="five columns">
 										<label class="inline" for="application_logon_requirement"><?php echo Services::Language()->translate('application_logon_requirement'); ?></label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="application_logon_requirement" id="application_logon_requirement">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="When set to Yes, users will be required to log on to get access."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -161,13 +161,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('url_sef'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="url_sef" id="url_sef">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -178,13 +178,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('url_unicode_slugs'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="url_unicode_slugs" id="url_unicode_slugs">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -195,13 +195,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('url_force_ssl'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="url_force_ssl" id="url_force_ssl">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -219,13 +219,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('language'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="language" id="language">
 											<option value="en-GB" selected="selected"><?php echo Services::Language()->translate('English (GB)'); ?></option>
 											<option value="nl-NL"><?php echo Services::Language()->translate('Dutch (NL)'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -236,13 +236,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('language_direction'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="language_direction" id="language_direction">
 											<option value="rtl" selected="selected"><?php echo Services::Language()->translate('Left to Right'); ?></option>
 											<option value="ltr"><?php echo Services::Language()->translate('Right to Left'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -253,13 +253,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('language_multilingual'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="language_multilingual" id="language_multilingual">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -270,12 +270,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('language_utc_offset'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="language_utc_offset" id="language_utc_offset">
 											<option value="UTC" selected="selected"><?php echo Services::Language()->translate('UTC'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -298,13 +298,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler" id="profiler">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -315,13 +315,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_verbose'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_verbose" id="profiler_verbose">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -332,13 +332,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_start_with'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_start_with" id="profiler_start_with">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -349,7 +349,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_start_with'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('Initialise'); ?>" 
@@ -358,7 +358,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="Initialise" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -369,7 +369,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_end_with'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('Response'); ?>" 
@@ -378,7 +378,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="Response" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -389,7 +389,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_output'); ?>
 										</label>
 									</div>
-									<div class="eleven columns"><?php
+									<div class="twelve columns"><?php
 											$outputTypes = explode(",",'Actions,Application,Authorisation,Queries,Rendering,Routing,Services,Triggers');
 											foreach ($outputTypes as $type):
 										?>
@@ -404,7 +404,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 										</label><?php
 											endforeach; ?>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div> -->
@@ -415,7 +415,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_output'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<div class="row">
 											<?php
 											$outputTypes = explode(",",'Actions,Application,Authorisation,Queries,Rendering,Routing,Services,Triggers');
@@ -434,7 +434,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											endforeach; ?>
 										</div>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -445,13 +445,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_output_queries_table_registry'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_output_queries_table_registry" id="profiler_output_queries_table_registry">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -462,13 +462,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_output_queries_sql'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_output_queries_sql" id="profiler_output_queries_sql">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -479,13 +479,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_output_queries_query_results'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_output_queries_query_results" id="profiler_output_queries_query_results">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -496,12 +496,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_console_template_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_console_template_view_id" id="profiler_console_template_view_id">
 											<option value="1385" selected="selected"><?php echo Services::Language()->translate('Profiler'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -512,12 +512,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('profiler_console_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="profiler_console_template_view_id" id="profiler_console_wrap_view_id">
 											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -542,12 +542,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('head_template_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="head_template_view_id" id="head_template_view_id">
 											<option value="1340" selected="selected"><?php echo Services::Language()->translate('Head'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -558,12 +558,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('head_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="head_wrap_view_id" id="head_wrap_view_id">
 											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -576,12 +576,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('defer_template_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="defer_template_view_id" id="defer_template_view_id">
 											<option value="1240" selected="selected"><?php echo Services::Language()->translate('Defer'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -592,12 +592,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('defer_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="defer_wrap_view_id" id="defer_wrap_view_id">
 											<option value="2090" selected="selected"><?php echo Services::Language()->translate('None'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -610,12 +610,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('message_template_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="message_template_view_id" id="message_template_view_id">
 											<option value="1350" selected="selected"><?php echo Services::Language()->translate('Message'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -626,12 +626,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('message_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="message_wrap_view_id" id="message_wrap_view_id">
 											<option value="2030" selected="selected"><?php echo Services::Language()->translate('Div'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -644,12 +644,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('offline_theme_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="offline_theme_id" id="offline_theme_id">
 											<option value="9000" selected="selected"><?php echo Services::Language()->translate('System'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -660,12 +660,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('offline_page_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="offline_page_view_id" id="offline_page_view_id">
 											<option value="260" selected="selected"><?php echo Services::Language()->translate('???'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -676,7 +676,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('offline_message'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('This site is not available'); ?>" 
@@ -685,7 +685,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="This site is not available" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -698,12 +698,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('error_page_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="error_page_view_id" id="error_page_view_id">
 											<option value="9000" selected="selected"><?php echo Services::Language()->translate('System'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -714,12 +714,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('head_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="head_wrap_view_id" id="head_wrap_view_id">
 											<option value="250" selected="selected"><?php echo Services::Language()->translate('???'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -730,7 +730,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('error_404_message'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('Page not found'); ?>" 
@@ -739,7 +739,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="Page not found" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -750,7 +750,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('error_403_message'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate('Not authorised'); ?>" 
@@ -759,7 +759,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="Not authorised" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="The message to display when your site is offline."><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -779,12 +779,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_theme_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_theme_id" id="menuitem_theme_id">
 											<option value="9050" selected="selected"><?php echo Services::Language()->translate('MAI'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -797,12 +797,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_page_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_page_view_id" id="menuitem_page_view_id">
 											<option value="200" selected="selected"><?php echo Services::Language()->translate('Admin'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -813,7 +813,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_page_view_css_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -822,7 +822,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -833,7 +833,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_page_view_css_class'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -842,7 +842,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -853,12 +853,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_template_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_template_view_id" id="menuitem_template_view_id">
 											<option value="1030" selected="selected"><?php echo Services::Language()->translate('Admindashboard'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -869,7 +869,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_template_view_css_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -878,7 +878,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -889,7 +889,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_template_view_css_class'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -898,7 +898,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -909,12 +909,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_wrap_view_id" id="menuitem_wrap_view_id">
 											<option value="2030" selected="selected"><?php echo Services::Language()->translate('Div'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -925,7 +925,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_wrap_view_id'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -934,7 +934,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -945,7 +945,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_wrap_view_css_class'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<input 
 											type="text" 
 											placeholder="<?php echo Services::Language()->translate(''); ?>" 
@@ -954,7 +954,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											class="eighteen" 
 											value="" />
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -965,12 +965,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_model_name'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_model_name" id="menuitem_model_name">
 											<option value="Content" selected="selected"><?php echo Services::Language()->translate('Content'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -981,12 +981,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_model_type'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_model_type" id="menuitem_model_type">
 											<option value="Menuitem" selected="selected"><?php echo Services::Language()->translate('Menuitem'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -997,12 +997,12 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('menuitem_model_query_object'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="menuitem_model_query_object" id="menuitem_model_query_object">
 											<option value="List" selected="selected"><?php echo Services::Language()->translate('List'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
@@ -1128,13 +1128,13 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 											<?php echo Services::Language()->translate('mustache'); ?>
 										</label>
 									</div>
-									<div class="eleven columns">
+									<div class="twelve columns">
 										<select name="mustache" id="mustache">
 											<option value="1" selected="selected"><?php echo Services::Language()->translate('yes'); ?></option>
 											<option value="0"><?php echo Services::Language()->translate('no'); ?></option>
 										</select>
 									</div>
-									<div class="two columns">
+									<div class="one column">
 										<span class="has-tip tip-left form-helper" data-width="250" title="Tooltip info"><i>`</i><small><?php echo Services::Language()->translate('More info&hellip;'); ?></small></span>
 									</div>
 								</div>
