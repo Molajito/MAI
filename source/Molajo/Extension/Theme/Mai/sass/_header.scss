@@ -138,34 +138,43 @@ header[role="banner"] {
 			color: #aaa;
 		}
 	}
-	.vertical.tabs {
-		border-bottom: 0;
-		margin-bottom: 0;
+	.tabs {
+		@include border-top-radius(3px);
+		border-bottom: darken($mainColor, 10);
+		margin: 20px 0 0;
+		dd {
+			border: 0; // Reset
+			border-bottom: 3px solid transparent;
+			a {
+				color: $white;
+			}
+			&.active {
+				border-color: darken($mainColor, 10);
+				a {
+					background: darken($mainColor, 3);
+					border-color: darken($mainColor, 2);
+					color: $white;
+				}
+			}
+		}
 	}
-	.contained.tabs-content {
+	.tabs-content {
 		>li {
-			@include border-top-radius($buttonRadius);
-			@include border-left-radius(0);
-			@include border-right-radius($buttonRadius);
-			@include border-bottom-radius($buttonRadius);
-			background: lighten($black, 30%);		
-			border: 0;
-			// Close the gap between vertical tabs and tabs-content
-			margin-left: -1px;
-			padding: 10px;
 			ul.accordion {
 				border: 0;
 				li {
 					border: 0;
 					.title {
-						// @include border-radius($buttonRadius);
 						@include font-size(14);
+						color: $txtColor;
 						padding: 5px 20px;
-						background: transparent;
 						border-width: 1px 0;
 						border-top: 1px solid rgba(255,255,255,.3);
 						border-bottom: 1px solid rgba(0,0,0,.3);
 						line-height: $navBarHeight;
+						&:first-child {
+							border-top: darken($mainColor, 10);
+						}
 					}
 					.content {
 						background: transparent;
@@ -175,7 +184,11 @@ header[role="banner"] {
 						border: 0;
 						.title {
 							background: rgba(0,0,0,.2);
+							color: $white;
 							font-weight: 700;
+							&:after {
+								border-top-color: $white;
+							}
 						}
 						.content {
 							background: darken($white, 5%);

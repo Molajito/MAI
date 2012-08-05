@@ -4322,7 +4322,7 @@ a#expander span {
 
 /* CSS to style glyphs */
 /* line 40, ../sass/_icons.scss */
-.glyph, .icon, a#expander:before, header[role="banner"] h1 i, nav[role="navigation"] i, a > i, .add:after, .form-helper i {
+.glyph, .icon, a#expander:before, header[role="banner"] h1 i, nav[role="navigation"] i, a > i, .add:after, .form-helper i, .button.active:after, button.active:after {
   cursor: default;
   font-size: 16px;
   font-weight: normal;
@@ -4331,23 +4331,23 @@ a#expander span {
 }
 
 /* line 41, ../sass/_icons.scss */
-.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings > li > a > i, nav[role="navigation"] i, a > i, .add:after, .form-helper i {
+.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings > li > a > i, nav[role="navigation"] i, a > i, .add:after, .form-helper i, .button.active:after, button.active:after {
   font-family: "FoundationIconsGeneral";
 }
 
 /* line 42, ../sass/_icons.scss */
-.glyph.enclosed, .enclosed.icon, a.enclosed#expander:before, header[role="banner"] h1 i.enclosed, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after, .form-helper i.enclosed {
+.glyph.enclosed, .enclosed.icon, a.enclosed#expander:before, header[role="banner"] h1 i.enclosed, nav[role="navigation"] i.enclosed, a > i.enclosed, .enclosed.add:after, .form-helper i.enclosed, .enclosed.button.active:after, button.enclosed.active:after {
   font-family: "FoundationIconsGeneralEnclosed";
 }
 
 /* line 43, ../sass/_icons.scss */
-.glyph.social, .social.icon, a.social#expander:before, header[role="banner"] h1 i.social, nav[role="navigation"] i.social, a > i.social, .social.add:after, .form-helper i.social {
+.glyph.social, .social.icon, a.social#expander:before, header[role="banner"] h1 i.social, nav[role="navigation"] i.social, a > i.social, .social.add:after, .form-helper i.social, .social.button.active:after, button.social.active:after {
   font-family: "FoundationIconsSocial
 	";
 }
 
 /* line 47, ../sass/_icons.scss */
-a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[role="banner"] h1 a i, a nav[role="navigation"] i, nav[role="navigation"] a i, a > i, a .add:after, a .form-helper i, .form-helper a i {
+a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[role="banner"] h1 a i, a nav[role="navigation"] i, nav[role="navigation"] a i, a > i, a .add:after, a .form-helper i, .form-helper a i, a .button.active:after, a button.active:after {
   cursor: pointer;
 }
 
@@ -4391,37 +4391,37 @@ a .glyph, a .icon, a a#expander:before, a header[role="banner"] h1 i, header[rol
 }
 
 /* line 75, ../sass/_icons.scss */
-.glyph.resources:before, .resources.icon:before, a.resources#expander:before:before, header[role="banner"] h1 i.resources:before, nav[role="navigation"] i.resources:before, a > i.resources:before, .resources.add:before:after, .form-helper i.resources:before {
+.glyph.resources:before, .resources.icon:before, a.resources#expander:before:before, header[role="banner"] h1 i.resources:before, nav[role="navigation"] i.resources:before, a > i.resources:before, .resources.add:before:after, .form-helper i.resources:before, .resources.button.active:before:after, button.resources.active:before:after {
   content: "j";
 }
 
 /* line 76, ../sass/_icons.scss */
-.glyph.collections:before, .collections.icon:before, a.collections#expander:before:before, header[role="banner"] h1 i.collections:before, nav[role="navigation"] i.collections:before, a > i.collections:before, .collections.add:before:after, .form-helper i.collections:before {
+.glyph.collections:before, .collections.icon:before, a.collections#expander:before:before, header[role="banner"] h1 i.collections:before, nav[role="navigation"] i.collections:before, a > i.collections:before, .collections.add:before:after, .form-helper i.collections:before, .collections.button.active:before:after, button.collections.active:before:after {
   content: "8";
 }
 
 /* line 77, ../sass/_icons.scss */
-.glyph.data-dictionary:before, .data-dictionary.icon:before, a.data-dictionary#expander:before:before, header[role="banner"] h1 i.data-dictionary:before, nav[role="navigation"] i.data-dictionary:before, a > i.data-dictionary:before, .data-dictionary.add:before:after, .form-helper i.data-dictionary:before {
+.glyph.data-dictionary:before, .data-dictionary.icon:before, a.data-dictionary#expander:before:before, header[role="banner"] h1 i.data-dictionary:before, nav[role="navigation"] i.data-dictionary:before, a > i.data-dictionary:before, .data-dictionary.add:before:after, .form-helper i.data-dictionary:before, .data-dictionary.button.active:before:after, button.data-dictionary.active:before:after {
   content: "3";
 }
 
 /* line 78, ../sass/_icons.scss */
-.glyph.hierarchies:before, .hierarchies.icon:before, a.hierarchies#expander:before:before, header[role="banner"] h1 i.hierarchies:before, nav[role="navigation"] i.hierarchies:before, a > i.hierarchies:before, .hierarchies.add:before:after, .form-helper i.hierarchies:before {
+.glyph.hierarchies:before, .hierarchies.icon:before, a.hierarchies#expander:before:before, header[role="banner"] h1 i.hierarchies:before, nav[role="navigation"] i.hierarchies:before, a > i.hierarchies:before, .hierarchies.add:before:after, .form-helper i.hierarchies:before, .hierarchies.button.active:before:after, button.hierarchies.active:before:after {
   content: "-";
 }
 
 /* line 79, ../sass/_icons.scss */
-.glyph.access:before, .access.icon:before, a.access#expander:before:before, header[role="banner"] h1 i.access:before, nav[role="navigation"] i.access:before, a > i.access:before, .access.add:before:after, .form-helper i.access:before {
+.glyph.access:before, .access.icon:before, a.access#expander:before:before, header[role="banner"] h1 i.access:before, nav[role="navigation"] i.access:before, a > i.access:before, .access.add:before:after, .form-helper i.access:before, .access.button.active:before:after, button.access.active:before:after {
   content: "o";
 }
 
 /* line 80, ../sass/_icons.scss */
-.glyph.build:before, .build.icon:before, a.build#expander:before:before, header[role="banner"] h1 i.build:before, nav[role="navigation"] i.build:before, a > i.build:before, .build.add:before:after, .form-helper i.build:before {
+.glyph.build:before, .build.icon:before, a.build#expander:before:before, header[role="banner"] h1 i.build:before, nav[role="navigation"] i.build:before, a > i.build:before, .build.add:before:after, .form-helper i.build:before, .build.button.active:before:after, button.build.active:before:after {
   content: "k";
 }
 
 /* line 81, ../sass/_icons.scss */
-.glyph.settings:before, .settings.icon:before, a.settings#expander:before:before, header[role="banner"] h1 i.settings:before, nav[role="navigation"] i.settings:before, a > i.settings:before, .settings.add:before:after, .form-helper i.settings:before {
+.glyph.settings:before, .settings.icon:before, a.settings#expander:before:before, header[role="banner"] h1 i.settings:before, nav[role="navigation"] i.settings:before, a > i.settings:before, .settings.add:before:after, .form-helper i.settings:before, .settings.button.active:before:after, button.settings.active:before:after {
   content: "a";
 }
 
@@ -4589,90 +4589,93 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   color: #aaa;
 }
 /* line 141, ../sass/_header.scss */
-[id^="application-"].reveal-modal .vertical.tabs {
-  border-bottom: 0;
-  margin-bottom: 0;
-}
-/* line 146, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li {
+[id^="application-"].reveal-modal .tabs {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-radius-topright: 3px;
-  -webkit-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  background: #4d4d4d;
-  border: 0;
-  margin-left: -1px;
-  padding: 10px;
+  border-bottom: #003434;
+  margin: 20px 0 0;
 }
-/* line 156, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion {
+/* line 145, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs dd {
   border: 0;
+  border-bottom: 3px solid transparent;
 }
-/* line 158, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li {
+/* line 148, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs dd a {
+  color: white;
+}
+/* line 151, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs dd.active {
+  border-color: #003434;
+}
+/* line 153, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs dd.active a {
+  background: #005858;
+  border-color: #005d5d;
+  color: white;
+}
+/* line 163, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion {
   border: 0;
 }
-/* line 160, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li .title {
+/* line 165, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li {
+  border: 0;
+}
+/* line 167, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title {
   font-size: 14px;
   font-size: 1.4rem;
+  color: #464646;
   padding: 5px 20px;
-  background: transparent;
   border-width: 1px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   line-height: 40px;
 }
-/* line 170, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li .content {
+/* line 175, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title:first-child {
+  border-top: #003434;
+}
+/* line 179, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li .content {
   background: transparent;
   color: #464646;
 }
-/* line 174, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active {
-  border: 0;
-}
-/* line 176, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .title {
-  background: rgba(0, 0, 0, 0.2);
-  font-weight: 700;
-}
-/* line 180, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li.active .content {
-  background: #f2f2f2;
+/* line 183, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active {
   border: 0;
 }
 /* line 185, ../sass/_header.scss */
-[id^="application-"].reveal-modal .contained.tabs-content > li ul.accordion li h6 {
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 700;
+}
+/* line 189, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title:after {
+  border-top-color: white;
+}
+/* line 193, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .content {
+  background: #f2f2f2;
+  border: 0;
+}
+/* line 198, ../sass/_header.scss */
+[id^="application-"].reveal-modal .tabs-content > li ul.accordion li h6 {
   color: #999;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 194, ../sass/_header.scss */
+  /* line 207, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 197, ../sass/_header.scss */
+  /* line 210, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
@@ -5366,4 +5369,13 @@ a > i {
   font-style: normal;
   left: 0;
   line-height: 19.2px;
+}
+
+/* line 32, ../sass/_buttons.scss */
+.button.active:after, button.active:after {
+  font-size: 12px;
+  font-size: 1.2rem;
+  content: "\00A0\0066";
+  position: absolute;
+  top: 0;
 }

@@ -57,7 +57,7 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 									<?php echo Services::Language()->translate('This&nbsp;application&nbsp;is'); ?>&nbsp;&nbsp;<a href="<?php echo $pageURL ?>" class="tiny success radius button" data-reveal-id="offline-switch"><?php echo Services::Language()->translate('Online'); ?></a>
 									<div id="offline-switch" class="reveal-modal">
-										Clicking on 'Continue' will put this website in offline maintenance mode. <label for="offline_message">Edit the site's offline message:</label>
+										Click 'Continue' to take this application offline. <label for="offline_message">Edit the site's offline message:</label>
 
 										<form action="<?php echo $pageURL ?>" class="custom">
 											<input type="hidden" name="offline" value="1" />
@@ -83,15 +83,20 @@ $pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 	<div id="application-config" class="reveal-modal">
 
-		<form class="custom row">
+		<ul class="button-group radius">
+			<li><button class="button secondary radius">Simple</button></li>
+			<li><button class="button secondary radius active">Advanced</button></li>
+		</ul>
 
-			<dl class="vertical tabs three columns">
+		<form class="custom">
+
+			<dl class="tabs">
 				<dd class="active"><a href="<?php echo $pageURL ?>#application"><?php echo Services::Language()->translate('Application'); ?></a></dd>
 				<dd><a href="<?php echo $pageURL ?>#development"><?php echo Services::Language()->translate('Development'); ?></a></dd>
 				<dd><a href="<?php echo $pageURL ?>#design"><?php echo Services::Language()->translate('Design'); ?></a></dd>
 			</dl>
 
-			<ul class="contained tabs-content fifteen columns">
+			<ul class="tabs-content">
 				<li class="active" id="applicationTab">
 					
 					<ul class="accordion">
