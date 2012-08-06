@@ -4254,26 +4254,41 @@ ul.orbit-bullets li.active.has-thumb {
 /* Typography*/
 /* Widths */
 /* Colors */
-/* line 15, ../sass/_molajo.scss */
+/* line 16, ../sass/_molajo.scss */
+.row .bleed {
+  margin: 0 -15px;
+}
+
+/* line 21, ../sass/_molajo.scss */
+.glyph.general, .general.icon, a.general#expander:before, header[role="banner"] h1 i.general, header[role="banner"] nav .settings > li > a > i, nav[role="navigation"] i, a > i, .add:after, .form-helper i, .button.active:after, button.active:after {
+  line-height: 0%;
+}
+
+/* line 25, ../sass/_molajo.scss */
+.button .glyph.general, button .glyph.general, .button .general.icon, button .general.icon, .button a.general#expander:before, button a.general#expander:before, .button header[role="banner"] h1 i.general, header[role="banner"] h1 .button i.general, button header[role="banner"] h1 i.general, header[role="banner"] h1 button i.general, .button header[role="banner"] nav .settings > li > a > i, header[role="banner"] nav .button .settings > li > a > i, button header[role="banner"] nav .settings > li > a > i, header[role="banner"] nav button .settings > li > a > i, .button nav[role="navigation"] i, nav[role="navigation"] .button i, button nav[role="navigation"] i, nav[role="navigation"] button i, .button a > i, button a > i, .button .add:after, button .add:after, .button .form-helper i, .form-helper .button i, button .form-helper i, .form-helper button i, .button .button.active:after, button .button.active:after, .button button.active:after, button button.active:after {
+  margin: 0 0.3em 0 -0.4em;
+}
+
+/* line 30, ../sass/_molajo.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
 /* Additional Resets */
-/* line 18, ../sass/_molajo.scss */
+/* line 33, ../sass/_molajo.scss */
 * {
   font-family: Ubuntu;
   font-weight: 300;
 }
 
-/* line 22, ../sass/_molajo.scss */
+/* line 37, ../sass/_molajo.scss */
 html, body {
   background: #fffffd;
   min-height: 100%;
   height: 100%;
 }
 
-/* line 29, ../sass/_molajo.scss */
+/* line 44, ../sass/_molajo.scss */
 a#expander {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4288,7 +4303,7 @@ a#expander {
   margin-bottom: 15px;
   padding: 8px;
 }
-/* line 39, ../sass/_molajo.scss */
+/* line 54, ../sass/_molajo.scss */
 a#expander span {
   display: none;
 }
@@ -5187,40 +5202,52 @@ nav[role="navigation"] a span {
   }
 }
 /*
- * This stylesheet contains styling for extensions.
+ * This stylesheet contains styling for resources.
  *
  *
  *
  */
-/* line 9, ../sass/_extensions.scss */
-h1 {
-  font-size: 24px;
-  font-size: 2.4rem;
+/* line 8, ../sass/_resources.scss */
+section header {
+  background: #e6e6e6;
+  padding: 15px;
+}
+/* line 11, ../sass/_resources.scss */
+section header > *:first-child {
+  margin-top: 0;
+}
+/* line 14, ../sass/_resources.scss */
+section header h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  color: #006767;
   font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 30px;
 }
 
-/* line 15, ../sass/_extensions.scss */
+/* line 24, ../sass/_resources.scss */
 a > i {
   cursor: pointer;
   font-style: normal;
 }
 
-/* line 28, ../sass/_extensions.scss */
+/* line 37, ../sass/_resources.scss */
 .add:after {
   content: "d";
 }
 
-/* line 35, ../sass/_extensions.scss */
+/* line 44, ../sass/_resources.scss */
 .dismiss {
   display: block;
   text-align: right;
 }
-/* line 38, ../sass/_extensions.scss */
+/* line 47, ../sass/_resources.scss */
 .dismiss a {
   color: inherit;
   font-weight: 600;
 }
-/* line 42, ../sass/_extensions.scss */
+/* line 51, ../sass/_resources.scss */
 .dismiss i {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -5235,65 +5262,65 @@ a > i {
   padding: 2px 8px 7px;
 }
 
-/* line 53, ../sass/_extensions.scss */
+/* line 62, ../sass/_resources.scss */
 .pagination ul {
   font-size: 12px;
   font-size: 1.2rem;
   list-style-type: none;
   margin: 0 0 -20px;
 }
-/* line 57, ../sass/_extensions.scss */
+/* line 66, ../sass/_resources.scss */
 .pagination ul li {
   display: inline;
 }
 
-/* line 65, ../sass/_extensions.scss */
+/* line 74, ../sass/_resources.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 68, ../sass/_extensions.scss */
+/* line 77, ../sass/_resources.scss */
 [role="main"] table.grid thead th {
   vertical-align: top;
 }
-/* line 70, ../sass/_extensions.scss */
+/* line 79, ../sass/_resources.scss */
 [role="main"] table.grid thead th span {
   display: block;
 }
-/* line 74, ../sass/_extensions.scss */
+/* line 83, ../sass/_resources.scss */
 [role="main"] table.grid thead th input[type="text"] {
   width: 10em;
 }
-/* line 77, ../sass/_extensions.scss */
+/* line 86, ../sass/_resources.scss */
 [role="main"] table.grid thead th input[type="number"] {
   width: 3em;
 }
-/* line 83, ../sass/_extensions.scss */
+/* line 92, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th {
   background: #aaaaaa;
   font-weight: 400;
   text-align: right;
 }
-/* line 88, ../sass/_extensions.scss */
+/* line 97, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th > div,
 [role="main"] table.grid thead tr#batch-actions th .dismiss {
   display: none;
 }
-/* line 91, ../sass/_extensions.scss */
+/* line 100, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th div {
   text-align: left;
 }
-/* line 98, ../sass/_extensions.scss */
+/* line 107, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions:target th > div,
 [role="main"] table.grid thead tr#batch-actions:target th .dismiss {
   display: block;
 }
-/* line 109, ../sass/_extensions.scss */
+/* line 118, ../sass/_resources.scss */
 [role="main"] dl#table_config {
   margin: 0;
   text-align: right;
   width: 100%;
 }
-/* line 114, ../sass/_extensions.scss */
+/* line 123, ../sass/_resources.scss */
 [role="main"] dl#table_config dt i {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -5306,11 +5333,11 @@ a > i {
   display: inline-block;
   padding: 6px 10px 14px;
 }
-/* line 120, ../sass/_extensions.scss */
+/* line 129, ../sass/_resources.scss */
 [role="main"] dl#table_config dt i + span {
   display: none;
 }
-/* line 125, ../sass/_extensions.scss */
+/* line 134, ../sass/_resources.scss */
 [role="main"] dl#table_config dd {
   display: none;
   -moz-border-radius-topleft: 3px;
@@ -5335,15 +5362,15 @@ a > i {
   position: relative;
   text-align: left;
 }
-/* line 140, ../sass/_extensions.scss */
+/* line 149, ../sass/_resources.scss */
 [role="main"] dl#table_config:target dt {
   margin-bottom: -2px;
 }
-/* line 143, ../sass/_extensions.scss */
+/* line 152, ../sass/_resources.scss */
 [role="main"] dl#table_config:target dd {
   display: block;
 }
-/* line 146, ../sass/_extensions.scss */
+/* line 155, ../sass/_resources.scss */
 [role="main"] dl#table_config:target + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -5352,7 +5379,7 @@ a > i {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 150, ../sass/_extensions.scss */
+/* line 159, ../sass/_resources.scss */
 [role="main"] dl#table_config + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;

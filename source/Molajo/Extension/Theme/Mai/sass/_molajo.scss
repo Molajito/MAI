@@ -12,6 +12,21 @@ $white: #ffffff;
 $offwhite: #fffffd;
 $borderColor: #ddd;
 
+// Provide a hook for elements that need to bleed beyond the row margins
+.row .bleed {
+	margin: 0 (-($columnGutter/2));
+}
+
+// Make glyps behave
+.glyph.general {
+	line-height: 0%;
+}
+.button {
+	.glyph.general {
+		margin: 0 0.3em 0 -0.4em;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 { font-weight: 400;}
 
 /* Additional Resets */
@@ -65,6 +80,6 @@ a#expander {
 @import "header";
 @import "menu";
 @import "suckerfish";
-@import "extensions";
+@import "resources";
 @import "buttons";
 

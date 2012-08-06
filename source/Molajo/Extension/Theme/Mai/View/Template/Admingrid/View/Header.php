@@ -7,7 +7,7 @@ use Molajo\Service\Services;
  */
 defined('MOLAJO') or die;
 
-$pageUri = $_SERVER['REQUEST_URI'];
+$pageURL = Services::Registry()->get('Triggerdata', 'full_page_url');
 
 $nowrap = '';
 $checked = '';
@@ -15,15 +15,24 @@ $rowCount = Services::Registry()->get('Triggerdata', 'AdminGridTableRows');
 $columnArray = Services::Registry()->get('Triggerdata', 'AdminGridTableColumns');
 $numCols = count($columnArray);
 ?>
-            <h1>Articles</h1>
+
+<header class="bleed">
+    <h1>Articles</h1>
+    <aside>
+        <ul class="radius button-group">
+            <li><a href="<?php echo $pageURL; ?>" class="button"><i class="glyph general">d</i>&nbsp;Add Item</a></li>
+            <li><a href="<?php echo $pageURL; ?>" class="secondary button"><i class="glyph general">a</i>&nbsp;Edit Resource</a></li>
+        </ul>
+    </aside>
+</header>
 
             <include:template name=Admingridpagination value=AdminGridPagination/>
 
 <?php // This needs to be a template ?>
             <dl id="table_config">
-                <dt><a href="<?php echo $pageUri ?>#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
+                <dt><a href="<?php echo $pageURL ?>#table_config"><i>a</i><span>Configure Table Columns</span></a></dt>
                 <dd>
-                    <a href="<?php echo $pageUri ?>#articles" class="dismiss"><i>g</i><span>Close</span></a>
+                    <a href="<?php echo $pageURL ?>#articles" class="dismiss"><i>g</i><span>Close</span></a>
                     <table>
                         <thead>
                             <tr>
@@ -75,7 +84,7 @@ $numCols = count($columnArray);
                     <tr id="batch-actions">
                         <th colspan="<?php echo $numCols + 1 ?>">
                             With selected: <select id="batch-options"><option>Enable</option><option>Disable</option><option>Archive</option><option>Delete</option><option value="more">More options...</option></select>
-                            <a href="<?php echo $pageUri ?>#articles" class="dismiss"><i>g</i><span>Close</span></a>
+                            <a href="<?php echo $pageURL ?>#articles" class="dismiss"><i>g</i><span>Close</span></a>
                             <?php
                             /*
                              * Check markup syntax for these items, something's awry

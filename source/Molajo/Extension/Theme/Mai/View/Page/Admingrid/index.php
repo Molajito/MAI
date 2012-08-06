@@ -9,6 +9,7 @@ defined('MOLAJO') or die;
 
 $_baseUri = Services::Registry()->get('Triggerdata', 'full_page_url');
 ?>
+    <include:template name=Adminheader/>
 
 	<nav role="navigation">
 		<include:template name=Adminnavigationbar/>
@@ -17,7 +18,6 @@ $_baseUri = Services::Registry()->get('Triggerdata', 'full_page_url');
 	<section role="main">
 		<include:message/>
 
-		<a href="<?php echo $_baseUri ?>#focus" id="expander"><span>Expand working area</span></a>
 		<include:request/>
 	</section>
 
