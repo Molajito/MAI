@@ -102,3 +102,23 @@
 		}
 	}
 }
+
+
+@media only screen and (max-width: $screenSmall - 1px) {
+	.suckerfish {
+		li {
+			&.search {
+				&:hover {
+					a+* {
+						position: absolute;
+						top: $navBarHeight + 1px;
+					}
+				}
+				a+* {
+					margin: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

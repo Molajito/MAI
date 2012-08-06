@@ -5173,6 +5173,18 @@ nav[role="navigation"] a span {
   color: #009a9a;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 112, ../sass/_suckerfish.scss */
+  .suckerfish li.search:hover a + * {
+    position: absolute;
+    top: 41px;
+  }
+  /* line 117, ../sass/_suckerfish.scss */
+  .suckerfish li.search a + * {
+    margin: 0;
+    width: 100%;
+  }
+}
 /*
  * This stylesheet contains styling for extensions.
  *
