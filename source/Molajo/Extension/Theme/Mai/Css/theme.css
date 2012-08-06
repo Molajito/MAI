@@ -4711,7 +4711,7 @@ nav[role="navigation"] {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 41px;
+  top: 0;
 }
 /* line 56, ../sass/_menu.scss */
 nav[role="navigation"] a {
