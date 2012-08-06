@@ -45,7 +45,7 @@ nav[role="navigation"] {
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
-	top: 0;
+	top: $navBarHeight + 1px;
 
 	// Temp, user config needs to move here
 	// padding-top: $navBarHeight + 1px;
@@ -288,6 +288,7 @@ nav[role="navigation"] {
 		padding: 0;
 		position: relative;
 		z-index: 100;
+		top: 0;
 		dl {
 			width: 100%;
 			text-align: center;

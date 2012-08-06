@@ -4711,7 +4711,7 @@ nav[role="navigation"] {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 0;
+  top: 41px;
 }
 /* line 56, ../sass/_menu.scss */
 nav[role="navigation"] a {
@@ -5023,28 +5023,29 @@ nav[role="navigation"] a span {
     padding: 0;
     position: relative;
     z-index: 100;
+    top: 0;
   }
-  /* line 291, ../sass/_menu.scss */
+  /* line 292, ../sass/_menu.scss */
   nav[role="navigation"] dl {
     width: 100%;
     text-align: center;
   }
-  /* line 295, ../sass/_menu.scss */
+  /* line 296, ../sass/_menu.scss */
   nav[role="navigation"] dt {
     display: inline;
   }
-  /* line 297, ../sass/_menu.scss */
+  /* line 298, ../sass/_menu.scss */
   nav[role="navigation"] dt > a {
     border: 0 !important;
     display: inline-block;
     height: 40px;
     text-align: center;
   }
-  /* line 303, ../sass/_menu.scss */
+  /* line 304, ../sass/_menu.scss */
   nav[role="navigation"] dt span {
     display: none;
   }
-  /* line 306, ../sass/_menu.scss */
+  /* line 307, ../sass/_menu.scss */
   nav[role="navigation"] dt + dd {
     text-align: left;
     left: 0;
@@ -5053,28 +5054,28 @@ nav[role="navigation"] a span {
     width: 100%;
   }
 
-  /* line 317, ../sass/_menu.scss */
+  /* line 318, ../sass/_menu.scss */
   #focus:target nav[role="navigation"] i {
     width: 20px;
   }
-  /* line 320, ../sass/_menu.scss */
+  /* line 321, ../sass/_menu.scss */
   #focus:target nav[role="navigation"] dd {
     display: none;
   }
-  /* line 324, ../sass/_menu.scss */
+  /* line 325, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover dd {
     display: block;
   }
-  /* line 327, ../sass/_menu.scss */
+  /* line 328, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover i {
     width: 20px;
   }
-  /* line 330, ../sass/_menu.scss */
+  /* line 331, ../sass/_menu.scss */
   #focus:target nav[role="navigation"]:hover dt > a > span {
     display: none;
   }
 
-  /* line 334, ../sass/_menu.scss */
+  /* line 335, ../sass/_menu.scss */
   a#expander {
     display: none;
   }
