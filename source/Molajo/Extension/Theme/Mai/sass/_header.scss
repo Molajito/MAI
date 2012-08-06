@@ -141,6 +141,27 @@ header[role="banner"] {
 			color: #aaa;
 		}
 	}
+
+	// .reveal-modal-header {
+	// 	// @extend .bleed;
+	// 	background: darken($mainColor, 10);
+	// 	margin: -30px -30px 30px;
+	// 	padding: 30px;
+	// 	h1 {
+	// 		@extend .embossed-up;
+	// 		@include font-size(28);
+	// 		color: $mainColor;
+	// 		font-weight: 700;
+	// 		line-height: 100%;
+	// 	}
+	// 	h2 {
+	// 		@extend .embossed-up;
+	// 		@include font-size(16);
+	// 		color: darken($mainColor, 30);
+	// 		font-weight: 500;
+	// 	}
+	// }
+
 	.tabs {
 		@include border-top-radius(3px);
 		border-bottom: darken($mainColor, 10);

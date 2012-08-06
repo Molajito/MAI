@@ -16,8 +16,9 @@ defined('MOLAJO') or die;
 <div id="resource-options" class="reveal-modal">
 
 	<hgroup class="reveal-modal-header">
-    <h2><?php echo Services::Language()->translate('Resource Configuration'); ?></h2>
-    <h1>Articles</h1>
+	    <h2><?php echo Services::Language()->translate('Resource Configuration'); ?></h2>
+	    <h1>Articles</h1>
+		<a class="close-reveal-modal">&#215;</a>
 	</hgroup>
 
 		<ul class="button-group radius">

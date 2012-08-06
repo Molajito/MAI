@@ -4270,30 +4270,35 @@ ul.orbit-bullets li.active.has-thumb {
 }
 
 /* line 30, ../sass/_molajo.scss */
-.embossed-down, h1, h2, h3, h4, h5, h6 {
+.embossed-down, section header h1, [id^="resource-"].reveal-modal h1, [id^="resource-"].reveal-modal h2 {
   text-shadow: 0px 1px 1px white;
 }
 
-/* line 34, ../sass/_molajo.scss */
+/* line 33, ../sass/_molajo.scss */
+.embossed-up {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 37, ../sass/_molajo.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
 /* Additional Resets */
-/* line 37, ../sass/_molajo.scss */
+/* line 40, ../sass/_molajo.scss */
 * {
   font-family: Ubuntu;
   font-weight: 300;
 }
 
-/* line 41, ../sass/_molajo.scss */
+/* line 44, ../sass/_molajo.scss */
 html, body {
   background: #fffffd;
   min-height: 100%;
   height: 100%;
 }
 
-/* line 48, ../sass/_molajo.scss */
+/* line 51, ../sass/_molajo.scss */
 a#expander {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4308,7 +4313,7 @@ a#expander {
   margin-bottom: 15px;
   padding: 8px;
 }
-/* line 58, ../sass/_molajo.scss */
+/* line 61, ../sass/_molajo.scss */
 a#expander span {
   display: none;
 }
@@ -4611,7 +4616,7 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
 [id^="application-"].reveal-modal .close-reveal-modal:hover {
   color: #aaa;
 }
-/* line 144, ../sass/_header.scss */
+/* line 165, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -4622,34 +4627,34 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   border-bottom: #003434;
   margin: 20px 0 0;
 }
-/* line 148, ../sass/_header.scss */
+/* line 169, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd {
   border: 0;
   border-bottom: 3px solid transparent;
 }
-/* line 151, ../sass/_header.scss */
+/* line 172, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd a {
   color: white;
 }
-/* line 154, ../sass/_header.scss */
+/* line 175, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd.active {
   border-color: #003434;
 }
-/* line 156, ../sass/_header.scss */
+/* line 177, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd.active a {
   background: #005858;
   border-color: #005d5d;
   color: white;
 }
-/* line 166, ../sass/_header.scss */
+/* line 187, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion {
   border: 0;
 }
-/* line 168, ../sass/_header.scss */
+/* line 189, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li {
   border: 0;
 }
-/* line 170, ../sass/_header.scss */
+/* line 191, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title {
   font-size: 14px;
   font-size: 1.4rem;
@@ -4660,45 +4665,45 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   line-height: 40px;
 }
-/* line 178, ../sass/_header.scss */
+/* line 199, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title:first-child {
   border-top: #003434;
 }
-/* line 182, ../sass/_header.scss */
+/* line 203, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .content {
   background: transparent;
   color: #464646;
 }
-/* line 186, ../sass/_header.scss */
+/* line 207, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active {
   border: 0;
 }
-/* line 188, ../sass/_header.scss */
+/* line 209, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title {
   background: rgba(0, 0, 0, 0.2);
   color: white;
   font-weight: 700;
 }
-/* line 192, ../sass/_header.scss */
+/* line 213, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title:after {
   border-top-color: white;
 }
-/* line 196, ../sass/_header.scss */
+/* line 217, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .content {
   background: #f2f2f2;
   border: 0;
 }
-/* line 201, ../sass/_header.scss */
+/* line 222, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li h6 {
   color: #999;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 210, ../sass/_header.scss */
+  /* line 231, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 213, ../sass/_header.scss */
+  /* line 234, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
@@ -5234,28 +5239,28 @@ section header h1 {
   margin-bottom: 30px;
 }
 
-/* line 24, ../sass/_resources.scss */
+/* line 25, ../sass/_resources.scss */
 a > i {
   cursor: pointer;
   font-style: normal;
 }
 
-/* line 37, ../sass/_resources.scss */
+/* line 38, ../sass/_resources.scss */
 .add:after {
   content: "d";
 }
 
-/* line 44, ../sass/_resources.scss */
+/* line 45, ../sass/_resources.scss */
 .dismiss {
   display: block;
   text-align: right;
 }
-/* line 47, ../sass/_resources.scss */
+/* line 48, ../sass/_resources.scss */
 .dismiss a {
   color: inherit;
   font-weight: 600;
 }
-/* line 51, ../sass/_resources.scss */
+/* line 52, ../sass/_resources.scss */
 .dismiss i {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -5270,65 +5275,65 @@ a > i {
   padding: 2px 8px 7px;
 }
 
-/* line 62, ../sass/_resources.scss */
+/* line 63, ../sass/_resources.scss */
 .pagination ul {
   font-size: 12px;
   font-size: 1.2rem;
   list-style-type: none;
   margin: 0 0 -20px;
 }
-/* line 66, ../sass/_resources.scss */
+/* line 67, ../sass/_resources.scss */
 .pagination ul li {
   display: inline;
 }
 
-/* line 74, ../sass/_resources.scss */
+/* line 75, ../sass/_resources.scss */
 [role="main"] table.grid {
   width: 100%;
 }
-/* line 77, ../sass/_resources.scss */
+/* line 78, ../sass/_resources.scss */
 [role="main"] table.grid thead th {
   vertical-align: top;
 }
-/* line 79, ../sass/_resources.scss */
+/* line 80, ../sass/_resources.scss */
 [role="main"] table.grid thead th span {
   display: block;
 }
-/* line 83, ../sass/_resources.scss */
+/* line 84, ../sass/_resources.scss */
 [role="main"] table.grid thead th input[type="text"] {
   width: 10em;
 }
-/* line 86, ../sass/_resources.scss */
+/* line 87, ../sass/_resources.scss */
 [role="main"] table.grid thead th input[type="number"] {
   width: 3em;
 }
-/* line 92, ../sass/_resources.scss */
+/* line 93, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th {
   background: #aaaaaa;
   font-weight: 400;
   text-align: right;
 }
-/* line 97, ../sass/_resources.scss */
+/* line 98, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th > div,
 [role="main"] table.grid thead tr#batch-actions th .dismiss {
   display: none;
 }
-/* line 100, ../sass/_resources.scss */
+/* line 101, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions th div {
   text-align: left;
 }
-/* line 107, ../sass/_resources.scss */
+/* line 108, ../sass/_resources.scss */
 [role="main"] table.grid thead tr#batch-actions:target th > div,
 [role="main"] table.grid thead tr#batch-actions:target th .dismiss {
   display: block;
 }
-/* line 118, ../sass/_resources.scss */
+/* line 119, ../sass/_resources.scss */
 [role="main"] dl#table_config {
   margin: 0;
   text-align: right;
   width: 100%;
 }
-/* line 123, ../sass/_resources.scss */
+/* line 124, ../sass/_resources.scss */
 [role="main"] dl#table_config dt i {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -5341,11 +5346,11 @@ a > i {
   display: inline-block;
   padding: 6px 10px 14px;
 }
-/* line 129, ../sass/_resources.scss */
+/* line 130, ../sass/_resources.scss */
 [role="main"] dl#table_config dt i + span {
   display: none;
 }
-/* line 134, ../sass/_resources.scss */
+/* line 135, ../sass/_resources.scss */
 [role="main"] dl#table_config dd {
   display: none;
   -moz-border-radius-topleft: 3px;
@@ -5370,15 +5375,15 @@ a > i {
   position: relative;
   text-align: left;
 }
-/* line 149, ../sass/_resources.scss */
+/* line 150, ../sass/_resources.scss */
 [role="main"] dl#table_config:target dt {
   margin-bottom: -2px;
 }
-/* line 152, ../sass/_resources.scss */
+/* line 153, ../sass/_resources.scss */
 [role="main"] dl#table_config:target dd {
   display: block;
 }
-/* line 155, ../sass/_resources.scss */
+/* line 156, ../sass/_resources.scss */
 [role="main"] dl#table_config:target + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -5387,7 +5392,7 @@ a > i {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 159, ../sass/_resources.scss */
+/* line 160, ../sass/_resources.scss */
 [role="main"] dl#table_config + table {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -5403,7 +5408,7 @@ a > i {
   border-bottom-left-radius: 3px;
 }
 
-/* line 166, ../sass/_resources.scss */
+/* line 167, ../sass/_resources.scss */
 [id^="resource-"].reveal-modal {
   left: 0;
   margin: 0;
@@ -5413,17 +5418,17 @@ a > i {
   width: 100%;
   z-index: 300;
 }
-/* line 174, ../sass/_resources.scss */
+/* line 175, ../sass/_resources.scss */
 [id^="resource-"].reveal-modal .reveal-modal-header {
   background: #e6e6e6;
   margin: -30px -30px 30px;
   padding: 30px;
 }
-/* line 181, ../sass/_resources.scss */
+/* line 182, ../sass/_resources.scss */
 [id^="resource-"].reveal-modal + .reveal-modal-bg {
   background: #e6e6e6;
 }
-/* line 184, ../sass/_resources.scss */
+/* line 185, ../sass/_resources.scss */
 [id^="resource-"].reveal-modal h1 {
   font-size: 28px;
   font-size: 2.8rem;
@@ -5431,7 +5436,7 @@ a > i {
   font-weight: 700;
   line-height: 100%;
 }
-/* line 190, ../sass/_resources.scss */
+/* line 192, ../sass/_resources.scss */
 [id^="resource-"].reveal-modal h2 {
   font-size: 16px;
   font-size: 1.6rem;
