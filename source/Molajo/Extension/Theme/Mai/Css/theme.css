@@ -4270,25 +4270,30 @@ ul.orbit-bullets li.active.has-thumb {
 }
 
 /* line 30, ../sass/_molajo.scss */
+.embossed-down, h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0px 1px 1px white;
+}
+
+/* line 34, ../sass/_molajo.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
 /* Additional Resets */
-/* line 33, ../sass/_molajo.scss */
+/* line 37, ../sass/_molajo.scss */
 * {
   font-family: Ubuntu;
   font-weight: 300;
 }
 
-/* line 37, ../sass/_molajo.scss */
+/* line 41, ../sass/_molajo.scss */
 html, body {
   background: #fffffd;
   min-height: 100%;
   height: 100%;
 }
 
-/* line 44, ../sass/_molajo.scss */
+/* line 48, ../sass/_molajo.scss */
 a#expander {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4303,7 +4308,7 @@ a#expander {
   margin-bottom: 15px;
   padding: 8px;
 }
-/* line 54, ../sass/_molajo.scss */
+/* line 58, ../sass/_molajo.scss */
 a#expander span {
   display: none;
 }
@@ -5396,6 +5401,42 @@ a > i {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+
+/* line 166, ../sass/_resources.scss */
+[id^="resource-"].reveal-modal {
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+}
+/* line 174, ../sass/_resources.scss */
+[id^="resource-"].reveal-modal .reveal-modal-header {
+  background: #e6e6e6;
+  margin: -30px -30px 30px;
+  padding: 30px;
+}
+/* line 181, ../sass/_resources.scss */
+[id^="resource-"].reveal-modal + .reveal-modal-bg {
+  background: #e6e6e6;
+}
+/* line 184, ../sass/_resources.scss */
+[id^="resource-"].reveal-modal h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  color: #006767;
+  font-weight: 700;
+  line-height: 100%;
+}
+/* line 190, ../sass/_resources.scss */
+[id^="resource-"].reveal-modal h2 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #b3b3b3;
+  font-weight: 500;
 }
 
 /* line 1, ../sass/_buttons.scss */

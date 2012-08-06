@@ -21,12 +21,12 @@ $numCols = count($columnArray);
     <aside>
         <ul class="radius button-group">
             <li><a href="<?php echo $pageURL; ?>" class="button"><i class="glyph general">d</i>&nbsp;Add Item</a></li>
-            <li><a href="<?php echo $pageURL; ?>" class="secondary button"><i class="glyph general">a</i>&nbsp;Edit Resource</a></li>
+            <li><a href="<?php echo $pageURL; ?>" class="secondary button" data-reveal-id="resource-options"><i class="glyph general">a</i>&nbsp;Edit Resource</a></li>
         </ul>
     </aside>
 </header>
 
-            <include:template name=Admingridpagination value=AdminGridPagination/>
+<include:template name=Admingridpagination value=AdminGridPagination/>
 
 <?php // This needs to be a template ?>
             <dl id="table_config">
