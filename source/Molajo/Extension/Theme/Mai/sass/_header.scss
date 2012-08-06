@@ -30,7 +30,10 @@ header[role="banner"] {
 			color: $white;
 			font-style: normal;
 			line-height: $navBarHeight + 2px;
+			padding: 0 8px;
 			position: absolute;
+			text-align: center;
+			width: 26px;
 			&+span {
 				padding-left: $navBarHeight + 2px;
 			}

@@ -4484,36 +4484,39 @@ header[role="banner"] h1 i {
   color: white;
   font-style: normal;
   line-height: 42px;
+  padding: 0 8px;
   position: absolute;
+  text-align: center;
+  width: 26px;
 }
-/* line 34, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 header[role="banner"] h1 i + span {
   padding-left: 42px;
 }
-/* line 40, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header[role="banner"] form[role="search"] fieldset {
   display: inline;
   padding: 8px 0 0;
   border: 0;
 }
-/* line 45, ../sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 header[role="banner"] form[role="search"] input[type="search"] {
   background: #fffffd;
 }
-/* line 49, ../sass/_header.scss */
+/* line 52, ../sass/_header.scss */
 header[role="banner"] nav {
   background: inherit;
   float: right;
   height: 40px;
 }
-/* line 53, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 header[role="banner"] nav .settings {
   width: 100%;
   right: 0;
   text-align: right;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 58, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 header[role="banner"] nav .settings > li {
   background: inherit;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -4521,11 +4524,11 @@ header[role="banner"] nav .settings > li {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 64, ../sass/_header.scss */
+/* line 67, ../sass/_header.scss */
 header[role="banner"] nav .settings > li:hover, header[role="banner"] nav .settings > li:active {
   background: #373737;
 }
-/* line 65, ../sass/_header.scss */
+/* line 68, ../sass/_header.scss */
 header[role="banner"] nav .settings > li > a {
   display: inline-block;
   color: inherit;
@@ -4535,27 +4538,27 @@ header[role="banner"] nav .settings > li > a {
   text-align: center;
   vertical-align: middle;
 }
-/* line 73, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 header[role="banner"] nav .settings > li > a > i {
   display: inline-block;
   font-style: normal;
   height: inherit;
   width: inherit;
 }
-/* line 80, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 header[role="banner"] nav .settings > li > a > span {
   display: none;
 }
-/* line 84, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 header[role="banner"] nav .settings > li.last {
   border-right: 0;
 }
-/* line 88, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 header[role="banner"] nav .settings > li.user > a {
   padding: 0;
   text-align: left;
 }
-/* line 91, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 header[role="banner"] nav .settings > li.user > a > img {
   display: inline;
   height: 40px;
@@ -4563,27 +4566,27 @@ header[role="banner"] nav .settings > li.user > a > img {
   width: 40px;
   margin-top: -2px;
 }
-/* line 100, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 header[role="banner"] nav .settings > li.user > a > span {
   display: inline;
   padding: 0 10px;
 }
-/* line 107, ../sass/_header.scss */
+/* line 110, ../sass/_header.scss */
 header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav .settings > li.config:active {
   background: #004848;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 114, ../sass/_header.scss */
+  /* line 117, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 117, ../sass/_header.scss */
+  /* line 120, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
 }
-/* line 125, ../sass/_header.scss */
+/* line 128, ../sass/_header.scss */
 [id^="application-"].reveal-modal {
   background: #006767;
   color: white;
@@ -4595,15 +4598,15 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   width: 100% !important;
   z-index: 300;
 }
-/* line 135, ../sass/_header.scss */
+/* line 138, ../sass/_header.scss */
 [id^="application-"].reveal-modal .close-reveal-modal {
   color: white;
 }
-/* line 137, ../sass/_header.scss */
+/* line 140, ../sass/_header.scss */
 [id^="application-"].reveal-modal .close-reveal-modal:hover {
   color: #aaa;
 }
-/* line 141, ../sass/_header.scss */
+/* line 144, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -4614,34 +4617,34 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   border-bottom: #003434;
   margin: 20px 0 0;
 }
-/* line 145, ../sass/_header.scss */
+/* line 148, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd {
   border: 0;
   border-bottom: 3px solid transparent;
 }
-/* line 148, ../sass/_header.scss */
+/* line 151, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd a {
   color: white;
 }
-/* line 151, ../sass/_header.scss */
+/* line 154, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd.active {
   border-color: #003434;
 }
-/* line 153, ../sass/_header.scss */
+/* line 156, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs dd.active a {
   background: #005858;
   border-color: #005d5d;
   color: white;
 }
-/* line 163, ../sass/_header.scss */
+/* line 166, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion {
   border: 0;
 }
-/* line 165, ../sass/_header.scss */
+/* line 168, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li {
   border: 0;
 }
-/* line 167, ../sass/_header.scss */
+/* line 170, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title {
   font-size: 14px;
   font-size: 1.4rem;
@@ -4652,45 +4655,45 @@ header[role="banner"] nav .settings > li.config:hover, header[role="banner"] nav
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   line-height: 40px;
 }
-/* line 175, ../sass/_header.scss */
+/* line 178, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .title:first-child {
   border-top: #003434;
 }
-/* line 179, ../sass/_header.scss */
+/* line 182, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li .content {
   background: transparent;
   color: #464646;
 }
-/* line 183, ../sass/_header.scss */
+/* line 186, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active {
   border: 0;
 }
-/* line 185, ../sass/_header.scss */
+/* line 188, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title {
   background: rgba(0, 0, 0, 0.2);
   color: white;
   font-weight: 700;
 }
-/* line 189, ../sass/_header.scss */
+/* line 192, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .title:after {
   border-top-color: white;
 }
-/* line 193, ../sass/_header.scss */
+/* line 196, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li.active .content {
   background: #f2f2f2;
   border: 0;
 }
-/* line 198, ../sass/_header.scss */
+/* line 201, ../sass/_header.scss */
 [id^="application-"].reveal-modal .tabs-content > li ul.accordion li h6 {
   color: #999;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 207, ../sass/_header.scss */
+  /* line 210, ../sass/_header.scss */
   header[role="banner"] {
     display: block;
   }
-  /* line 210, ../sass/_header.scss */
+  /* line 213, ../sass/_header.scss */
   header[role="banner"] h1 span {
     display: none;
   }
